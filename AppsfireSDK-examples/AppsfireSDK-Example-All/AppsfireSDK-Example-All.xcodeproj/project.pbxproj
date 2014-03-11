@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B1A68C41864756C0079DC2D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1A68C31864756C0079DC2D /* Accelerate.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		7B54608D18A5180D00D22B36 /* ExampleMinimalSashimiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B54608A18A5180D00D22B36 /* ExampleMinimalSashimiTableViewCell.m */; };
+		7B54608E18A5180D00D22B36 /* ExampleMinimalSashimiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B54608C18A5180D00D22B36 /* ExampleMinimalSashimiTableViewController.m */; };
+		7B54609318A5181300D22B36 /* ExampleExtendedSashimiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B54609018A5181300D22B36 /* ExampleExtendedSashimiTableViewCell.m */; };
+		7B54609418A5181300D22B36 /* ExampleExtendedSashimiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B54609218A5181300D22B36 /* ExampleExtendedSashimiTableViewController.m */; };
+		7B54609B18A5181D00D22B36 /* ExampleCustomSashimiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B54609618A5181D00D22B36 /* ExampleCustomSashimiTableViewCell.m */; };
+		7B54609C18A5181D00D22B36 /* ExampleCustomSashimiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B54609818A5181D00D22B36 /* ExampleCustomSashimiTableViewController.m */; };
+		7B54609D18A5181D00D22B36 /* ExampleCustomSashimiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B54609A18A5181D00D22B36 /* ExampleCustomSashimiView.m */; };
+		7BE9A3B117E706E100A664E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE9A3B017E706E100A664E8 /* Foundation.framework */; };
+		7BE9A3B317E706E100A664E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE9A3B217E706E100A664E8 /* CoreGraphics.framework */; };
+		7BE9A3B517E706E100A664E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE9A3B417E706E100A664E8 /* UIKit.framework */; };
+		7BE9A3EF17E7098D00A664E8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE9A3EE17E7098D00A664E8 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		7BE9A3F117E709AB00A664E8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE9A3F017E709AB00A664E8 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		7BE9A3F517E709F800A664E8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE9A3F417E709F800A664E8 /* SystemConfiguration.framework */; };
+		7BE9A3F717E70A0100A664E8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE9A3F617E70A0100A664E8 /* MobileCoreServices.framework */; };
+		7BE9A3F917E70A0700A664E8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE9A3F817E70A0700A664E8 /* Security.framework */; };
+		BFFD8DF818A0FD8900371EB0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFFD8DF518A0FD8900371EB0 /* InfoPlist.strings */; };
+		BFFD8DF918A0FD8900371EB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFD8DF618A0FD8900371EB0 /* main.m */; };
+		BFFD8E0918A0FDE400371EB0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFFD8DFB18A0FDE400371EB0 /* Default-568h@2x.png */; };
+		BFFD8E0A18A0FDE400371EB0 /* icon-120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = BFFD8DFC18A0FDE400371EB0 /* icon-120x120.png */; };
+		BFFD8E0B18A0FDE400371EB0 /* icon-152x152.png in Resources */ = {isa = PBXBuildFile; fileRef = BFFD8DFD18A0FDE400371EB0 /* icon-152x152.png */; };
+		BFFD8E0C18A0FDE400371EB0 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = BFFD8DFE18A0FDE400371EB0 /* Icon-72.png */; };
+		BFFD8E0D18A0FDE400371EB0 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFFD8DFF18A0FDE400371EB0 /* Icon-72@2x.png */; };
+		BFFD8E0E18A0FDE400371EB0 /* icon-76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = BFFD8E0018A0FDE400371EB0 /* icon-76x76.png */; };
+		BFFD8E0F18A0FDE400371EB0 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BFFD8E0118A0FDE400371EB0 /* Icon-Small-50.png */; };
+		BFFD8E1018A0FDE400371EB0 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFFD8E0218A0FDE400371EB0 /* Icon-Small-50@2x.png */; };
+		BFFD8E1118A0FDE400371EB0 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = BFFD8E0318A0FDE400371EB0 /* Icon-Small.png */; };
+		BFFD8E1218A0FDE400371EB0 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFFD8E0418A0FDE400371EB0 /* Icon-Small@2x.png */; };
+		BFFD8E1318A0FDE400371EB0 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BFFD8E0518A0FDE400371EB0 /* Icon.png */; };
+		BFFD8E1418A0FDE400371EB0 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFFD8E0618A0FDE400371EB0 /* Icon@2x.png */; };
+		BFFD8E1518A0FDE400371EB0 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = BFFD8E0718A0FDE400371EB0 /* iTunesArtwork.png */; };
+		BFFD8E1618A0FDE400371EB0 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFFD8E0818A0FDE400371EB0 /* iTunesArtwork@2x.png */; };
+		BFFD8E2918A0FE0E00371EB0 /* AppsfireAdTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFD8E1A18A0FE0E00371EB0 /* AppsfireAdTimerView.m */; };
+		BFFD8E2A18A0FE0E00371EB0 /* AFBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFD8E1D18A0FE0E00371EB0 /* AFBadgeView.m */; };
+		BFFD8E2B18A0FE0E00371EB0 /* AFNotificationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFD8E2018A0FE0E00371EB0 /* AFNotificationBarView.m */; };
+		BFFD8E2C18A0FE0E00371EB0 /* libAppsfireSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFD8E2518A0FE0E00371EB0 /* libAppsfireSDK.a */; };
+		BFFD8E2D18A0FE0E00371EB0 /* AppsfireConvenienceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFD8E2818A0FE0E00371EB0 /* AppsfireConvenienceDelegate.m */; };
+		BFFD8E3018A0FE4A00371EB0 /* AdSDKOptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFD8E2F18A0FE4A00371EB0 /* AdSDKOptionsTableViewController.m */; };
+		BFFD8E3318A0FE5800371EB0 /* SDKOptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFD8E3218A0FE5800371EB0 /* SDKOptionsTableViewController.m */; };
+		BFFD8E3618A0FE6400371EB0 /* NotificationBarExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFD8E3518A0FE6400371EB0 /* NotificationBarExampleController.m */; };
+		BFFD8E3B18A0FE7300371EB0 /* SDKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFD8E3818A0FE7300371EB0 /* SDKTableViewController.m */; };
+		BFFD8E3C18A0FE7300371EB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFD8E3A18A0FE7300371EB0 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7B1A68C31864756C0079DC2D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		7B54608918A5180D00D22B36 /* ExampleMinimalSashimiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleMinimalSashimiTableViewCell.h; path = "AppsfireSDK-Example-All/Classes/ExampleMinimalSashimiTableViewCell.h"; sourceTree = SOURCE_ROOT; };
+		7B54608A18A5180D00D22B36 /* ExampleMinimalSashimiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleMinimalSashimiTableViewCell.m; path = "AppsfireSDK-Example-All/Classes/ExampleMinimalSashimiTableViewCell.m"; sourceTree = SOURCE_ROOT; };
+		7B54608B18A5180D00D22B36 /* ExampleMinimalSashimiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleMinimalSashimiTableViewController.h; path = "AppsfireSDK-Example-All/Classes/ExampleMinimalSashimiTableViewController.h"; sourceTree = SOURCE_ROOT; };
+		7B54608C18A5180D00D22B36 /* ExampleMinimalSashimiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleMinimalSashimiTableViewController.m; path = "AppsfireSDK-Example-All/Classes/ExampleMinimalSashimiTableViewController.m"; sourceTree = SOURCE_ROOT; };
+		7B54608F18A5181300D22B36 /* ExampleExtendedSashimiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleExtendedSashimiTableViewCell.h; path = "AppsfireSDK-Example-All/Classes/ExampleExtendedSashimiTableViewCell.h"; sourceTree = SOURCE_ROOT; };
+		7B54609018A5181300D22B36 /* ExampleExtendedSashimiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleExtendedSashimiTableViewCell.m; path = "AppsfireSDK-Example-All/Classes/ExampleExtendedSashimiTableViewCell.m"; sourceTree = SOURCE_ROOT; };
+		7B54609118A5181300D22B36 /* ExampleExtendedSashimiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleExtendedSashimiTableViewController.h; path = "AppsfireSDK-Example-All/Classes/ExampleExtendedSashimiTableViewController.h"; sourceTree = SOURCE_ROOT; };
+		7B54609218A5181300D22B36 /* ExampleExtendedSashimiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleExtendedSashimiTableViewController.m; path = "AppsfireSDK-Example-All/Classes/ExampleExtendedSashimiTableViewController.m"; sourceTree = SOURCE_ROOT; };
+		7B54609518A5181D00D22B36 /* ExampleCustomSashimiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleCustomSashimiTableViewCell.h; path = "AppsfireSDK-Example-All/Classes/ExampleCustomSashimiTableViewCell.h"; sourceTree = SOURCE_ROOT; };
+		7B54609618A5181D00D22B36 /* ExampleCustomSashimiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleCustomSashimiTableViewCell.m; path = "AppsfireSDK-Example-All/Classes/ExampleCustomSashimiTableViewCell.m"; sourceTree = SOURCE_ROOT; };
+		7B54609718A5181D00D22B36 /* ExampleCustomSashimiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleCustomSashimiTableViewController.h; path = "AppsfireSDK-Example-All/Classes/ExampleCustomSashimiTableViewController.h"; sourceTree = SOURCE_ROOT; };
+		7B54609818A5181D00D22B36 /* ExampleCustomSashimiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleCustomSashimiTableViewController.m; path = "AppsfireSDK-Example-All/Classes/ExampleCustomSashimiTableViewController.m"; sourceTree = SOURCE_ROOT; };
+		7B54609918A5181D00D22B36 /* ExampleCustomSashimiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleCustomSashimiView.h; path = "AppsfireSDK-Example-All/Classes/ExampleCustomSashimiView.h"; sourceTree = SOURCE_ROOT; };
+		7B54609A18A5181D00D22B36 /* ExampleCustomSashimiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleCustomSashimiView.m; path = "AppsfireSDK-Example-All/Classes/ExampleCustomSashimiView.m"; sourceTree = SOURCE_ROOT; };
+		7B54609F18A51BA100D22B36 /* AFAdSDKAdBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKAdBadgeView.h; sourceTree = "<group>"; };
+		7B5460A018A51BA100D22B36 /* AFAdSDKSashimiExtendedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiExtendedView.h; sourceTree = "<group>"; };
+		7B5460A118A51BA100D22B36 /* AFAdSDKSashimiMinimalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiMinimalView.h; sourceTree = "<group>"; };
+		7B5460A218A51BA100D22B36 /* AFAdSDKSashimiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiView.h; sourceTree = "<group>"; };
+		7BE9A3AD17E706E100A664E8 /* AppsfireSDK-Example-All.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppsfireSDK-Example-All.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BE9A3B017E706E100A664E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7BE9A3B217E706E100A664E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7BE9A3B417E706E100A664E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7BE9A3D217E706E200A664E8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7BE9A3EE17E7098D00A664E8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		7BE9A3F017E709AB00A664E8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		7BE9A3F417E709F800A664E8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7BE9A3F617E70A0100A664E8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		7BE9A3F817E70A0700A664E8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BFFD8DF318A0FD8900371EB0 /* AppsfireSDK-Example-All-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "AppsfireSDK-Example-All-Info.plist"; path = "AppsfireSDK-Example-All/AppsfireSDK-Example-All-Info.plist"; sourceTree = SOURCE_ROOT; };
+		BFFD8DF418A0FD8900371EB0 /* AppsfireSDK-Example-All-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AppsfireSDK-Example-All-Prefix.pch"; path = "AppsfireSDK-Example-All/AppsfireSDK-Example-All-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		BFFD8DF518A0FD8900371EB0 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = "AppsfireSDK-Example-All/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
+		BFFD8DF618A0FD8900371EB0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "AppsfireSDK-Example-All/main.m"; sourceTree = SOURCE_ROOT; };
+		BFFD8DFB18A0FDE400371EB0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BFFD8DFC18A0FDE400371EB0 /* icon-120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-120x120.png"; sourceTree = "<group>"; };
+		BFFD8DFD18A0FDE400371EB0 /* icon-152x152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-152x152.png"; sourceTree = "<group>"; };
+		BFFD8DFE18A0FDE400371EB0 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		BFFD8DFF18A0FDE400371EB0 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		BFFD8E0018A0FDE400371EB0 /* icon-76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76x76.png"; sourceTree = "<group>"; };
+		BFFD8E0118A0FDE400371EB0 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		BFFD8E0218A0FDE400371EB0 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		BFFD8E0318A0FDE400371EB0 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		BFFD8E0418A0FDE400371EB0 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		BFFD8E0518A0FDE400371EB0 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		BFFD8E0618A0FDE400371EB0 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		BFFD8E0718A0FDE400371EB0 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		BFFD8E0818A0FDE400371EB0 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		BFFD8E1918A0FE0E00371EB0 /* AppsfireAdTimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsfireAdTimerView.h; sourceTree = "<group>"; };
+		BFFD8E1A18A0FE0E00371EB0 /* AppsfireAdTimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppsfireAdTimerView.m; sourceTree = "<group>"; };
+		BFFD8E1C18A0FE0E00371EB0 /* AFBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFBadgeView.h; sourceTree = "<group>"; };
+		BFFD8E1D18A0FE0E00371EB0 /* AFBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFBadgeView.m; sourceTree = "<group>"; };
+		BFFD8E1F18A0FE0E00371EB0 /* AFNotificationBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNotificationBarView.h; sourceTree = "<group>"; };
+		BFFD8E2018A0FE0E00371EB0 /* AFNotificationBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNotificationBarView.m; sourceTree = "<group>"; };
+		BFFD8E2218A0FE0E00371EB0 /* AppsfireAdSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsfireAdSDK.h; sourceTree = "<group>"; };
+		BFFD8E2318A0FE0E00371EB0 /* AppsfireSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsfireSDK.h; sourceTree = "<group>"; };
+		BFFD8E2418A0FE0E00371EB0 /* AppsfireSDKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsfireSDKConstants.h; sourceTree = "<group>"; };
+		BFFD8E2518A0FE0E00371EB0 /* libAppsfireSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppsfireSDK.a; sourceTree = "<group>"; };
+		BFFD8E2718A0FE0E00371EB0 /* AppsfireConvenienceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsfireConvenienceDelegate.h; sourceTree = "<group>"; };
+		BFFD8E2818A0FE0E00371EB0 /* AppsfireConvenienceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppsfireConvenienceDelegate.m; sourceTree = "<group>"; };
+		BFFD8E2E18A0FE4A00371EB0 /* AdSDKOptionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdSDKOptionsTableViewController.h; path = "AppsfireSDK-Example-All/Classes/AdSDKOptionsTableViewController.h"; sourceTree = SOURCE_ROOT; };
+		BFFD8E2F18A0FE4A00371EB0 /* AdSDKOptionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdSDKOptionsTableViewController.m; path = "AppsfireSDK-Example-All/Classes/AdSDKOptionsTableViewController.m"; sourceTree = SOURCE_ROOT; };
+		BFFD8E3118A0FE5800371EB0 /* SDKOptionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDKOptionsTableViewController.h; path = "AppsfireSDK-Example-All/Classes/SDKOptionsTableViewController.h"; sourceTree = SOURCE_ROOT; };
+		BFFD8E3218A0FE5800371EB0 /* SDKOptionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDKOptionsTableViewController.m; path = "AppsfireSDK-Example-All/Classes/SDKOptionsTableViewController.m"; sourceTree = SOURCE_ROOT; };
+		BFFD8E3418A0FE6400371EB0 /* NotificationBarExampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotificationBarExampleController.h; path = "AppsfireSDK-Example-All/Classes/NotificationBarExampleController.h"; sourceTree = SOURCE_ROOT; };
+		BFFD8E3518A0FE6400371EB0 /* NotificationBarExampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotificationBarExampleController.m; path = "AppsfireSDK-Example-All/Classes/NotificationBarExampleController.m"; sourceTree = SOURCE_ROOT; };
+		BFFD8E3718A0FE7300371EB0 /* SDKTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDKTableViewController.h; path = "AppsfireSDK-Example-All/Classes/SDKTableViewController.h"; sourceTree = SOURCE_ROOT; };
+		BFFD8E3818A0FE7300371EB0 /* SDKTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDKTableViewController.m; path = "AppsfireSDK-Example-All/Classes/SDKTableViewController.m"; sourceTree = SOURCE_ROOT; };
+		BFFD8E3918A0FE7300371EB0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "AppsfireSDK-Example-All/Classes/AppDelegate.h"; sourceTree = SOURCE_ROOT; };
+		BFFD8E3A18A0FE7300371EB0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "AppsfireSDK-Example-All/Classes/AppDelegate.m"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BE9A3AA17E706E100A664E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B1A68C41864756C0079DC2D /* Accelerate.framework in Frameworks */,
+				7BE9A3F917E70A0700A664E8 /* Security.framework in Frameworks */,
+				7BE9A3F717E70A0100A664E8 /* MobileCoreServices.framework in Frameworks */,
+				7BE9A3F517E709F800A664E8 /* SystemConfiguration.framework in Frameworks */,
+				BFFD8E2C18A0FE0E00371EB0 /* libAppsfireSDK.a in Frameworks */,
+				7BE9A3F117E709AB00A664E8 /* AdSupport.framework in Frameworks */,
+				7BE9A3EF17E7098D00A664E8 /* StoreKit.framework in Frameworks */,
+				7BE9A3B317E706E100A664E8 /* CoreGraphics.framework in Frameworks */,
+				7BE9A3B517E706E100A664E8 /* UIKit.framework in Frameworks */,
+				7BE9A3B117E706E100A664E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B1A68BF186463BD0079DC2D /* Monetization */ = {
+			isa = PBXGroup;
+			children = (
+				BFFD8E2E18A0FE4A00371EB0 /* AdSDKOptionsTableViewController.h */,
+				BFFD8E2F18A0FE4A00371EB0 /* AdSDKOptionsTableViewController.m */,
+				7B54608518A517B500D22B36 /* Sashimi Examples */,
+			);
+			name = Monetization;
+			sourceTree = "<group>";
+		};
+		7B54608518A517B500D22B36 /* Sashimi Examples */ = {
+			isa = PBXGroup;
+			children = (
+				7B54608618A517C100D22B36 /* Minimal */,
+				7B54608718A517DB00D22B36 /* Extended */,
+				7B54608818A517DF00D22B36 /* Custom */,
+			);
+			name = "Sashimi Examples";
+			sourceTree = "<group>";
+		};
+		7B54608618A517C100D22B36 /* Minimal */ = {
+			isa = PBXGroup;
+			children = (
+				7B54608918A5180D00D22B36 /* ExampleMinimalSashimiTableViewCell.h */,
+				7B54608A18A5180D00D22B36 /* ExampleMinimalSashimiTableViewCell.m */,
+				7B54608B18A5180D00D22B36 /* ExampleMinimalSashimiTableViewController.h */,
+				7B54608C18A5180D00D22B36 /* ExampleMinimalSashimiTableViewController.m */,
+			);
+			name = Minimal;
+			sourceTree = "<group>";
+		};
+		7B54608718A517DB00D22B36 /* Extended */ = {
+			isa = PBXGroup;
+			children = (
+				7B54608F18A5181300D22B36 /* ExampleExtendedSashimiTableViewCell.h */,
+				7B54609018A5181300D22B36 /* ExampleExtendedSashimiTableViewCell.m */,
+				7B54609118A5181300D22B36 /* ExampleExtendedSashimiTableViewController.h */,
+				7B54609218A5181300D22B36 /* ExampleExtendedSashimiTableViewController.m */,
+			);
+			name = Extended;
+			sourceTree = "<group>";
+		};
+		7B54608818A517DF00D22B36 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				7B54609518A5181D00D22B36 /* ExampleCustomSashimiTableViewCell.h */,
+				7B54609618A5181D00D22B36 /* ExampleCustomSashimiTableViewCell.m */,
+				7B54609718A5181D00D22B36 /* ExampleCustomSashimiTableViewController.h */,
+				7B54609818A5181D00D22B36 /* ExampleCustomSashimiTableViewController.m */,
+				7B54609918A5181D00D22B36 /* ExampleCustomSashimiView.h */,
+				7B54609A18A5181D00D22B36 /* ExampleCustomSashimiView.m */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		7B54609E18A51BA100D22B36 /* sashimi */ = {
+			isa = PBXGroup;
+			children = (
+				7B54609F18A51BA100D22B36 /* AFAdSDKAdBadgeView.h */,
+				7B5460A018A51BA100D22B36 /* AFAdSDKSashimiExtendedView.h */,
+				7B5460A118A51BA100D22B36 /* AFAdSDKSashimiMinimalView.h */,
+				7B5460A218A51BA100D22B36 /* AFAdSDKSashimiView.h */,
+			);
+			path = sashimi;
+			sourceTree = "<group>";
+		};
+		7BB5E88F182A8C41000A04B4 /* Notification Bar Example */ = {
+			isa = PBXGroup;
+			children = (
+				BFFD8E3418A0FE6400371EB0 /* NotificationBarExampleController.h */,
+				BFFD8E3518A0FE6400371EB0 /* NotificationBarExampleController.m */,
+			);
+			name = "Notification Bar Example";
+			sourceTree = "<group>";
+		};
+		7BB5E890182A8C56000A04B4 /* Engagement */ = {
+			isa = PBXGroup;
+			children = (
+				BFFD8E3118A0FE5800371EB0 /* SDKOptionsTableViewController.h */,
+				BFFD8E3218A0FE5800371EB0 /* SDKOptionsTableViewController.m */,
+				7BB5E88F182A8C41000A04B4 /* Notification Bar Example */,
+			);
+			name = Engagement;
+			sourceTree = "<group>";
+		};
+		7BE9A3A417E706E100A664E8 = {
+			isa = PBXGroup;
+			children = (
+				7BE9A3B617E706E100A664E8 /* AppsfireSDK Example All */,
+				7BE9A3AF17E706E100A664E8 /* Frameworks */,
+				7BE9A3AE17E706E100A664E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BE9A3AE17E706E100A664E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BE9A3AD17E706E100A664E8 /* AppsfireSDK-Example-All.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BE9A3AF17E706E100A664E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B1A68C31864756C0079DC2D /* Accelerate.framework */,
+				7BE9A3F817E70A0700A664E8 /* Security.framework */,
+				7BE9A3F617E70A0100A664E8 /* MobileCoreServices.framework */,
+				7BE9A3F417E709F800A664E8 /* SystemConfiguration.framework */,
+				7BE9A3F017E709AB00A664E8 /* AdSupport.framework */,
+				7BE9A3EE17E7098D00A664E8 /* StoreKit.framework */,
+				7BE9A3B017E706E100A664E8 /* Foundation.framework */,
+				7BE9A3B217E706E100A664E8 /* CoreGraphics.framework */,
+				7BE9A3B417E706E100A664E8 /* UIKit.framework */,
+				7BE9A3D217E706E200A664E8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BE9A3B617E706E100A664E8 /* AppsfireSDK Example All */ = {
+			isa = PBXGroup;
+			children = (
+				BFFD8E3918A0FE7300371EB0 /* AppDelegate.h */,
+				BFFD8E3A18A0FE7300371EB0 /* AppDelegate.m */,
+				BFFD8E3718A0FE7300371EB0 /* SDKTableViewController.h */,
+				BFFD8E3818A0FE7300371EB0 /* SDKTableViewController.m */,
+				7BB5E890182A8C56000A04B4 /* Engagement */,
+				7B1A68BF186463BD0079DC2D /* Monetization */,
+				BFFD8E1718A0FE0E00371EB0 /* Vendor */,
+				BFFD8DFA18A0FDE400371EB0 /* Images */,
+				7BE9A3B717E706E100A664E8 /* Supporting Files */,
+			);
+			name = "AppsfireSDK Example All";
+			path = "Appsfire SDK Demo";
+			sourceTree = "<group>";
+		};
+		7BE9A3B717E706E100A664E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFFD8DF318A0FD8900371EB0 /* AppsfireSDK-Example-All-Info.plist */,
+				BFFD8DF418A0FD8900371EB0 /* AppsfireSDK-Example-All-Prefix.pch */,
+				BFFD8DF518A0FD8900371EB0 /* InfoPlist.strings */,
+				BFFD8DF618A0FD8900371EB0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFFD8DFA18A0FDE400371EB0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BFFD8DFB18A0FDE400371EB0 /* Default-568h@2x.png */,
+				BFFD8DFC18A0FDE400371EB0 /* icon-120x120.png */,
+				BFFD8DFD18A0FDE400371EB0 /* icon-152x152.png */,
+				BFFD8DFE18A0FDE400371EB0 /* Icon-72.png */,
+				BFFD8DFF18A0FDE400371EB0 /* Icon-72@2x.png */,
+				BFFD8E0018A0FDE400371EB0 /* icon-76x76.png */,
+				BFFD8E0118A0FDE400371EB0 /* Icon-Small-50.png */,
+				BFFD8E0218A0FDE400371EB0 /* Icon-Small-50@2x.png */,
+				BFFD8E0318A0FDE400371EB0 /* Icon-Small.png */,
+				BFFD8E0418A0FDE400371EB0 /* Icon-Small@2x.png */,
+				BFFD8E0518A0FDE400371EB0 /* Icon.png */,
+				BFFD8E0618A0FDE400371EB0 /* Icon@2x.png */,
+				BFFD8E0718A0FDE400371EB0 /* iTunesArtwork.png */,
+				BFFD8E0818A0FDE400371EB0 /* iTunesArtwork@2x.png */,
+			);
+			name = Images;
+			path = "AppsfireSDK-Example-All/Images";
+			sourceTree = SOURCE_ROOT;
+		};
+		BFFD8E1718A0FE0E00371EB0 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				BFFD8E1818A0FE0E00371EB0 /* AFAdTimerView */,
+				BFFD8E1B18A0FE0E00371EB0 /* AFBadgeView */,
+				BFFD8E1E18A0FE0E00371EB0 /* AFNotificationBarView */,
+				BFFD8E2118A0FE0E00371EB0 /* Appsfire SDK */,
+				BFFD8E2618A0FE0E00371EB0 /* AppsfireConvenienceDelegate */,
+			);
+			name = Vendor;
+			path = "AppsfireSDK-Example-All/Classes/Vendor";
+			sourceTree = SOURCE_ROOT;
+		};
+		BFFD8E1818A0FE0E00371EB0 /* AFAdTimerView */ = {
+			isa = PBXGroup;
+			children = (
+				BFFD8E1918A0FE0E00371EB0 /* AppsfireAdTimerView.h */,
+				BFFD8E1A18A0FE0E00371EB0 /* AppsfireAdTimerView.m */,
+			);
+			path = AFAdTimerView;
+			sourceTree = "<group>";
+		};
+		BFFD8E1B18A0FE0E00371EB0 /* AFBadgeView */ = {
+			isa = PBXGroup;
+			children = (
+				BFFD8E1C18A0FE0E00371EB0 /* AFBadgeView.h */,
+				BFFD8E1D18A0FE0E00371EB0 /* AFBadgeView.m */,
+			);
+			path = AFBadgeView;
+			sourceTree = "<group>";
+		};
+		BFFD8E1E18A0FE0E00371EB0 /* AFNotificationBarView */ = {
+			isa = PBXGroup;
+			children = (
+				BFFD8E1F18A0FE0E00371EB0 /* AFNotificationBarView.h */,
+				BFFD8E2018A0FE0E00371EB0 /* AFNotificationBarView.m */,
+			);
+			path = AFNotificationBarView;
+			sourceTree = "<group>";
+		};
+		BFFD8E2118A0FE0E00371EB0 /* Appsfire SDK */ = {
+			isa = PBXGroup;
+			children = (
+				7B54609E18A51BA100D22B36 /* sashimi */,
+				BFFD8E2218A0FE0E00371EB0 /* AppsfireAdSDK.h */,
+				BFFD8E2318A0FE0E00371EB0 /* AppsfireSDK.h */,
+				BFFD8E2418A0FE0E00371EB0 /* AppsfireSDKConstants.h */,
+				BFFD8E2518A0FE0E00371EB0 /* libAppsfireSDK.a */,
+			);
+			path = "Appsfire SDK";
+			sourceTree = "<group>";
+		};
+		BFFD8E2618A0FE0E00371EB0 /* AppsfireConvenienceDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BFFD8E2718A0FE0E00371EB0 /* AppsfireConvenienceDelegate.h */,
+				BFFD8E2818A0FE0E00371EB0 /* AppsfireConvenienceDelegate.m */,
+			);
+			path = AppsfireConvenienceDelegate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BE9A3AC17E706E100A664E8 /* AppsfireSDK-Example-All */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BE9A3E217E706E200A664E8 /* Build configuration list for PBXNativeTarget "AppsfireSDK-Example-All" */;
+			buildPhases = (
+				7BE9A3A917E706E100A664E8 /* Sources */,
+				7BE9A3AA17E706E100A664E8 /* Frameworks */,
+				7BE9A3AB17E706E100A664E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AppsfireSDK-Example-All";
+			productName = "Appsfire SDK Demo";
+			productReference = 7BE9A3AD17E706E100A664E8 /* AppsfireSDK-Example-All.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BE9A3A517E706E100A664E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AF;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Appsfire;
+				TargetAttributes = {
+					7BE9A3AC17E706E100A664E8 = {
+						DevelopmentTeam = 9KV6WCERWN;
+					};
+				};
+			};
+			buildConfigurationList = 7BE9A3A817E706E100A664E8 /* Build configuration list for PBXProject "AppsfireSDK-Example-All" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BE9A3A417E706E100A664E8;
+			productRefGroup = 7BE9A3AE17E706E100A664E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BE9A3AC17E706E100A664E8 /* AppsfireSDK-Example-All */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BE9A3AB17E706E100A664E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFFD8E0D18A0FDE400371EB0 /* Icon-72@2x.png in Resources */,
+				BFFD8E1118A0FDE400371EB0 /* Icon-Small.png in Resources */,
+				BFFD8E0E18A0FDE400371EB0 /* icon-76x76.png in Resources */,
+				BFFD8E1618A0FDE400371EB0 /* iTunesArtwork@2x.png in Resources */,
+				BFFD8E1518A0FDE400371EB0 /* iTunesArtwork.png in Resources */,
+				BFFD8E1018A0FDE400371EB0 /* Icon-Small-50@2x.png in Resources */,
+				BFFD8DF818A0FD8900371EB0 /* InfoPlist.strings in Resources */,
+				BFFD8E0F18A0FDE400371EB0 /* Icon-Small-50.png in Resources */,
+				BFFD8E0B18A0FDE400371EB0 /* icon-152x152.png in Resources */,
+				BFFD8E1318A0FDE400371EB0 /* Icon.png in Resources */,
+				BFFD8E1418A0FDE400371EB0 /* Icon@2x.png in Resources */,
+				BFFD8E0918A0FDE400371EB0 /* Default-568h@2x.png in Resources */,
+				BFFD8E1218A0FDE400371EB0 /* Icon-Small@2x.png in Resources */,
+				BFFD8E0A18A0FDE400371EB0 /* icon-120x120.png in Resources */,
+				BFFD8E0C18A0FDE400371EB0 /* Icon-72.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BE9A3A917E706E100A664E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B54609C18A5181D00D22B36 /* ExampleCustomSashimiTableViewController.m in Sources */,
+				BFFD8E2B18A0FE0E00371EB0 /* AFNotificationBarView.m in Sources */,
+				7B54609318A5181300D22B36 /* ExampleExtendedSashimiTableViewCell.m in Sources */,
+				BFFD8E3018A0FE4A00371EB0 /* AdSDKOptionsTableViewController.m in Sources */,
+				BFFD8E2918A0FE0E00371EB0 /* AppsfireAdTimerView.m in Sources */,
+				BFFD8E3B18A0FE7300371EB0 /* SDKTableViewController.m in Sources */,
+				BFFD8E3618A0FE6400371EB0 /* NotificationBarExampleController.m in Sources */,
+				7B54609418A5181300D22B36 /* ExampleExtendedSashimiTableViewController.m in Sources */,
+				BFFD8E2A18A0FE0E00371EB0 /* AFBadgeView.m in Sources */,
+				BFFD8E3C18A0FE7300371EB0 /* AppDelegate.m in Sources */,
+				7B54609D18A5181D00D22B36 /* ExampleCustomSashimiView.m in Sources */,
+				BFFD8E3318A0FE5800371EB0 /* SDKOptionsTableViewController.m in Sources */,
+				7B54609B18A5181D00D22B36 /* ExampleCustomSashimiTableViewCell.m in Sources */,
+				BFFD8E2D18A0FE0E00371EB0 /* AppsfireConvenienceDelegate.m in Sources */,
+				7B54608E18A5180D00D22B36 /* ExampleMinimalSashimiTableViewController.m in Sources */,
+				7B54608D18A5180D00D22B36 /* ExampleMinimalSashimiTableViewCell.m in Sources */,
+				BFFD8DF918A0FD8900371EB0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7BE9A3E017E706E200A664E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		7BE9A3E117E706E200A664E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+		7BE9A3E317E706E200A664E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppsfireSDK-Example-All/AppsfireSDK-Example-All-Prefix.pch";
+				INFOPLIST_FILE = "AppsfireSDK-Example-All/AppsfireSDK-Example-All-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/AppsfireSDK-Example-All/Classes/Vendor/Appsfire\\ SDK",
+				);
+				PRODUCT_NAME = "AppsfireSDK-Example-All";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
+				WARNING_CFLAGS = "";
+				WARNING_LDFLAGS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7BE9A3E417E706E200A664E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppsfireSDK-Example-All/AppsfireSDK-Example-All-Prefix.pch";
+				INFOPLIST_FILE = "AppsfireSDK-Example-All/AppsfireSDK-Example-All-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/AppsfireSDK-Example-All/Classes/Vendor/Appsfire\\ SDK",
+				);
+				PRODUCT_NAME = "AppsfireSDK-Example-All";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
+				WARNING_CFLAGS = "";
+				WARNING_LDFLAGS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BE9A3A817E706E100A664E8 /* Build configuration list for PBXProject "AppsfireSDK-Example-All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BE9A3E017E706E200A664E8 /* Debug */,
+				7BE9A3E117E706E200A664E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BE9A3E217E706E200A664E8 /* Build configuration list for PBXNativeTarget "AppsfireSDK-Example-All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BE9A3E317E706E200A664E8 /* Debug */,
+				7BE9A3E417E706E200A664E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BE9A3A517E706E100A664E8 /* Project object */;
+}

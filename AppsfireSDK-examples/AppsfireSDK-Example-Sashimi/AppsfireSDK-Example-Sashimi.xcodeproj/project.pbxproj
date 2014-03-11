@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF20A9EB18A10A9600863F6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF20A9E818A10A9600863F6A /* AppDelegate.m */; };
+		BF20A9EF18A10ACB00863F6A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF20A9EE18A10ACB00863F6A /* MainViewController.m */; };
+		BF20A9F518A10BA400863F6A /* libAppsfireSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF20A9F418A10BA400863F6A /* libAppsfireSDK.a */; };
+		BF20AA0518A10D0E00863F6A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20A9F718A10D0E00863F6A /* Default-568h@2x.png */; };
+		BF20AA0618A10D0E00863F6A /* icon-120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20A9F818A10D0E00863F6A /* icon-120x120.png */; };
+		BF20AA0718A10D0E00863F6A /* icon-152x152.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20A9F918A10D0E00863F6A /* icon-152x152.png */; };
+		BF20AA0818A10D0E00863F6A /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20A9FA18A10D0E00863F6A /* Icon-72.png */; };
+		BF20AA0918A10D0E00863F6A /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20A9FB18A10D0E00863F6A /* Icon-72@2x.png */; };
+		BF20AA0A18A10D0E00863F6A /* icon-76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20A9FC18A10D0E00863F6A /* icon-76x76.png */; };
+		BF20AA0B18A10D0E00863F6A /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20A9FD18A10D0E00863F6A /* Icon-Small-50.png */; };
+		BF20AA0C18A10D0E00863F6A /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20A9FE18A10D0E00863F6A /* Icon-Small-50@2x.png */; };
+		BF20AA0D18A10D0E00863F6A /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20A9FF18A10D0E00863F6A /* Icon-Small.png */; };
+		BF20AA0E18A10D0E00863F6A /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20AA0018A10D0E00863F6A /* Icon-Small@2x.png */; };
+		BF20AA0F18A10D0E00863F6A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20AA0118A10D0E00863F6A /* Icon.png */; };
+		BF20AA1018A10D0E00863F6A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20AA0218A10D0E00863F6A /* Icon@2x.png */; };
+		BF20AA1118A10D0E00863F6A /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20AA0318A10D0E00863F6A /* iTunesArtwork.png */; };
+		BF20AA1218A10D0E00863F6A /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20AA0418A10D0E00863F6A /* iTunesArtwork@2x.png */; };
+		BF20AA1918A122FF00863F6A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF20AA1818A122FF00863F6A /* Security.framework */; };
+		BF20AA1B18A1230300863F6A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF20AA1A18A1230300863F6A /* StoreKit.framework */; };
+		BF20AA1D18A1231700863F6A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF20AA1C18A1231700863F6A /* AdSupport.framework */; };
+		BF20AA1F18A1231D00863F6A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF20AA1E18A1231D00863F6A /* Accelerate.framework */; };
+		BF20AA2118A1232800863F6A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF20AA2018A1232800863F6A /* QuartzCore.framework */; };
+		BF20AA2318A1233200863F6A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF20AA2218A1233200863F6A /* SystemConfiguration.framework */; };
+		BF20AA2818A13D6200863F6A /* ExampleMinimalSashimiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF20AA2718A13D6200863F6A /* ExampleMinimalSashimiTableViewController.m */; };
+		BF20AA2B18A147C500863F6A /* ExampleMinimalSashimiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF20AA2A18A147C500863F6A /* ExampleMinimalSashimiTableViewCell.m */; };
+		BF20AA3218A18BA400863F6A /* ExampleExtendedSashimiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF20AA2F18A18BA400863F6A /* ExampleExtendedSashimiTableViewCell.m */; };
+		BF20AA3318A18BA400863F6A /* ExampleExtendedSashimiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF20AA3118A18BA400863F6A /* ExampleExtendedSashimiTableViewController.m */; };
+		BF20AA4218A1ACB800863F6A /* ExampleCustomSashimiView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF20AA3F18A1ACB800863F6A /* ExampleCustomSashimiView.m */; };
+		BF863DA118A1AEA100FA4C36 /* ExampleCustomSashimiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF20AA3D18A1ACB800863F6A /* ExampleCustomSashimiTableViewController.m */; };
+		BF863DA218A1AEA100FA4C36 /* ExampleCustomSashimiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF20AA3B18A1ACB800863F6A /* ExampleCustomSashimiTableViewCell.m */; };
+		BFFD8E4A18A1013A00371EB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFD8E4918A1013A00371EB0 /* Foundation.framework */; };
+		BFFD8E4C18A1013A00371EB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFD8E4B18A1013A00371EB0 /* CoreGraphics.framework */; };
+		BFFD8E4E18A1013A00371EB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFD8E4D18A1013A00371EB0 /* UIKit.framework */; };
+		BFFD8E5418A1013A00371EB0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFFD8E5218A1013A00371EB0 /* InfoPlist.strings */; };
+		BFFD8E5618A1013A00371EB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFD8E5518A1013A00371EB0 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF20A9E718A10A9600863F6A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		BF20A9E818A10A9600863F6A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
+		BF20A9ED18A10ACB00863F6A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
+		BF20A9EE18A10ACB00863F6A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
+		BF20A9F118A10BA400863F6A /* AppsfireAdSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsfireAdSDK.h; sourceTree = "<group>"; };
+		BF20A9F218A10BA400863F6A /* AppsfireSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsfireSDK.h; sourceTree = "<group>"; };
+		BF20A9F318A10BA400863F6A /* AppsfireSDKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsfireSDKConstants.h; sourceTree = "<group>"; };
+		BF20A9F418A10BA400863F6A /* libAppsfireSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppsfireSDK.a; sourceTree = "<group>"; };
+		BF20A9F718A10D0E00863F6A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BF20A9F818A10D0E00863F6A /* icon-120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-120x120.png"; sourceTree = "<group>"; };
+		BF20A9F918A10D0E00863F6A /* icon-152x152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-152x152.png"; sourceTree = "<group>"; };
+		BF20A9FA18A10D0E00863F6A /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		BF20A9FB18A10D0E00863F6A /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		BF20A9FC18A10D0E00863F6A /* icon-76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76x76.png"; sourceTree = "<group>"; };
+		BF20A9FD18A10D0E00863F6A /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		BF20A9FE18A10D0E00863F6A /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		BF20A9FF18A10D0E00863F6A /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		BF20AA0018A10D0E00863F6A /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		BF20AA0118A10D0E00863F6A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		BF20AA0218A10D0E00863F6A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		BF20AA0318A10D0E00863F6A /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		BF20AA0418A10D0E00863F6A /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		BF20AA1418A1203200863F6A /* AFAdSDKAdBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKAdBadgeView.h; sourceTree = "<group>"; };
+		BF20AA1518A1203200863F6A /* AFAdSDKSashimiExtendedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiExtendedView.h; sourceTree = "<group>"; };
+		BF20AA1618A1203200863F6A /* AFAdSDKSashimiMinimalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiMinimalView.h; sourceTree = "<group>"; };
+		BF20AA1718A1203200863F6A /* AFAdSDKSashimiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiView.h; sourceTree = "<group>"; };
+		BF20AA1818A122FF00863F6A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BF20AA1A18A1230300863F6A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		BF20AA1C18A1231700863F6A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		BF20AA1E18A1231D00863F6A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		BF20AA2018A1232800863F6A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BF20AA2218A1233200863F6A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BF20AA2618A13D6200863F6A /* ExampleMinimalSashimiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleMinimalSashimiTableViewController.h; path = Classes/ExampleMinimalSashimiTableViewController.h; sourceTree = "<group>"; };
+		BF20AA2718A13D6200863F6A /* ExampleMinimalSashimiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleMinimalSashimiTableViewController.m; path = Classes/ExampleMinimalSashimiTableViewController.m; sourceTree = "<group>"; };
+		BF20AA2918A147C500863F6A /* ExampleMinimalSashimiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleMinimalSashimiTableViewCell.h; path = Classes/ExampleMinimalSashimiTableViewCell.h; sourceTree = "<group>"; };
+		BF20AA2A18A147C500863F6A /* ExampleMinimalSashimiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleMinimalSashimiTableViewCell.m; path = Classes/ExampleMinimalSashimiTableViewCell.m; sourceTree = "<group>"; };
+		BF20AA2E18A18BA400863F6A /* ExampleExtendedSashimiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleExtendedSashimiTableViewCell.h; path = Classes/ExampleExtendedSashimiTableViewCell.h; sourceTree = "<group>"; };
+		BF20AA2F18A18BA400863F6A /* ExampleExtendedSashimiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleExtendedSashimiTableViewCell.m; path = Classes/ExampleExtendedSashimiTableViewCell.m; sourceTree = "<group>"; };
+		BF20AA3018A18BA400863F6A /* ExampleExtendedSashimiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleExtendedSashimiTableViewController.h; path = Classes/ExampleExtendedSashimiTableViewController.h; sourceTree = "<group>"; };
+		BF20AA3118A18BA400863F6A /* ExampleExtendedSashimiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleExtendedSashimiTableViewController.m; path = Classes/ExampleExtendedSashimiTableViewController.m; sourceTree = "<group>"; };
+		BF20AA3A18A1ACB800863F6A /* ExampleCustomSashimiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleCustomSashimiTableViewCell.h; path = Classes/ExampleCustomSashimiTableViewCell.h; sourceTree = "<group>"; };
+		BF20AA3B18A1ACB800863F6A /* ExampleCustomSashimiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleCustomSashimiTableViewCell.m; path = Classes/ExampleCustomSashimiTableViewCell.m; sourceTree = "<group>"; };
+		BF20AA3C18A1ACB800863F6A /* ExampleCustomSashimiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleCustomSashimiTableViewController.h; path = Classes/ExampleCustomSashimiTableViewController.h; sourceTree = "<group>"; };
+		BF20AA3D18A1ACB800863F6A /* ExampleCustomSashimiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleCustomSashimiTableViewController.m; path = Classes/ExampleCustomSashimiTableViewController.m; sourceTree = "<group>"; };
+		BF20AA3E18A1ACB800863F6A /* ExampleCustomSashimiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleCustomSashimiView.h; path = Classes/ExampleCustomSashimiView.h; sourceTree = "<group>"; };
+		BF20AA3F18A1ACB800863F6A /* ExampleCustomSashimiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleCustomSashimiView.m; path = Classes/ExampleCustomSashimiView.m; sourceTree = "<group>"; };
+		BFFD8E4618A1013A00371EB0 /* AppsfireSDK-Example-Sashimi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppsfireSDK-Example-Sashimi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFFD8E4918A1013A00371EB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BFFD8E4B18A1013A00371EB0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BFFD8E4D18A1013A00371EB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BFFD8E5118A1013A00371EB0 /* AppsfireSDK-Example-Sashimi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppsfireSDK-Example-Sashimi-Info.plist"; sourceTree = "<group>"; };
+		BFFD8E5318A1013A00371EB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BFFD8E5518A1013A00371EB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BFFD8E5718A1013A00371EB0 /* AppsfireSDK-Example-Sashimi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppsfireSDK-Example-Sashimi-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFFD8E4318A1013A00371EB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF20AA2318A1233200863F6A /* SystemConfiguration.framework in Frameworks */,
+				BF20AA2118A1232800863F6A /* QuartzCore.framework in Frameworks */,
+				BF20AA1F18A1231D00863F6A /* Accelerate.framework in Frameworks */,
+				BF20AA1D18A1231700863F6A /* AdSupport.framework in Frameworks */,
+				BF20AA1B18A1230300863F6A /* StoreKit.framework in Frameworks */,
+				BF20AA1918A122FF00863F6A /* Security.framework in Frameworks */,
+				BFFD8E4C18A1013A00371EB0 /* CoreGraphics.framework in Frameworks */,
+				BFFD8E4E18A1013A00371EB0 /* UIKit.framework in Frameworks */,
+				BF20A9F518A10BA400863F6A /* libAppsfireSDK.a in Frameworks */,
+				BFFD8E4A18A1013A00371EB0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF20A9F018A10BA400863F6A /* appsfire-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				BF20A9F118A10BA400863F6A /* AppsfireAdSDK.h */,
+				BF20A9F218A10BA400863F6A /* AppsfireSDK.h */,
+				BF20A9F318A10BA400863F6A /* AppsfireSDKConstants.h */,
+				BF20A9F418A10BA400863F6A /* libAppsfireSDK.a */,
+				BF20AA1318A1203200863F6A /* sashimi */,
+			);
+			name = "appsfire-sdk";
+			path = "Classes/appsfire-sdk";
+			sourceTree = "<group>";
+		};
+		BF20A9F618A10D0E00863F6A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BF20A9F718A10D0E00863F6A /* Default-568h@2x.png */,
+				BF20A9F818A10D0E00863F6A /* icon-120x120.png */,
+				BF20A9F918A10D0E00863F6A /* icon-152x152.png */,
+				BF20A9FA18A10D0E00863F6A /* Icon-72.png */,
+				BF20A9FB18A10D0E00863F6A /* Icon-72@2x.png */,
+				BF20A9FC18A10D0E00863F6A /* icon-76x76.png */,
+				BF20A9FD18A10D0E00863F6A /* Icon-Small-50.png */,
+				BF20A9FE18A10D0E00863F6A /* Icon-Small-50@2x.png */,
+				BF20A9FF18A10D0E00863F6A /* Icon-Small.png */,
+				BF20AA0018A10D0E00863F6A /* Icon-Small@2x.png */,
+				BF20AA0118A10D0E00863F6A /* Icon.png */,
+				BF20AA0218A10D0E00863F6A /* Icon@2x.png */,
+				BF20AA0318A10D0E00863F6A /* iTunesArtwork.png */,
+				BF20AA0418A10D0E00863F6A /* iTunesArtwork@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		BF20AA1318A1203200863F6A /* sashimi */ = {
+			isa = PBXGroup;
+			children = (
+				BF20AA1418A1203200863F6A /* AFAdSDKAdBadgeView.h */,
+				BF20AA1518A1203200863F6A /* AFAdSDKSashimiExtendedView.h */,
+				BF20AA1618A1203200863F6A /* AFAdSDKSashimiMinimalView.h */,
+				BF20AA1718A1203200863F6A /* AFAdSDKSashimiView.h */,
+			);
+			path = sashimi;
+			sourceTree = "<group>";
+		};
+		BF20AA2418A13D2100863F6A /* Sashimi Examples */ = {
+			isa = PBXGroup;
+			children = (
+				BF20AA2518A13D2E00863F6A /* Minimal */,
+				BF20AA2C18A163C800863F6A /* Extended */,
+				BF20AA2D18A166FA00863F6A /* Custom */,
+			);
+			name = "Sashimi Examples";
+			sourceTree = "<group>";
+		};
+		BF20AA2518A13D2E00863F6A /* Minimal */ = {
+			isa = PBXGroup;
+			children = (
+				BF20AA2618A13D6200863F6A /* ExampleMinimalSashimiTableViewController.h */,
+				BF20AA2718A13D6200863F6A /* ExampleMinimalSashimiTableViewController.m */,
+				BF20AA2918A147C500863F6A /* ExampleMinimalSashimiTableViewCell.h */,
+				BF20AA2A18A147C500863F6A /* ExampleMinimalSashimiTableViewCell.m */,
+			);
+			name = Minimal;
+			sourceTree = "<group>";
+		};
+		BF20AA2C18A163C800863F6A /* Extended */ = {
+			isa = PBXGroup;
+			children = (
+				BF20AA3018A18BA400863F6A /* ExampleExtendedSashimiTableViewController.h */,
+				BF20AA3118A18BA400863F6A /* ExampleExtendedSashimiTableViewController.m */,
+				BF20AA2E18A18BA400863F6A /* ExampleExtendedSashimiTableViewCell.h */,
+				BF20AA2F18A18BA400863F6A /* ExampleExtendedSashimiTableViewCell.m */,
+			);
+			name = Extended;
+			sourceTree = "<group>";
+		};
+		BF20AA2D18A166FA00863F6A /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				BF20AA3C18A1ACB800863F6A /* ExampleCustomSashimiTableViewController.h */,
+				BF20AA3D18A1ACB800863F6A /* ExampleCustomSashimiTableViewController.m */,
+				BF20AA3A18A1ACB800863F6A /* ExampleCustomSashimiTableViewCell.h */,
+				BF20AA3B18A1ACB800863F6A /* ExampleCustomSashimiTableViewCell.m */,
+				BF20AA3E18A1ACB800863F6A /* ExampleCustomSashimiView.h */,
+				BF20AA3F18A1ACB800863F6A /* ExampleCustomSashimiView.m */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		BFFD8E3D18A1013A00371EB0 = {
+			isa = PBXGroup;
+			children = (
+				BFFD8E4F18A1013A00371EB0 /* AppsfireSDK-Example-Sashimi */,
+				BFFD8E4818A1013A00371EB0 /* Frameworks */,
+				BFFD8E4718A1013A00371EB0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFFD8E4718A1013A00371EB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFFD8E4618A1013A00371EB0 /* AppsfireSDK-Example-Sashimi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFFD8E4818A1013A00371EB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF20AA2218A1233200863F6A /* SystemConfiguration.framework */,
+				BF20AA2018A1232800863F6A /* QuartzCore.framework */,
+				BF20AA1E18A1231D00863F6A /* Accelerate.framework */,
+				BF20AA1C18A1231700863F6A /* AdSupport.framework */,
+				BF20AA1A18A1230300863F6A /* StoreKit.framework */,
+				BF20AA1818A122FF00863F6A /* Security.framework */,
+				BFFD8E4918A1013A00371EB0 /* Foundation.framework */,
+				BFFD8E4B18A1013A00371EB0 /* CoreGraphics.framework */,
+				BFFD8E4D18A1013A00371EB0 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFFD8E4F18A1013A00371EB0 /* AppsfireSDK-Example-Sashimi */ = {
+			isa = PBXGroup;
+			children = (
+				BF20A9E718A10A9600863F6A /* AppDelegate.h */,
+				BF20A9E818A10A9600863F6A /* AppDelegate.m */,
+				BF20A9ED18A10ACB00863F6A /* MainViewController.h */,
+				BF20A9EE18A10ACB00863F6A /* MainViewController.m */,
+				BF20AA2418A13D2100863F6A /* Sashimi Examples */,
+				BF20A9F018A10BA400863F6A /* appsfire-sdk */,
+				BF20A9F618A10D0E00863F6A /* Images */,
+				BFFD8E5018A1013A00371EB0 /* Supporting Files */,
+			);
+			path = "AppsfireSDK-Example-Sashimi";
+			sourceTree = "<group>";
+		};
+		BFFD8E5018A1013A00371EB0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFFD8E5118A1013A00371EB0 /* AppsfireSDK-Example-Sashimi-Info.plist */,
+				BFFD8E5218A1013A00371EB0 /* InfoPlist.strings */,
+				BFFD8E5518A1013A00371EB0 /* main.m */,
+				BFFD8E5718A1013A00371EB0 /* AppsfireSDK-Example-Sashimi-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFFD8E4518A1013A00371EB0 /* AppsfireSDK-Example-Sashimi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFFD8E7B18A1013B00371EB0 /* Build configuration list for PBXNativeTarget "AppsfireSDK-Example-Sashimi" */;
+			buildPhases = (
+				BFFD8E4218A1013A00371EB0 /* Sources */,
+				BFFD8E4318A1013A00371EB0 /* Frameworks */,
+				BFFD8E4418A1013A00371EB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AppsfireSDK-Example-Sashimi";
+			productName = "AppsfireSDK-Example-Sashimi";
+			productReference = BFFD8E4618A1013A00371EB0 /* AppsfireSDK-Example-Sashimi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFFD8E3E18A1013A00371EB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Appsfire;
+			};
+			buildConfigurationList = BFFD8E4118A1013A00371EB0 /* Build configuration list for PBXProject "AppsfireSDK-Example-Sashimi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFFD8E3D18A1013A00371EB0;
+			productRefGroup = BFFD8E4718A1013A00371EB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFFD8E4518A1013A00371EB0 /* AppsfireSDK-Example-Sashimi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFFD8E4418A1013A00371EB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF20AA0F18A10D0E00863F6A /* Icon.png in Resources */,
+				BF20AA1218A10D0E00863F6A /* iTunesArtwork@2x.png in Resources */,
+				BF20AA1018A10D0E00863F6A /* Icon@2x.png in Resources */,
+				BF20AA0C18A10D0E00863F6A /* Icon-Small-50@2x.png in Resources */,
+				BFFD8E5418A1013A00371EB0 /* InfoPlist.strings in Resources */,
+				BF20AA0A18A10D0E00863F6A /* icon-76x76.png in Resources */,
+				BF20AA0818A10D0E00863F6A /* Icon-72.png in Resources */,
+				BF20AA0918A10D0E00863F6A /* Icon-72@2x.png in Resources */,
+				BF20AA0718A10D0E00863F6A /* icon-152x152.png in Resources */,
+				BF20AA0B18A10D0E00863F6A /* Icon-Small-50.png in Resources */,
+				BF20AA0518A10D0E00863F6A /* Default-568h@2x.png in Resources */,
+				BF20AA1118A10D0E00863F6A /* iTunesArtwork.png in Resources */,
+				BF20AA0D18A10D0E00863F6A /* Icon-Small.png in Resources */,
+				BF20AA0618A10D0E00863F6A /* icon-120x120.png in Resources */,
+				BF20AA0E18A10D0E00863F6A /* Icon-Small@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFFD8E4218A1013A00371EB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF863DA118A1AEA100FA4C36 /* ExampleCustomSashimiTableViewController.m in Sources */,
+				BF863DA218A1AEA100FA4C36 /* ExampleCustomSashimiTableViewCell.m in Sources */,
+				BF20A9EF18A10ACB00863F6A /* MainViewController.m in Sources */,
+				BF20AA3318A18BA400863F6A /* ExampleExtendedSashimiTableViewController.m in Sources */,
+				BF20AA2818A13D6200863F6A /* ExampleMinimalSashimiTableViewController.m in Sources */,
+				BF20AA2B18A147C500863F6A /* ExampleMinimalSashimiTableViewCell.m in Sources */,
+				BF20A9EB18A10A9600863F6A /* AppDelegate.m in Sources */,
+				BF20AA3218A18BA400863F6A /* ExampleExtendedSashimiTableViewCell.m in Sources */,
+				BFFD8E5618A1013A00371EB0 /* main.m in Sources */,
+				BF20AA4218A1ACB800863F6A /* ExampleCustomSashimiView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BFFD8E5218A1013A00371EB0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFFD8E5318A1013A00371EB0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFFD8E7918A1013B00371EB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		BFFD8E7A18A1013B00371EB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+		BFFD8E7C18A1013B00371EB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppsfireSDK-Example-Sashimi/AppsfireSDK-Example-Sashimi-Prefix.pch";
+				INFOPLIST_FILE = "AppsfireSDK-Example-Sashimi/AppsfireSDK-Example-Sashimi-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/AppsfireSDK-Example-Sashimi/Classes/appsfire-sdk",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BFFD8E7D18A1013B00371EB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppsfireSDK-Example-Sashimi/AppsfireSDK-Example-Sashimi-Prefix.pch";
+				INFOPLIST_FILE = "AppsfireSDK-Example-Sashimi/AppsfireSDK-Example-Sashimi-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/AppsfireSDK-Example-Sashimi/Classes/appsfire-sdk",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFFD8E4118A1013A00371EB0 /* Build configuration list for PBXProject "AppsfireSDK-Example-Sashimi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFFD8E7918A1013B00371EB0 /* Debug */,
+				BFFD8E7A18A1013B00371EB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFFD8E7B18A1013B00371EB0 /* Build configuration list for PBXNativeTarget "AppsfireSDK-Example-Sashimi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFFD8E7C18A1013B00371EB0 /* Debug */,
+				BFFD8E7D18A1013B00371EB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFFD8E3E18A1013A00371EB0 /* Project object */;
+}
