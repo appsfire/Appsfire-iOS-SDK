@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   spec.summary         = 'Appsfire iOS SDK'
   spec.description     = 'The Appsfire SDK for iOS enables you to natively monetize your application and engage with your users.'
   spec.homepage        = 'https://appsfire.com/'
-  spec.author          = { 'Appsfire' => 'https://appsfire.com/' }
+  spec.author          = { 'Appsfire' => 'https://www.appsfire.com/' }
   spec.source          = { :git => 'https://github.com/appsfire/Appsfire-iOS-SDK.git', :tag => '2.2.0' }
   spec.platform        = :ios, '5.1.1'
   spec.source_files    = 'AppsfireSDK/**/*.{h,m}'
