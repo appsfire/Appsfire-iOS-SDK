@@ -32,7 +32,53 @@ In order to get started, please be sure you've done the following:
 
 1. Registered on [Appsfire website](http://www.appsfire.com/) and accepted our Terms Of Use
 2. Registered your app on our [Dashboard](http://dashboard.appsfire.com/) and generated an SDK key for your app
-3. Downloaded the SDK from our [Dashboard](http://dashboard.appsfire.com/app/doc)
+3. Grabbed our latest version of the SDK, either using CocoaPods, or downloading the SDK from our [Dashboard](http://dashboard.appsfire.com/app/doc)
+
+
+### CocoaPods
+
+The recommended approach for installing `AppsfireSDK` is via the [CocoaPods](http://cocoapods.org/) package manager, as it provides flexible dependency management and dead simple installation.
+For best results, it is recommended that you install via CocoaPods >= **0.28.0** using Git >= **1.8.0** installed via Homebrew.
+
+Install CocoaPods if not already available:
+
+``` bash
+$ [sudo] gem install cocoapods
+$ pod setup
+```
+
+Change to the directory of your Xcode project:
+
+``` bash
+$ cd /path/to/MyProject
+$ touch Podfile
+$ edit Podfile
+```
+
+Edit your Podfile and add AppsfireSDK:
+
+``` bash
+platform :ios, '5.1.1'
+pod 'AppsfireSDK', '~> 2.2.0'
+```
+
+Install into your Xcode project:
+
+``` bash
+$ pod install
+```
+
+Open your project in Xcode from the .xcworkspace file (not the usual project file)
+
+``` bash
+$ open MyProject.xcworkspace
+```
+
+Please note that if your installation fails, it may be because you are installing with a version of Git lower than CocoaPods is expecting. Please ensure that you are running Git >= **1.8.0** by executing `git --version`. You can get a full picture of the installation details by executing `pod install --verbose`.
+
+### Manual Install
+
+For manual install, please refer to our [online documentation](http://docs.appsfire.com/sdk/ios/integration-reference/).
 
 ## Sample Application
 Included is a sample app to use as example and for help on Appsfire integration. This basic application allows users to test our different ad units (Monetization Features) and our Notification Wall / Feedback Form (Engagement Features).
