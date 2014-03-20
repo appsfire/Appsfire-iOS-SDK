@@ -96,6 +96,10 @@ typedef NS_ENUM(NSUInteger, AFSDKBadgeHandling) {
     // Appsfire SDK Setup
     //------------------------------
     
+    // Enable both Engage and Monetization features
+    // please refer to the online documentation to understand what you need to enable in your case!
+    [AppsfireSDK setFeatures:AFSDKFeatureEngage|AFSDKFeatureMonetization];
+    
     // The only mandatory code in order to use the Appsfire SDK if the connection to the API with the API Key.
     if ([AppsfireSDK connectWithAPIKey:AFSDK_API_KEY]) {
         AFSDKLog(@"Appsfire Demo App launched with %@",[AppsfireSDK getAFSDKVersionInfo]);

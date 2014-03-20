@@ -1,7 +1,7 @@
 /*!
  *  @header    AppsfireAdSDK.h
  *  @abstract  Appsfire Advertising SDK Header
- *  @version   2.2.0
+ *  @version   2.2.2
  */
 
 #import <UIKit/UIKit.h>
@@ -182,7 +182,7 @@
 + (void)requestModalAd:(AFAdSDKModalType)modalType withController:(UIViewController *)controller;
 
 /*!
- *  @brief Ask if ads are loaded and if there is at least one modal ad available
+ *  @brief Ask if ads are loaded and if there is at least one modal ad available.
  *  @since 2.2
  *
  *  @note If ads aren't downloaded yet, then the method will return `AFAdSDKAdAvailabilityPending`.
@@ -194,6 +194,16 @@
  *  @return `AFAdSDKAdAvailabilityPending` if ads aren't loaded yet, `AFAdSDKAdAvailabilityYes` and if there is at least one modal ad available, `AFAdSDKAdAvailabilityNo` otherwise.
  */
 + (AFAdSDKAdAvailability)isThereAModalAdAvailableForType:(AFAdSDKModalType)modalType;
+
+/*!
+ *  @brief Force the dismissal of any modal ad currently being displayed on the screen.
+ *  @since 2.2.2
+ *
+ *  @note In the majority of cases, you shouldn't use this method. We highly recommend not to use this method if you aren't sure of the results. Please refer to the documentation or contact us if you have any doubt!
+ *
+ *  @return `YES` if a modal ad was dismissed, `NO` otherwise.
+ */
++ (BOOL)forceDismissalOfModalAd;
 
 /*!
  *  @brief Cancel any pending ad modal request you have made in the past.
