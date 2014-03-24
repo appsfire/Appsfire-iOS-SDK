@@ -1,19 +1,8 @@
 Appsfire for iOS
 ================
 
-**Modified**: 2014-03-11  
-**SDK Version**: 2.2
-
-## Contains
-* Appsfire iOS SDK
-  * AppsfireSDK.h
-  * AppsfireAdSDK.h
-  * AppsfireSDKConstants.h
-  * libAppsfireSDK.a
-  * Sashimi
-* Sample App
-  * AppsfireSDK-examples
-
+**Modified**: 2014-03-20  
+**SDK Version**: 2.2.2
 
 ## Getting Started with Appsfire
 The Appsfire iOS SDK is the cornerstone of the Appsfire network.
@@ -22,8 +11,8 @@ It provides the functionalities for monetizing your mobile application: it facil
 
 It also helps you engage with your users by sending push and in-app notifications.
 
-- Please visit our [website](http://appsfire.com) to learn more about our ad units and products.<br />
-- Please visit our [online documentation](http://docs.appsfire.com/sdk/ios/integration-reference/Introduction) to learn how to integrate our SDK into your app.<br />
+- Please visit our [website](http://appsfire.com) to learn more about our ad units and products.
+- Please visit our [online documentation](http://docs.appsfire.com/sdk/ios/integration-reference/Introduction) to learn how to integrate our SDK into your app.
 - Check out the full [API specification](http://docs.appsfire.com/sdk/ios/api-reference/) to have a detailed understanding of our SDK.
 
 ## Installation
@@ -59,7 +48,7 @@ Edit your Podfile and add AppsfireSDK:
 
 ``` bash
 platform :ios, '5.1.1'
-pod 'AppsfireSDK', '~> 2.2.0'
+pod 'AppsfireSDK', '~> 2.2.2'
 ```
 
 Install into your Xcode project:
@@ -87,37 +76,45 @@ Included is a sample app to use as example and for help on Appsfire integration.
 If you encounter any issues, do not hesitate to contact our happy support team at support@appsfire.com.
 
 ## Change Logs
+
+###Version 2.2.2
+**Release date** : March 20, 2014
+
+- Monetization is now the default feature. Please read our [migration note](http://docs.appsfire.com/sdk/ios/integration-reference/Upgrading/From_2,2_to_2,2,2) if you use **Engagement** features in your application.
+- Custom Sashimi's minimal size is now 30pt x 30pt (previously was 75pt x 75pt).
+- Added `forceDismissalOfModalAd`. You can now force the dismissal of a modal ad.
+
 ### Version 2.2
 **Release date**: March 11, 2014
 
-* New ad format: Sashimi (in-streams ads)
-* Specify the features you are using to improve the user experience
-* Added support for 64-bit iOS applications
+- New ad format: Sashimi (in-streams ads)
+- Specify the features you are using to improve the user experience
+- Added support for 64-bit iOS applications
 
 ### Version 2.1.1
 **Release date**: January 10, 2014
 
-* Workaround bug fix to prevent app crash in cases where the storeKit component is displayed in landscape-only iPhone apps
-* Improved flushing of data
+- Workaround bug fix to prevent app crash in cases where the storeKit component is displayed in landscape-only iPhone apps
+- Improved flushing of data
 
 ### Version 2.1.0
 **Release date**: January 2, 2014
 
-* New ad format: Uramaki
-* Sushi is supporting devices in landscape
+- New ad format: Uramaki
+- Sushi is supporting devices in landscape
 
 ### Version 2.0.2
 **Release date**: December 16, 2013
 
-* Fixed a bug with notification wall for landscape-only apps
+- Fixed a bug with notification wall for landscape-only apps
 
 ### Version 2.0.1
 **Release date**: December 5, 2013
 
-* Fixed a bug with the capping in monetization sdk
+- Fixed a bug with the capping in monetization sdk
 
 ### Version 2.0
 **Release date**: November 21, 2013
 
-* Monetization SDK
-* New, flat design for iOS 7
+- Monetization SDK
+- New, flat design for iOS 7
