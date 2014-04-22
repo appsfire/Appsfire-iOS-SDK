@@ -15,6 +15,7 @@
 		7B54609B18A5181D00D22B36 /* ExampleCustomSashimiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B54609618A5181D00D22B36 /* ExampleCustomSashimiTableViewCell.m */; };
 		7B54609C18A5181D00D22B36 /* ExampleCustomSashimiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B54609818A5181D00D22B36 /* ExampleCustomSashimiTableViewController.m */; };
 		7B54609D18A5181D00D22B36 /* ExampleCustomSashimiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B54609A18A5181D00D22B36 /* ExampleCustomSashimiView.m */; };
+		7BE61D4C18FC05A20097937A /* ExampleBrichterSanTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE61D4B18FC05A20097937A /* ExampleBrichterSanTableViewController.m */; };
 		7BE9A3B117E706E100A664E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE9A3B017E706E100A664E8 /* Foundation.framework */; };
 		7BE9A3B317E706E100A664E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE9A3B217E706E100A664E8 /* CoreGraphics.framework */; };
 		7BE9A3B517E706E100A664E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE9A3B417E706E100A664E8 /* UIKit.framework */; };
@@ -71,6 +72,9 @@
 		7B5460A018A51BA100D22B36 /* AFAdSDKSashimiExtendedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiExtendedView.h; sourceTree = "<group>"; };
 		7B5460A118A51BA100D22B36 /* AFAdSDKSashimiMinimalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiMinimalView.h; sourceTree = "<group>"; };
 		7B5460A218A51BA100D22B36 /* AFAdSDKSashimiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiView.h; sourceTree = "<group>"; };
+		7BE61D4A18FC05A20097937A /* ExampleBrichterSanTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleBrichterSanTableViewController.h; path = "AppsfireSDK-Example-All/Classes/ExampleBrichterSanTableViewController.h"; sourceTree = SOURCE_ROOT; };
+		7BE61D4B18FC05A20097937A /* ExampleBrichterSanTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleBrichterSanTableViewController.m; path = "AppsfireSDK-Example-All/Classes/ExampleBrichterSanTableViewController.m"; sourceTree = SOURCE_ROOT; };
+		7BE61D4D18FC07C40097937A /* AFAdSDKBrichterSanControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKBrichterSanControl.h; sourceTree = "<group>"; };
 		7BE9A3AD17E706E100A664E8 /* AppsfireSDK-Example-All.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppsfireSDK-Example-All.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE9A3B017E706E100A664E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7BE9A3B217E706E100A664E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -160,6 +164,7 @@
 				7B54608618A517C100D22B36 /* Minimal */,
 				7B54608718A517DB00D22B36 /* Extended */,
 				7B54608818A517DF00D22B36 /* Custom */,
+				7BE61D4918FC05110097937A /* Brichter-San */,
 			);
 			name = "Sashimi Examples";
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				7B54609F18A51BA100D22B36 /* AFAdSDKAdBadgeView.h */,
+				7BE61D4D18FC07C40097937A /* AFAdSDKBrichterSanControl.h */,
 				7B5460A018A51BA100D22B36 /* AFAdSDKSashimiExtendedView.h */,
 				7B5460A118A51BA100D22B36 /* AFAdSDKSashimiMinimalView.h */,
 				7B5460A218A51BA100D22B36 /* AFAdSDKSashimiView.h */,
@@ -227,6 +233,15 @@
 				7BB5E88F182A8C41000A04B4 /* Notification Bar Example */,
 			);
 			name = Engagement;
+			sourceTree = "<group>";
+		};
+		7BE61D4918FC05110097937A /* Brichter-San */ = {
+			isa = PBXGroup;
+			children = (
+				7BE61D4A18FC05A20097937A /* ExampleBrichterSanTableViewController.h */,
+				7BE61D4B18FC05A20097937A /* ExampleBrichterSanTableViewController.m */,
+			);
+			name = "Brichter-San";
 			sourceTree = "<group>";
 		};
 		7BE9A3A417E706E100A664E8 = {
@@ -463,6 +478,7 @@
 				BFFD8E3018A0FE4A00371EB0 /* AdSDKOptionsTableViewController.m in Sources */,
 				BFFD8E2918A0FE0E00371EB0 /* AppsfireAdTimerView.m in Sources */,
 				BFFD8E3B18A0FE7300371EB0 /* SDKTableViewController.m in Sources */,
+				7BE61D4C18FC05A20097937A /* ExampleBrichterSanTableViewController.m in Sources */,
 				BFFD8E3618A0FE6400371EB0 /* NotificationBarExampleController.m in Sources */,
 				7B54609418A5181300D22B36 /* ExampleExtendedSashimiTableViewController.m in Sources */,
 				BFFD8E2A18A0FE0E00371EB0 /* AFBadgeView.m in Sources */,

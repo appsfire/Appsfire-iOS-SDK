@@ -25,7 +25,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     NSLog(@"%s (mainThread=%d)", __PRETTY_FUNCTION__, [NSThread isMainThread]);
-
+    
     //
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
@@ -42,17 +42,17 @@
      */
     
     // sdk connect
-    #error Add your Appsfire API key below.
+#error Add your Appsfire API key below.
     [AppsfireSDK connectWithAPIKey:@""];
     
     // set delegate
     [AppsfireAdSDK setDelegate:self];
     
     //
-    #if DEBUG
-        #warning In Release mode, make sure to set the value below to NO.
-        [AppsfireAdSDK setDebugModeEnabled:YES];
-    #endif
+#if DEBUG
+#warning In Release mode, make sure to set the value below to NO.
+    [AppsfireAdSDK setDebugModeEnabled:YES];
+#endif
     
     // tell ad sdk to load ads right now
     [AppsfireAdSDK prepare];

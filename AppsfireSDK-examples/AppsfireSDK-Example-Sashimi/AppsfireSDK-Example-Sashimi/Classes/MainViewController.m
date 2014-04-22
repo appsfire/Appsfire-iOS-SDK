@@ -13,13 +13,14 @@
 #import "ExampleMinimalSashimiTableViewController.h"
 #import "ExampleExtendedSashimiTableViewController.h"
 #import "ExampleCustomSashimiTableViewController.h"
+#import "ExampleBrichterSanTableViewController.h"
 
 @implementation MainViewController
 
 - (void)viewDidLoad {
     
     NSLog(@"%s (mainThread=%d)", __PRETTY_FUNCTION__, [NSThread isMainThread]);
-
+    
     self.title = @"Sashimi Examples";
     self.tableView.rowHeight = 80.0;
     
@@ -33,7 +34,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 3;
+    return 4;
     
 }
 
@@ -62,6 +63,9 @@
         case 2:
             cellTitle = @"Sashimi Custom";
             break;
+        case 3:
+            cellTitle = @"Brichter-San (Pull-to-Refresh)";
+            break;
         default:
             cellTitle = @"";
             break;
@@ -78,31 +82,39 @@
     UIViewController *controller;
     
     switch (indexPath.row) {
-        
-        // sashimi minimal
+            
+            // sashimi minimal
         case 0:
         {
             controller = [[ExampleMinimalSashimiTableViewController alloc ] initWithStyle:UITableViewStylePlain];
             [self.navigationController pushViewController:controller animated:YES];
             break;
         }
-
-        // sashimi extended
+            
+            // sashimi extended
         case 1:
         {
             controller = [[ExampleExtendedSashimiTableViewController alloc ] initWithStyle:UITableViewStylePlain];
             [self.navigationController pushViewController:controller animated:YES];
             break;
         }
-
-        // sashimi custom
+            
+            // sashimi custom
         case 2:
         {
             controller = [[ExampleCustomSashimiTableViewController alloc ] initWithStyle:UITableViewStylePlain];
             [self.navigationController pushViewController:controller animated:YES];
             break;
         }
-
+            
+            // brichter-san
+        case 3:
+        {
+            controller = [[ExampleBrichterSanTableViewController alloc ] initWithStyle:UITableViewStylePlain];
+            [self.navigationController pushViewController:controller animated:YES];
+            break;
+        }
+            
         default:
             break;
     }

@@ -5,7 +5,7 @@
  */
 
 #import <UIKit/UIKit.h>
-// Views
+
 #import "AFAdSDKAdBadgeView.h"
 
 /*! 

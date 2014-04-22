@@ -52,18 +52,11 @@ typedef NS_ENUM(NSUInteger, AFAdSDKSashimiExtendedStyleMode) {
 @property (nonatomic, strong, readwrite) UIColor *contentBackgroundColor;
 
 /*!
- * Color of the border around the app icon in `AFAdSDKSashimiExtendedStyleModeLight` style mode.
+ * Color of the border around the app icon.
  *
- * @since 2.2.0
+ * @since 2.3.0
  */
-@property (nonatomic, strong, readwrite) UIColor *lightIconBorderColor;
-
-/*!
- * Color of the border around the app icon in `AFAdSDKSashimiExtendedStyleModeDark` style mode.
- *
- * @since 2.2.0
- */
-@property (nonatomic, strong, readwrite) UIColor *darkIconBorderColor;
+@property (nonatomic, strong, readwrite) UIColor *iconBorderColor;
 
 /*!
  * Edge insets of the whole sashimi view.
@@ -121,5 +114,20 @@ typedef NS_ENUM(NSUInteger, AFAdSDKSashimiExtendedStyleMode) {
  * @since 2.2.0
  */
 @property (nonatomic, assign, readwrite) CGFloat blurRadius;
+
+/*!
+ * Color of the border around the app icon in `AFAdSDKSashimiMinimalStyleModeLight` style mode.
+ *
+ * @since 2.2.0
+ */
+@property (nonatomic, strong, readwrite) UIColor *lightIconBorderColor __deprecated_msg("Use iconBorderColor instead.");
+
+/*!
+ * Color of the border around the app icon in `AFAdSDKSashimiMinimalStyleModeDark` style mode.
+ *
+ * @since 2.2.0
+ */
+@property (nonatomic, strong, readwrite) UIColor *darkIconBorderColor __deprecated_msg("Use iconBorderColor instead.");
+
 
 @end
