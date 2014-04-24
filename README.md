@@ -1,8 +1,8 @@
 Appsfire for iOS
 ================
 
-**Modified**: 2014-03-20  
-**SDK Version**: 2.2.2
+**Modified**: 2014-04-24  
+**SDK Version**: 2.3.0
 
 ## Getting Started with Appsfire
 The Appsfire iOS SDK is the cornerstone of the Appsfire network.
@@ -48,7 +48,7 @@ Edit your Podfile and add AppsfireSDK:
 
 ``` bash
 platform :ios, '5.1.1'
-pod 'AppsfireSDK', '~> 2.2.2'
+pod 'AppsfireSDK', '~> 2.3.0'
 ```
 
 Install into your Xcode project:
@@ -76,6 +76,13 @@ Included is a sample app to use as example and for help on Appsfire integration.
 If you encounter any issues, do not hesitate to contact our happy support team at support@appsfire.com.
 
 ## Change Logs
+
+###Version 2.3.0
+**Release date** : April 24, 2014
+
+- New ad format: Brichter-San (Pull-to-Refresh control)
+- Sashimi: fixed a bug that sometimes prevented the view to react to user's tap
+- Updates and bug fixes for other ad units
 
 ###Version 2.2.2
 **Release date** : March 20, 2014
