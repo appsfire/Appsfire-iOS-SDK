@@ -16,7 +16,7 @@
 #import "ExampleMinimalSashimiTableViewController.h"
 #import "ExampleExtendedSashimiTableViewController.h"
 #import "ExampleCustomSashimiTableViewController.h"
-#import "ExampleBrichterSanTableViewController.h"
+#import "ExampleUdonNoodleTableViewController.h"
 
 typedef NS_ENUM(NSUInteger, AFAdSDKSection) {
     AFAdSDKSectionInterstitial = 0,
@@ -35,7 +35,7 @@ typedef NS_ENUM(NSUInteger, AFAdSDKRowInStream) {
     AFAdSDKRowInStreamSashimiMinimal = 0,
     AFAdSDKRowInStreamSashimiExtended,
     AFAdSDKRowInStreamSashimiCustom,
-    AFAdSDKRowInStreamSashimiBrichterSan,
+    AFAdSDKRowInStreamSashimiUdonNoodle,
     AFAdSDKRowInStreamSashimiNum
 };
 
@@ -168,8 +168,8 @@ typedef NS_ENUM(NSUInteger, AFAdSDKRowInStream) {
                     cell.textLabel.text = @"Sashimi Custom";
                 } break;
                     
-                case AFAdSDKRowInStreamSashimiBrichterSan: {
-                    cell.textLabel.text = @"Brichter-San (Pull-to-Refresh)";
+                case AFAdSDKRowInStreamSashimiUdonNoodle: {
+                    cell.textLabel.text = @"Udon Noodle (Pull-to-Refresh)";
                 }
                     
                 default: {
@@ -264,8 +264,8 @@ typedef NS_ENUM(NSUInteger, AFAdSDKRowInStream) {
                     [self.navigationController pushViewController:controller animated:YES];
                 } break;
                     
-                case AFAdSDKRowInStreamSashimiBrichterSan: {
-                    controller = [[ExampleBrichterSanTableViewController alloc] initWithStyle:UITableViewStylePlain];
+                case AFAdSDKRowInStreamSashimiUdonNoodle: {
+                    controller = [[ExampleUdonNoodleTableViewController alloc] initWithStyle:UITableViewStylePlain];
                     [self.navigationController pushViewController:controller animated:YES];
                 }
                     

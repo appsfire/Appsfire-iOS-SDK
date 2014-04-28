@@ -1,12 +1,10 @@
 /*!
- *  @header    AFAdSDKBrichterSanControl.h
- *  @abstract  Brichter-San Control Header file.
- *  @version   2.3.0
+ *  @header    AFAdSDKUdonNoodleControl.h
+ *  @abstract  Udon Noodle Control Header file.
+ *  @version   2.3.1
  */
 
 #import <UIKit/UIKit.h>
-
-// Views
 #import "AFAdSDKSashimiMinimalView.h"
 
 /*!
@@ -14,27 +12,27 @@
  *
  * @since 2.3.0
  */
-typedef NS_ENUM(NSUInteger, AFAdSDKBSControlState) {
+typedef NS_ENUM(NSUInteger, AFAdSDKUNControlState) {
     /*!
-     * Undefined state of the Brichter-San control.
+     * Undefined state of the Udon Noodle control.
      *
      * @since 2.3.0
      */
-    AFAdSDKBSControlStateNone = 0,
+    AFAdSDKUNControlStateNone = 0,
     
     /*!
-     * The Brichter-San control is currently refreshing and the process is not over.
+     * The Udon Noodle control is currently refreshing and the process is not over.
      *
      * @since 2.3.0
      */
-    AFAdSDKBSControlStateRefreshing,
+    AFAdSDKUNControlStateRefreshing,
     
     /*!
-     * The Brichter-San control finished refreshing and is showing and advertisement.
+     * The Udon Noodle control finished refreshing and is showing and advertisement.
      *
      * @since 2.3.0
      */
-    AFAdSDKBSControlStateRefreshed
+    AFAdSDKUNControlStateRefreshed
 };
 
 /*!
@@ -42,41 +40,41 @@ typedef NS_ENUM(NSUInteger, AFAdSDKBSControlState) {
  *
  * @since 2.3.0
  */
-typedef NS_ENUM(NSUInteger, AFAdSDKBSControlStyle) {
+typedef NS_ENUM(NSUInteger, AFAdSDKUNControlStyle) {
     /*!
-     * Light style of the Brichter-San control.
+     * Light style of the Udon Noodle control.
      *
      * @since 2.3.0
      */
     
-    AFAdSDKBSControlStyleLight = 0,
+    AFAdSDKUNControlStyleLight = 0,
     /*!
-     * Dark style of the Brichter-San control.
+     * Dark style of the Udon Noodle control.
      *
      * @since 2.3.0
      */
-    AFAdSDKBSControlStyleDark
+    AFAdSDKUNControlStyleDark
 };
 
-@protocol AFAdSDKBrichterSanControlDelegate;
+@protocol AFAdSDKUdonNoodleControlDelegate;
 
 /*!
- * `AFAdSDKBrichterSanControl` is an API compatible replacement of `UIRefreshControl` for iOS 5.0+
+ * `AFAdSDKUdonNoodleControl` is an API compatible replacement of `UIRefreshControl` for iOS 5.0+
  * which uses the Appsfire Sashimi format to display advertisement in the refresh control view on
  * top of a `UIScrollView` (can be a `UITableView` for instance).
  */
-@interface AFAdSDKBrichterSanControl : UIControl
+@interface AFAdSDKUdonNoodleControl : UIControl
 
 
 /*!
- * The object that acts as the delegate of the receiving Brichter-San control.
+ * The object that acts as the delegate of the receiving Udon Noodle control.
  *
  * @since 2.3.0
  */
-@property (nonatomic, weak, readwrite) id <AFAdSDKBrichterSanControlDelegate> delegate;
+@property (nonatomic, weak, readwrite) id <AFAdSDKUdonNoodleControlDelegate> delegate;
 
 /*!
- * The UIScroll view subclass used to trigger the Brichter-San control.
+ * The UIScroll view subclass used to trigger the Udon Noodle control.
  *
  * @since 2.3.0
  */
@@ -91,25 +89,25 @@ typedef NS_ENUM(NSUInteger, AFAdSDKBSControlStyle) {
 @property (nonatomic, strong, readwrite) UIColor *color;
 
 /*!
- * An Enum value reflecting the internal state of the Brichter-San control.
+ * An Enum value reflecting the internal state of the Udon Noodle control.
  *
- * @see `AFAdSDKBSControlState`
+ * @see `AFAdSDKUNControlState`
  * @since 2.3.0
  */
-@property (nonatomic, assign, readonly) AFAdSDKBSControlState controlState;
+@property (nonatomic, assign, readonly) AFAdSDKUNControlState controlState;
 
 /*!
  * An Enum value to set the coloring style of the control.
  *
- * @see `AFAdSDKBSControlStyle`
+ * @see `AFAdSDKUNControlStyle`
  * @since 2.3.0
  */
-@property (nonatomic, assign, readwrite) AFAdSDKBSControlStyle style;
+@property (nonatomic, assign, readwrite) AFAdSDKUNControlStyle style;
 
 /*!
  * Default top content inset.
  *
- * @note    If the you set a top `contentInset` of your `UIScrollView` you might want to set the 
+ * @note    If the you set a top `contentInset` of your `UIScrollView` you might want to set the
  *          same value to `defaultTopContentInset`.
  *
  * @since 2.3.0
@@ -123,15 +121,15 @@ typedef NS_ENUM(NSUInteger, AFAdSDKBSControlStyle) {
  *          edges value `edgesForExtendedLayout` is equal to `UIRectEdgeTop` or `UIRectEdgeAll`. In
  *          this case the top `contentOffset` is equal to topLayoutGuide.length (64pt in portrait).
  *          The following code sample allows you to adjust the top content offset with rotation support:
- *          
+ *
  *          // In your view controller subclass.
  *          - (void)viewDidLayoutSubviews {
  *              [super viewDidLayoutSubviews];
  *
- *              // Brichter-San adjustment.
+ *              // Udon Noodle adjustment.
  *              if ([self respondsToSelector:@selector(topLayoutGuide)]) {
  *                  CGFloat topOffset = self.topLayoutGuide.length;
- *                  _brichterSanControl.defaultTopContentOffset = topOffset;
+ *                  _udonNoodleControl.defaultTopContentOffset = topOffset;
  *              }
  *          }
  *
@@ -140,16 +138,16 @@ typedef NS_ENUM(NSUInteger, AFAdSDKBSControlStyle) {
 @property (nonatomic, assign, readwrite) CGFloat defaultTopContentOffset;
 
 /*!
- * A Boolean value indicating whether the Brichter-San control should show ads.
+ * A Boolean value indicating whether the Udon Noodle control should show ads.
  *
  * @since 2.3.0
  */
 @property (nonatomic, assign, readwrite, getter = isShowingAds) BOOL showAds;
 
 /*!
- * Initializes and returns a standard Brichter-San control.
+ * Initializes and returns a standard Udon Noodle control.
  *
- * @param scrollView The `UIScrollView` used to trigger the Brichter-San control.
+ * @param scrollView The `UIScrollView` used to trigger the Udon Noodle control.
  * @since 2.3.0
  */
 - (id)initWithScrollView:(UIScrollView *)scrollView;
@@ -160,7 +158,7 @@ typedef NS_ENUM(NSUInteger, AFAdSDKBSControlStyle) {
  * @note    Call this method when an external event source triggers a programmatic refresh of your
  *          table. For example, if you use an NSTimer object to refresh the contents of the table
  *          view periodically, you would call this method as part of your timer handler. This method
- *          updates the state of the Brichter-San control to reflect the in-progress refresh
+ *          updates the state of the Udon Noodle control to reflect the in-progress refresh
  *          operation. When the refresh operation ends, be sure to call the endRefreshing method to
  *          return the control to its default state.
  *
@@ -173,8 +171,8 @@ typedef NS_ENUM(NSUInteger, AFAdSDKBSControlStyle) {
  * Tells the control that a refresh operation has ended.
  *
  * @note    Call this method at the end of any refresh operation (whether it was initiated
- *          programmatically or by the user) to return the Brichter-San control to its default state.
- *          If the Brichter-San control is at least partially visible, calling this method also hides
+ *          programmatically or by the user) to return the Udon Noodle control to its default state.
+ *          If the Udon Noodle control is at least partially visible, calling this method also hides
  *          it. If animations are also enabled, the control is hidden using an animation.
  *
  * @since 2.3.0
@@ -184,7 +182,7 @@ typedef NS_ENUM(NSUInteger, AFAdSDKBSControlStyle) {
 /*!
  * Tells the control to programmatically dismiss when it's showing an ad.
  *
- * @note This method is only applied when the control's state is `AFAdSDKBSControlStateRefreshed`.
+ * @note This method is only applied when the control's state is `AFAdSDKUNControlStateRefreshed`.
  *
  * @since 2.3.0
  */
@@ -193,24 +191,24 @@ typedef NS_ENUM(NSUInteger, AFAdSDKBSControlStyle) {
 @end
 
 /*!
- *  Brichter-San protocol.
+ *  Udon Noodle protocol.
  */
-@protocol AFAdSDKBrichterSanControlDelegate <NSObject>
+@protocol AFAdSDKUdonNoodleControlDelegate <NSObject>
 
 @optional
 
 /**
- *  Allows the customization of the `AFAdSDKSashimiMinimalView` instance displayed in the Brichter-San 
+ *  Allows the customization of the `AFAdSDKSashimiMinimalView` instance displayed in the Udon Noodle
  *  control when available.
  *
- *  @param brichterSanControl   The `AFAdSDKBrichterSanControl` instance requesting for customization
- *                              of the `AFAdSDKSashimiMinimalView` instance displayed in the 
- *                              Brichter-San control.
+ *  @param udonNoodleControl    The `AFAdSDKUdonNoodleControl` instance requesting for customization
+ *                              of the `AFAdSDKSashimiMinimalView` instance displayed in the Udon
+ *                              Noodle control.
  *
  *  @param sashimiView          The the `AFAdSDKSashimiMinimalView` instance being customized.
  *  @since 2.3.0
  */
-- (void)brichterSanControl:(AFAdSDKBrichterSanControl *)brichterSanControl customizeSashimiView:(AFAdSDKSashimiMinimalView *)sashimiView;
+- (void)udonNoodleControl:(AFAdSDKUdonNoodleControl *)udonNoodleControl customizeSashimiView:(AFAdSDKSashimiMinimalView *)sashimiView;
 
 @end
 

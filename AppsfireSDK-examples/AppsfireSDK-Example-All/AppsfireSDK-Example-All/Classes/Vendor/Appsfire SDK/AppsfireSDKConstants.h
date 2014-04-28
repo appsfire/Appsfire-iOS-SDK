@@ -1,7 +1,7 @@
 /*!
  *  @header    AppsfireSDKConstants.h
  *  @abstract  Appsfire SDK Constants Header
- *  @version   2.3.0
+ *  @version   2.3.1
  */
 
 /*!

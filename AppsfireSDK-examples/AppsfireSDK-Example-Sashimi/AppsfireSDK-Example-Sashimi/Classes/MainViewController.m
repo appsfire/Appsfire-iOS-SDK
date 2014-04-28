@@ -13,14 +13,14 @@
 #import "ExampleMinimalSashimiTableViewController.h"
 #import "ExampleExtendedSashimiTableViewController.h"
 #import "ExampleCustomSashimiTableViewController.h"
-#import "ExampleBrichterSanTableViewController.h"
+#import "ExampleUdonNoodleTableViewController.h"
 
 @implementation MainViewController
 
 - (void)viewDidLoad {
     
     NSLog(@"%s (mainThread=%d)", __PRETTY_FUNCTION__, [NSThread isMainThread]);
-    
+
     self.title = @"Sashimi Examples";
     self.tableView.rowHeight = 80.0;
     
@@ -64,7 +64,7 @@
             cellTitle = @"Sashimi Custom";
             break;
         case 3:
-            cellTitle = @"Brichter-San (Pull-to-Refresh)";
+            cellTitle = @"Udon Noodle (Pull-to-Refresh)";
             break;
         default:
             cellTitle = @"";
@@ -82,39 +82,39 @@
     UIViewController *controller;
     
     switch (indexPath.row) {
-            
-            // sashimi minimal
+        
+        // sashimi minimal
         case 0:
         {
             controller = [[ExampleMinimalSashimiTableViewController alloc ] initWithStyle:UITableViewStylePlain];
             [self.navigationController pushViewController:controller animated:YES];
             break;
         }
-            
-            // sashimi extended
+
+        // sashimi extended
         case 1:
         {
             controller = [[ExampleExtendedSashimiTableViewController alloc ] initWithStyle:UITableViewStylePlain];
             [self.navigationController pushViewController:controller animated:YES];
             break;
         }
-            
-            // sashimi custom
+
+        // sashimi custom
         case 2:
         {
             controller = [[ExampleCustomSashimiTableViewController alloc ] initWithStyle:UITableViewStylePlain];
             [self.navigationController pushViewController:controller animated:YES];
             break;
         }
-            
-            // brichter-san
+        
+        // udon noodle
         case 3:
         {
-            controller = [[ExampleBrichterSanTableViewController alloc ] initWithStyle:UITableViewStylePlain];
+            controller = [[ExampleUdonNoodleTableViewController alloc ] initWithStyle:UITableViewStylePlain];
             [self.navigationController pushViewController:controller animated:YES];
             break;
         }
-            
+
         default:
             break;
     }

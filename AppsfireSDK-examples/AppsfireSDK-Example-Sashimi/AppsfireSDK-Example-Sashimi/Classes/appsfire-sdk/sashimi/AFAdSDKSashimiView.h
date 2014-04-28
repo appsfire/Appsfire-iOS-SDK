@@ -1,11 +1,10 @@
 /*!
  *  @header    AFAdSDKSashimiView.h
  *  @abstract  Appsfire Advertising SDK Sashimi Header
- *  @version   2.2.0
+ *  @version   2.3.1
  */
 
 #import <UIKit/UIKit.h>
-
 #import "AFAdSDKAdBadgeView.h"
 
 /*! 

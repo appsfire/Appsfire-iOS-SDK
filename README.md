@@ -1,8 +1,8 @@
 Appsfire for iOS
 ================
 
-**Modified**: 2014-04-24  
-**SDK Version**: 2.3.0
+**Modified**: 2014-04-28  
+**SDK Version**: 2.3.1
 
 ## Getting Started with Appsfire
 The Appsfire iOS SDK is the cornerstone of the Appsfire network.
@@ -48,7 +48,7 @@ Edit your Podfile and add AppsfireSDK:
 
 ``` bash
 platform :ios, '5.1.1'
-pod 'AppsfireSDK', '~> 2.3.0'
+pod 'AppsfireSDK', '~> 2.3.1'
 ```
 
 Install into your Xcode project:
@@ -76,6 +76,10 @@ Included is a sample app to use as example and for help on Appsfire integration.
 If you encounter any issues, do not hesitate to contact our happy support team at support@appsfire.com.
 
 ## Change Logs
+
+###Version 2.3.1
+**Release date** : April 28, 2014
+- Brichter-San is renamed Udon Noodle. Please read our [migration notes](http://docs.appsfire.com/sdk/ios/integration-reference/Upgrading/From_2,3_to_2,3,1).
 
 ###Version 2.3.0
 **Release date** : April 24, 2014

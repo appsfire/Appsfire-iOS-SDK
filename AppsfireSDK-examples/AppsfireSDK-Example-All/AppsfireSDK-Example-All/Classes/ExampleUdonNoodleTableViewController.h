@@ -1,5 +1,5 @@
 //
-//  ExampleBrichterSanTableViewController.h
+//  ExampleUdonNoodleTableViewController.h
 //  AppsfireSDK-Example-Sashimi
 //
 //  Created by Ali on 14/04/2014.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ExampleBrichterSanTableViewController : UITableViewController
+@interface ExampleUdonNoodleTableViewController : UITableViewController
 
 @end

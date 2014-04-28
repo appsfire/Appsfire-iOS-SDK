@@ -1,28 +1,28 @@
 //
-//  ExampleBrichterSanTableViewController.m
+//  ExampleUdonNoodleTableViewController.m
 //  AppsfireSDK-Example-Sashimi
 //
 //  Created by Ali on 14/04/2014.
 //  Copyright (c) 2014 Appsfire. All rights reserved.
 //
 
-#import "ExampleBrichterSanTableViewController.h"
+#import "ExampleUdonNoodleTableViewController.h"
 // helpers
 #import "AppsfireAdSDK.h"
 // views
-#import "AFAdSDKBrichterSanControl.h"
+#import "AFAdSDKUdonNoodleControl.h"
 
 
-@interface ExampleBrichterSanTableViewController () <AFAdSDKBrichterSanControlDelegate> {
+@interface ExampleUdonNoodleTableViewController () <AFAdSDKUdonNoodleControlDelegate> {
     
     NSMutableArray *_arraySource;
-    AFAdSDKBrichterSanControl *_refreshControl;
+    AFAdSDKUdonNoodleControl *_refreshControl;
     
 }
 
 @end
 
-@implementation ExampleBrichterSanTableViewController
+@implementation ExampleUdonNoodleTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style {
     
@@ -31,7 +31,7 @@
     if ((self = [super initWithStyle:style]) != nil) {
         
         //
-        self.title = @"Brichter-San";
+        self.title = @"Udon Noodle";
         self.tableView.rowHeight = 100.0;
         
         //
@@ -55,7 +55,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _refreshControl = [[AFAdSDKBrichterSanControl alloc] initWithScrollView:self.tableView];
+    _refreshControl = [[AFAdSDKUdonNoodleControl alloc] initWithScrollView:self.tableView];
     _refreshControl.delegate = self;
     [_refreshControl addTarget:self action:@selector(doRefresh:) forControlEvents:UIControlEventValueChanged];
     
@@ -64,7 +64,7 @@
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     
-    // Brichter-San adjustments.
+    // Udon Noodle adjustments.
     if ([self respondsToSelector:@selector(topLayoutGuide)]) {
         CGFloat topOffset = self.topLayoutGuide.length;
         _refreshControl.defaultTopContentOffset = topOffset;
@@ -125,7 +125,7 @@
 
 #pragma mark - Refreshing
 
-- (void)doRefresh:(AFAdSDKBrichterSanControl *)refreshControl {
+- (void)doRefresh:(AFAdSDKUdonNoodleControl *)refreshControl {
     [_refreshControl beginRefreshing];
     NSLog(@"Refreshing...");
     
@@ -135,9 +135,9 @@
     });
 }
 
-#pragma mark - AFAdSDKBrichterSanControlDelegate
+#pragma mark - AFAdSDKUdonNoodleControlDelegate
 
-- (void)brichterSanControl:(AFAdSDKBrichterSanControl *)brichterSanControl customizeSashimiView:(AFAdSDKSashimiMinimalView *)sashimiView {
+- (void)udonNoodleControl:(AFAdSDKUdonNoodleControl *)udonNoodleControl customizeSashimiView:(AFAdSDKSashimiMinimalView *)sashimiView {
 
     // Uncomment the following lines to see the effect of customization.
     /*
