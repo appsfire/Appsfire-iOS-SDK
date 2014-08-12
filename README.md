@@ -81,7 +81,7 @@ If you encounter any issues, do not hesitate to contact our happy support team a
 **Release date** : August 12, 2014
 - New design for the Sushi (interstitial ad format).
 - In App purchase Ad Removal Prompt: we now offer an easy way to display alert views to users to inform them about the possibility to remove ads in your application.
-- Sashimi: Custom Sashimi can now be built using Interface Builder. Please read our <a href="http://localhost:8085/Monetization_Features/In-stream_ads_(Sashimi_&_Udon_Noodle)/Custom_mode/Implementation">dedicated section</a> to learn how.
+- Sashimi: Custom Sashimi can now be built using Interface Builder. Please read our <a href="http://docs.appsfire.com/sdk/ios/integration-reference/Monetization_Features/In-stream_ads_(Sashimi_&_Udon_Noodle)/Custom_mode/Implementation">dedicated section</a> to learn how.
 - Udon Noodle: Ads are now dismissed when scrolling up. We also added support for UITableView with multiple sections.
 
 **Side note regarding iOS 8 compatibility**: We began updating our SDK for iOS 8. However note that we won't release a full-compatible library for iOS 8 until Apple allows publishers to submit an application built with Xcode 6. In the meantime you shouldn't have any problem as you can't submit a build with Xcode 6! And thus, any special iOS 8 UI/UX behaviour won't be visible. Stay tuned!
