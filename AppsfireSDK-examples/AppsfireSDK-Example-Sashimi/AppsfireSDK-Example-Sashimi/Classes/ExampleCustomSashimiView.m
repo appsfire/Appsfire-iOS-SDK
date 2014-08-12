@@ -10,14 +10,16 @@
 //
 #import <QuartzCore/QuartzCore.h>
 
-@interface ExampleCustomSashimiView() {
-    
-    UILabel *_labelTitle;
-    UIImageView *_imageIcon;
-    UILabel *_labelDownload;
-    
-}
-- (void)_downloadIcon;
+@interface ExampleCustomSashimiView()
+
+// title label
+@property (nonatomic, strong) UILabel *titleLabel;
+
+// icon image
+@property (nonatomic, strong) UIImageView *iconImage;
+
+// call-to-action label
+@property (nonatomic, strong) UILabel *ctaLabel;
 
 @end
 
@@ -28,35 +30,57 @@
     //
     [self setBackgroundColor:[UIColor whiteColor ]];
     
-    // label title
-    _labelTitle = [[UILabel alloc] init];
-    [_labelTitle setTextColor:[UIColor blackColor]];
-    [_labelTitle setBackgroundColor:[UIColor clearColor]];
-    [_labelTitle setText:self.title];
-    [_labelTitle setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:16.0]];
-    [_labelTitle setNumberOfLines:2];
-    [self addSubview:_labelTitle];
+    // title label
+    _titleLabel = [[UILabel alloc] init];
+    [_titleLabel setTextColor:[UIColor blackColor]];
+    [_titleLabel setBackgroundColor:[UIColor clearColor]];
+    [_titleLabel setText:self.title];
+    [_titleLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:16.0]];
+    [_titleLabel setNumberOfLines:2];
+    [self addSubview:_titleLabel];
     
-    // label download
-    _labelDownload = [[UILabel alloc ] init];
-    [_labelDownload setText:[self.callToActionTitle uppercaseString]];
-    [_labelDownload setBackgroundColor:[UIColor clearColor ]];
-    [_labelDownload setTextColor:[UIColor darkGrayColor]];
-    [_labelDownload setTextAlignment:NSTextAlignmentCenter];
-    [_labelDownload setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:13.0]];
-    [_labelDownload.layer setBorderColor:[UIColor darkGrayColor].CGColor];
-    [_labelDownload.layer setBorderWidth:1.0];
-    [_labelDownload.layer setCornerRadius:4.0];
-    [_labelDownload sizeToFit];
-    [_labelDownload setFrame:CGRectMake(0.0, 0.0, CGRectGetWidth(_labelDownload.frame) + 12.0, CGRectGetHeight(_labelDownload.frame) + 4.0)];
-    [self addSubview:_labelDownload];
+    // call-to-action label
+    _ctaLabel = [[UILabel alloc ] init];
+    [_ctaLabel setText:[self.callToActionTitle uppercaseString]];
+    [_ctaLabel setBackgroundColor:[UIColor clearColor ]];
+    [_ctaLabel setTextColor:[UIColor darkGrayColor]];
+    [_ctaLabel setTextAlignment:NSTextAlignmentCenter];
+    [_ctaLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:13.0]];
+    [_ctaLabel.layer setBorderColor:[UIColor darkGrayColor].CGColor];
+    [_ctaLabel.layer setBorderWidth:1.0];
+    [_ctaLabel.layer setCornerRadius:4.0];
+    [_ctaLabel sizeToFit];
+    [_ctaLabel setFrame:CGRectMake(0.0, 0.0, CGRectGetWidth(_ctaLabel.frame) + 12.0, CGRectGetHeight(_ctaLabel.frame) + 4.0)];
+    [self addSubview:_ctaLabel];
     
-    // image icon
-    _imageIcon = [[UIImageView alloc ] initWithFrame:CGRectMake(0.0, 0.0, 70.0, 70.0)];
-    [_imageIcon.layer setMasksToBounds:YES];
-    [_imageIcon.layer setCornerRadius:CGRectGetWidth(_imageIcon.frame)/5.4];
-    [self addSubview:_imageIcon];
-    [self _downloadIcon];
+    // icon image
+    _iconImage = [[UIImageView alloc ] initWithFrame:CGRectMake(0.0, 0.0, 70.0, 70.0)];
+    [_iconImage.layer setMasksToBounds:YES];
+    [_iconImage.layer setCornerRadius:CGRectGetWidth(_iconImage.frame)/5.4];
+    [self addSubview:_iconImage];
+    
+    // download the icon thanks to the helper method
+    // there should always be an icon, but in case, check before downloading it!
+    if (self.iconURL != nil) {
+        
+        // as there is a block, make sure to use a weak property!
+        __weak typeof(self) weakSelf = self;
+
+        //
+        [self downloadAsset:AFAdSDKAppAssetTypeIcon completion:^(UIImage *image) {
+            
+            // transform our weak self to a strong one!
+            // only if self wasn't deallocated in the meantime
+            if (weakSelf == nil)
+                return;
+            typeof(weakSelf) __strong strongSelf = weakSelf;
+
+            //
+            [strongSelf.iconImage setImage:image];
+            
+        }];
+        
+    }
     
     // appsfire badge
     [self.viewAppsfireBadge setStyleMode:AFAdSDKAdBadgeStyleModeDark];
@@ -66,82 +90,49 @@
 
 - (void)dealloc {
     
-    _labelTitle = nil;
-    _imageIcon = nil;
-    _labelDownload = nil;
+    _titleLabel = nil;
+    _ctaLabel = nil;
+    _iconImage = nil;
     
 }
 
 - (void)layoutSubviews {
     
-    CGRect imageIconFrame;
-    CGRect labelTitleFrame;
-    CGRect labelDownloadFrame;
+    CGRect iconImageFrame;
+    CGRect titleLabelFrame;
+    CGRect ctaLabelFrame;
     CGRect appsfireBadgeFrame;
     CGFloat contentTotalHeight, componentsSpacing;
     
     //
     componentsSpacing = 6.0;
-    labelTitleFrame = CGRectZero;
-    labelDownloadFrame = _labelDownload.frame;
+    titleLabelFrame = CGRectZero;
+    ctaLabelFrame = _ctaLabel.frame;
     
     // define icon frame
-    imageIconFrame = CGRectMake(15.0, 0.0, 70.0, 70.0);
-    imageIconFrame.origin.y = floor(CGRectGetHeight(self.frame) / 2.0 - CGRectGetHeight(imageIconFrame) / 2.0);
+    iconImageFrame = CGRectMake(15.0, 0.0, 70.0, 70.0);
+    iconImageFrame.origin.y = floor(CGRectGetHeight(self.frame) / 2.0 - CGRectGetHeight(iconImageFrame) / 2.0);
     
     // define appsfire badge frame
     appsfireBadgeFrame = CGRectMake(CGRectGetWidth(self.frame) - CGRectGetWidth(self.viewAppsfireBadge.frame) - 5.0, 5.0, CGRectGetWidth(self.viewAppsfireBadge.frame), CGRectGetHeight(self.viewAppsfireBadge.frame));
     
     // calculate height of title
-    labelDownloadFrame.origin.x = labelTitleFrame.origin.x = CGRectGetMaxX(imageIconFrame) + 10.0;
-    labelTitleFrame.size.width = CGRectGetWidth(self.frame) - labelTitleFrame.origin.x - 8.0 - 15.0;
-    labelTitleFrame.size.height = [self stringSizeOfText:_labelTitle.text withFont:_labelTitle.font constrainedToSize:CGSizeMake(labelTitleFrame.size.width, _labelTitle.font.lineHeight * 2) lineBreakMode:NSLineBreakByWordWrapping].height;
+    ctaLabelFrame.origin.x = titleLabelFrame.origin.x = CGRectGetMaxX(iconImageFrame) + 10.0;
+    titleLabelFrame.size.width = CGRectGetWidth(self.frame) - titleLabelFrame.origin.x - 8.0 - 15.0;
+    titleLabelFrame.size.height = [self stringSizeOfText:_titleLabel.text withFont:_titleLabel.font constrainedToSize:CGSizeMake(titleLabelFrame.size.width, _titleLabel.font.lineHeight * 2) lineBreakMode:NSLineBreakByWordWrapping].height;
     
     // calculate total height (title + download)
-    contentTotalHeight = CGRectGetHeight(labelTitleFrame) + componentsSpacing + CGRectGetHeight(labelDownloadFrame);
+    contentTotalHeight = CGRectGetHeight(titleLabelFrame) + componentsSpacing + CGRectGetHeight(ctaLabelFrame);
     
     // adjust the title/download y
-    labelTitleFrame.origin.y = floor(CGRectGetHeight(self.frame) / 2.0 - contentTotalHeight / 2.0);
-    labelDownloadFrame.origin.y = CGRectGetMaxY(labelTitleFrame) + componentsSpacing;
+    titleLabelFrame.origin.y = floor(CGRectGetHeight(self.frame) / 2.0 - contentTotalHeight / 2.0);
+    ctaLabelFrame.origin.y = CGRectGetMaxY(titleLabelFrame) + componentsSpacing;
     
     // set frames
-    [_imageIcon setFrame:imageIconFrame];
-    [_labelTitle setFrame:labelTitleFrame];
-    [_labelDownload setFrame:labelDownloadFrame];
+    [_iconImage setFrame:iconImageFrame];
+    [_titleLabel setFrame:titleLabelFrame];
+    [_ctaLabel setFrame:ctaLabelFrame];
     [self.viewAppsfireBadge setFrame:appsfireBadgeFrame];
-    
-}
-
-#pragma mark - Icon download
-
-// note: this piece of code if just for the sake of the demo
-// we recommend you to use a better system to download image asynchronously
-// so you can put them into a queue, cancel them, etc
-- (void)_downloadIcon {
-    
-    // there should always be an icon
-    // but check in case!
-    if (self.iconURL == nil)
-        return;
-
-    // dispatch content download into an async block
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-
-        NSData *data;
-        UIImage *image;
-        
-        //
-        data = [NSData dataWithContentsOfURL:[NSURL URLWithString:self.iconURL]];
-        image = [UIImage imageWithData:data];
-        
-        // dispatch image display on main thread
-        dispatch_async(dispatch_get_main_queue(), ^{
-            
-            [_imageIcon setImage:image];
-            
-        });
-        
-    });
     
 }
 

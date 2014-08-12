@@ -1,8 +1,8 @@
 Appsfire for iOS
 ================
 
-**Modified**: 2014-04-28  
-**SDK Version**: 2.3.1
+**Modified**: 2014-08-12  
+**SDK Version**: 2.4.0
 
 ## Getting Started with Appsfire
 The Appsfire iOS SDK is the cornerstone of the Appsfire network.
@@ -48,7 +48,7 @@ Edit your Podfile and add AppsfireSDK:
 
 ``` bash
 platform :ios, '5.1.1'
-pod 'AppsfireSDK', '~> 2.3.1'
+pod 'AppsfireSDK', '~> 2.4.0'
 ```
 
 Install into your Xcode project:
@@ -76,6 +76,15 @@ Included is a sample app to use as example and for help on Appsfire integration.
 If you encounter any issues, do not hesitate to contact our happy support team at support@appsfire.com.
 
 ## Change Logs
+
+###Version 2.4.0
+**Release date** : August 12, 2014
+- New design for the Sushi (interstitial ad format).
+- In App purchase Ad Removal Prompt: we now offer an easy way to display alert views to users to inform them about the possibility to remove ads in your application.
+- Sashimi: Custom Sashimi can now be built using Interface Builder. Please read our <a href="http://localhost:8085/Monetization_Features/In-stream_ads_(Sashimi_&_Udon_Noodle)/Custom_mode/Implementation">dedicated section</a> to learn how.
+- Udon Noodle: Ads are now dismissed when scrolling up. We also added support for UITableView with multiple sections.
+
+**Side note regarding iOS 8 compatibility**: We began updating our SDK for iOS 8. However note that we won't release a full-compatible library for iOS 8 until Apple allows publishers to submit an application built with Xcode 6. In the meantime you shouldn't have any problem as you can't submit a build with Xcode 6! And thus, any special iOS 8 UI/UX behaviour won't be visible. Stay tuned!
 
 ###Version 2.3.1
 **Release date** : April 28, 2014

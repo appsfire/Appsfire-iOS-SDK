@@ -137,19 +137,23 @@
 
 #pragma mark - AFAdSDKUdonNoodleControlDelegate
 
+- (UIViewController *)viewControllerForUdonNoodleControl:(AFAdSDKUdonNoodleControl *)udonNoodleControl {
+    return self;
+}
+
 - (void)udonNoodleControl:(AFAdSDKUdonNoodleControl *)udonNoodleControl customizeSashimiView:(AFAdSDKSashimiMinimalView *)sashimiView {
     
     // Uncomment the following lines to see the effect of customization.
     /*
-    // Changing the background color to a lighter gray.
-    sashimiView.contentBackgroundColor = [UIColor colorWithRed:240.0 / 255.0 green:240.0 / 255.0 blue:240.0 / 255.0 alpha:1.0];
-    
-    // Changing the color of the title to yellow.
-    sashimiView.titleLabel.textColor = [UIColor colorWithRed:213.0 / 255.0 green:198.0 / 255.0 blue:136.0 / 255.0 alpha:1.0];
-    
-    // Changing the color of the icon color to black.
-    sashimiView.iconBorderColor = [UIColor blackColor];
-    */
+     // Changing the background color to a lighter gray.
+     sashimiView.contentBackgroundColor = [UIColor colorWithRed:240.0 / 255.0 green:240.0 / 255.0 blue:240.0 / 255.0 alpha:1.0];
+     
+     // Changing the color of the title to yellow.
+     sashimiView.titleLabel.textColor = [UIColor colorWithRed:213.0 / 255.0 green:198.0 / 255.0 blue:136.0 / 255.0 alpha:1.0];
+     
+     // Changing the color of the icon color to black.
+     sashimiView.iconBorderColor = [UIColor blackColor];
+     */
 }
 
 @end

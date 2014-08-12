@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:AppsfireSDK-Example-Interstitial/AppsfireSDK-Example-Interstitial.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AppsfireSDK-Example-Sashimi/AppsfireSDK-Example-Sashimi.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AppsfireSDK-Example-Engage/AppsfireSDK-Example-Engage.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AppsfireSDK-Example-IAP/AppsfireSDK-Example-IAP.xcodeproj">
+   </FileRef>
+</Workspace>

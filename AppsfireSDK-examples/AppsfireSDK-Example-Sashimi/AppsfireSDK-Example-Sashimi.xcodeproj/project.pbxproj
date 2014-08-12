@@ -7,24 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B6B1B77190E897B00549386 /* ExampleUdonNoodleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B1B76190E897B00549386 /* ExampleUdonNoodleTableViewController.m */; };
+		7BE61D4718FBEDAA0097937A /* ExampleUdonNoodleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE61D4618FBEDAA0097937A /* ExampleUdonNoodleTableViewController.m */; };
 		BF20A9EB18A10A9600863F6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF20A9E818A10A9600863F6A /* AppDelegate.m */; };
-		BF20A9EF18A10ACB00863F6A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF20A9EE18A10ACB00863F6A /* MainViewController.m */; };
-		BF20A9F518A10BA400863F6A /* libAppsfireSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF20A9F418A10BA400863F6A /* libAppsfireSDK.a */; };
-		BF20AA0518A10D0E00863F6A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20A9F718A10D0E00863F6A /* Default-568h@2x.png */; };
-		BF20AA0618A10D0E00863F6A /* icon-120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20A9F818A10D0E00863F6A /* icon-120x120.png */; };
-		BF20AA0718A10D0E00863F6A /* icon-152x152.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20A9F918A10D0E00863F6A /* icon-152x152.png */; };
-		BF20AA0818A10D0E00863F6A /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20A9FA18A10D0E00863F6A /* Icon-72.png */; };
-		BF20AA0918A10D0E00863F6A /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20A9FB18A10D0E00863F6A /* Icon-72@2x.png */; };
-		BF20AA0A18A10D0E00863F6A /* icon-76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20A9FC18A10D0E00863F6A /* icon-76x76.png */; };
-		BF20AA0B18A10D0E00863F6A /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20A9FD18A10D0E00863F6A /* Icon-Small-50.png */; };
-		BF20AA0C18A10D0E00863F6A /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20A9FE18A10D0E00863F6A /* Icon-Small-50@2x.png */; };
-		BF20AA0D18A10D0E00863F6A /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20A9FF18A10D0E00863F6A /* Icon-Small.png */; };
-		BF20AA0E18A10D0E00863F6A /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20AA0018A10D0E00863F6A /* Icon-Small@2x.png */; };
-		BF20AA0F18A10D0E00863F6A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20AA0118A10D0E00863F6A /* Icon.png */; };
-		BF20AA1018A10D0E00863F6A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20AA0218A10D0E00863F6A /* Icon@2x.png */; };
-		BF20AA1118A10D0E00863F6A /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20AA0318A10D0E00863F6A /* iTunesArtwork.png */; };
-		BF20AA1218A10D0E00863F6A /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF20AA0418A10D0E00863F6A /* iTunesArtwork@2x.png */; };
+		BF20A9EF18A10ACB00863F6A /* AppTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF20A9EE18A10ACB00863F6A /* AppTableViewController.m */; };
 		BF20AA1918A122FF00863F6A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF20AA1818A122FF00863F6A /* Security.framework */; };
 		BF20AA1B18A1230300863F6A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF20AA1A18A1230300863F6A /* StoreKit.framework */; };
 		BF20AA1D18A1231700863F6A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF20AA1C18A1231700863F6A /* AdSupport.framework */; };
@@ -36,8 +21,15 @@
 		BF20AA3218A18BA400863F6A /* ExampleExtendedSashimiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF20AA2F18A18BA400863F6A /* ExampleExtendedSashimiTableViewCell.m */; };
 		BF20AA3318A18BA400863F6A /* ExampleExtendedSashimiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF20AA3118A18BA400863F6A /* ExampleExtendedSashimiTableViewController.m */; };
 		BF20AA4218A1ACB800863F6A /* ExampleCustomSashimiView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF20AA3F18A1ACB800863F6A /* ExampleCustomSashimiView.m */; };
+		BF2C5DFF1954848E00594C38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2C5DFE1954848E00594C38 /* Images.xcassets */; };
+		BF2C5E021954857700594C38 /* AppNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C5E011954857700594C38 /* AppNavigationController.m */; };
+		BF2C5E421954991200594C38 /* libAppsfireSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2C5E3B1954991200594C38 /* libAppsfireSDK.a */; };
 		BF863DA118A1AEA100FA4C36 /* ExampleCustomSashimiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF20AA3D18A1ACB800863F6A /* ExampleCustomSashimiTableViewController.m */; };
 		BF863DA218A1AEA100FA4C36 /* ExampleCustomSashimiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF20AA3B18A1ACB800863F6A /* ExampleCustomSashimiTableViewCell.m */; };
+		BFF8C6211951BDED00A3CA04 /* ExampleCustomSashimiWithXIBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF8C6201951BDED00A3CA04 /* ExampleCustomSashimiWithXIBTableViewController.m */; };
+		BFF8C6241951BFA900A3CA04 /* ExampleCustomSashimiWithXIBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF8C6231951BFA900A3CA04 /* ExampleCustomSashimiWithXIBTableViewCell.m */; };
+		BFF8C6271951C02600A3CA04 /* ExampleCustomSashimiWithXIBView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF8C6261951C02600A3CA04 /* ExampleCustomSashimiWithXIBView.m */; };
+		BFF8C62A1951ECBC00A3CA04 /* ExampleCustomSashimiView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFF8C6281951C53700A3CA04 /* ExampleCustomSashimiView.xib */; };
 		BFFD8E4A18A1013A00371EB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFD8E4918A1013A00371EB0 /* Foundation.framework */; };
 		BFFD8E4C18A1013A00371EB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFD8E4B18A1013A00371EB0 /* CoreGraphics.framework */; };
 		BFFD8E4E18A1013A00371EB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFD8E4D18A1013A00371EB0 /* UIKit.framework */; };
@@ -46,35 +38,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7B6B1B75190E897B00549386 /* ExampleUdonNoodleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleUdonNoodleTableViewController.h; path = Classes/ExampleUdonNoodleTableViewController.h; sourceTree = "<group>"; };
-		7B6B1B76190E897B00549386 /* ExampleUdonNoodleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleUdonNoodleTableViewController.m; path = Classes/ExampleUdonNoodleTableViewController.m; sourceTree = "<group>"; };
-		7B6B1B78190E898800549386 /* AFAdSDKUdonNoodleControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFAdSDKUdonNoodleControl.h; sourceTree = "<group>"; };
+		7BE61D4518FBEDAA0097937A /* ExampleUdonNoodleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleUdonNoodleTableViewController.h; path = Classes/ExampleUdonNoodleTableViewController.h; sourceTree = "<group>"; };
+		7BE61D4618FBEDAA0097937A /* ExampleUdonNoodleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleUdonNoodleTableViewController.m; path = Classes/ExampleUdonNoodleTableViewController.m; sourceTree = "<group>"; };
 		BF20A9E718A10A9600863F6A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		BF20A9E818A10A9600863F6A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
-		BF20A9ED18A10ACB00863F6A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
-		BF20A9EE18A10ACB00863F6A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
-		BF20A9F118A10BA400863F6A /* AppsfireAdSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsfireAdSDK.h; sourceTree = "<group>"; };
-		BF20A9F218A10BA400863F6A /* AppsfireSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsfireSDK.h; sourceTree = "<group>"; };
-		BF20A9F318A10BA400863F6A /* AppsfireSDKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsfireSDKConstants.h; sourceTree = "<group>"; };
-		BF20A9F418A10BA400863F6A /* libAppsfireSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppsfireSDK.a; sourceTree = "<group>"; };
-		BF20A9F718A10D0E00863F6A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		BF20A9F818A10D0E00863F6A /* icon-120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-120x120.png"; sourceTree = "<group>"; };
-		BF20A9F918A10D0E00863F6A /* icon-152x152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-152x152.png"; sourceTree = "<group>"; };
-		BF20A9FA18A10D0E00863F6A /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
-		BF20A9FB18A10D0E00863F6A /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
-		BF20A9FC18A10D0E00863F6A /* icon-76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76x76.png"; sourceTree = "<group>"; };
-		BF20A9FD18A10D0E00863F6A /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
-		BF20A9FE18A10D0E00863F6A /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
-		BF20A9FF18A10D0E00863F6A /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
-		BF20AA0018A10D0E00863F6A /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
-		BF20AA0118A10D0E00863F6A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		BF20AA0218A10D0E00863F6A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		BF20AA0318A10D0E00863F6A /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
-		BF20AA0418A10D0E00863F6A /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
-		BF20AA1418A1203200863F6A /* AFAdSDKAdBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKAdBadgeView.h; sourceTree = "<group>"; };
-		BF20AA1518A1203200863F6A /* AFAdSDKSashimiExtendedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiExtendedView.h; sourceTree = "<group>"; };
-		BF20AA1618A1203200863F6A /* AFAdSDKSashimiMinimalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiMinimalView.h; sourceTree = "<group>"; };
-		BF20AA1718A1203200863F6A /* AFAdSDKSashimiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiView.h; sourceTree = "<group>"; };
+		BF20A9ED18A10ACB00863F6A /* AppTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppTableViewController.h; path = Classes/AppTableViewController.h; sourceTree = "<group>"; };
+		BF20A9EE18A10ACB00863F6A /* AppTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppTableViewController.m; path = Classes/AppTableViewController.m; sourceTree = "<group>"; };
 		BF20AA1818A122FF00863F6A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BF20AA1A18A1230300863F6A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		BF20AA1C18A1231700863F6A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -95,6 +64,26 @@
 		BF20AA3D18A1ACB800863F6A /* ExampleCustomSashimiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleCustomSashimiTableViewController.m; path = Classes/ExampleCustomSashimiTableViewController.m; sourceTree = "<group>"; };
 		BF20AA3E18A1ACB800863F6A /* ExampleCustomSashimiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleCustomSashimiView.h; path = Classes/ExampleCustomSashimiView.h; sourceTree = "<group>"; };
 		BF20AA3F18A1ACB800863F6A /* ExampleCustomSashimiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleCustomSashimiView.m; path = Classes/ExampleCustomSashimiView.m; sourceTree = "<group>"; };
+		BF2C5DFE1954848E00594C38 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BF2C5E001954857700594C38 /* AppNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppNavigationController.h; path = Classes/AppNavigationController.h; sourceTree = "<group>"; };
+		BF2C5E011954857700594C38 /* AppNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppNavigationController.m; path = Classes/AppNavigationController.m; sourceTree = "<group>"; };
+		BF2C5E371954991200594C38 /* AppsfireAdSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsfireAdSDK.h; sourceTree = "<group>"; };
+		BF2C5E381954991200594C38 /* AppsfireEngageSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsfireEngageSDK.h; sourceTree = "<group>"; };
+		BF2C5E391954991200594C38 /* AppsfireSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsfireSDK.h; sourceTree = "<group>"; };
+		BF2C5E3A1954991200594C38 /* AppsfireSDKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsfireSDKConstants.h; sourceTree = "<group>"; };
+		BF2C5E3B1954991200594C38 /* libAppsfireSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppsfireSDK.a; sourceTree = "<group>"; };
+		BF2C5E3D1954991200594C38 /* AFAdSDKAdBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKAdBadgeView.h; sourceTree = "<group>"; };
+		BF2C5E3E1954991200594C38 /* AFAdSDKSashimiExtendedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiExtendedView.h; sourceTree = "<group>"; };
+		BF2C5E3F1954991200594C38 /* AFAdSDKSashimiMinimalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiMinimalView.h; sourceTree = "<group>"; };
+		BF2C5E401954991200594C38 /* AFAdSDKSashimiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiView.h; sourceTree = "<group>"; };
+		BF2C5E411954991200594C38 /* AFAdSDKUdonNoodleControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKUdonNoodleControl.h; sourceTree = "<group>"; };
+		BFF8C61F1951BDED00A3CA04 /* ExampleCustomSashimiWithXIBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleCustomSashimiWithXIBTableViewController.h; path = Classes/ExampleCustomSashimiWithXIBTableViewController.h; sourceTree = "<group>"; };
+		BFF8C6201951BDED00A3CA04 /* ExampleCustomSashimiWithXIBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleCustomSashimiWithXIBTableViewController.m; path = Classes/ExampleCustomSashimiWithXIBTableViewController.m; sourceTree = "<group>"; };
+		BFF8C6221951BFA900A3CA04 /* ExampleCustomSashimiWithXIBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleCustomSashimiWithXIBTableViewCell.h; path = Classes/ExampleCustomSashimiWithXIBTableViewCell.h; sourceTree = "<group>"; };
+		BFF8C6231951BFA900A3CA04 /* ExampleCustomSashimiWithXIBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleCustomSashimiWithXIBTableViewCell.m; path = Classes/ExampleCustomSashimiWithXIBTableViewCell.m; sourceTree = "<group>"; };
+		BFF8C6251951C02600A3CA04 /* ExampleCustomSashimiWithXIBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleCustomSashimiWithXIBView.h; path = Classes/ExampleCustomSashimiWithXIBView.h; sourceTree = "<group>"; };
+		BFF8C6261951C02600A3CA04 /* ExampleCustomSashimiWithXIBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleCustomSashimiWithXIBView.m; path = Classes/ExampleCustomSashimiWithXIBView.m; sourceTree = "<group>"; };
+		BFF8C6281951C53700A3CA04 /* ExampleCustomSashimiView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ExampleCustomSashimiView.xib; path = Classes/ExampleCustomSashimiView.xib; sourceTree = "<group>"; };
 		BFFD8E4618A1013A00371EB0 /* AppsfireSDK-Example-Sashimi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppsfireSDK-Example-Sashimi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFD8E4918A1013A00371EB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BFFD8E4B18A1013A00371EB0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -114,11 +103,11 @@
 				BF20AA2118A1232800863F6A /* QuartzCore.framework in Frameworks */,
 				BF20AA1F18A1231D00863F6A /* Accelerate.framework in Frameworks */,
 				BF20AA1D18A1231700863F6A /* AdSupport.framework in Frameworks */,
+				BF2C5E421954991200594C38 /* libAppsfireSDK.a in Frameworks */,
 				BF20AA1B18A1230300863F6A /* StoreKit.framework in Frameworks */,
 				BF20AA1918A122FF00863F6A /* Security.framework in Frameworks */,
 				BFFD8E4C18A1013A00371EB0 /* CoreGraphics.framework in Frameworks */,
 				BFFD8E4E18A1013A00371EB0 /* UIKit.framework in Frameworks */,
-				BF20A9F518A10BA400863F6A /* libAppsfireSDK.a in Frameworks */,
 				BFFD8E4A18A1013A00371EB0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,59 +115,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7BE61D4F18FC08590097937A /* Udon Noodle */ = {
+		7BE61D4418FBED9B0097937A /* Udon Noodle */ = {
 			isa = PBXGroup;
 			children = (
-				7B6B1B75190E897B00549386 /* ExampleUdonNoodleTableViewController.h */,
-				7B6B1B76190E897B00549386 /* ExampleUdonNoodleTableViewController.m */,
+				7BE61D4518FBEDAA0097937A /* ExampleUdonNoodleTableViewController.h */,
+				7BE61D4618FBEDAA0097937A /* ExampleUdonNoodleTableViewController.m */,
 			);
 			name = "Udon Noodle";
-			sourceTree = "<group>";
-		};
-		BF20A9F018A10BA400863F6A /* AppsfireSDK */ = {
-			isa = PBXGroup;
-			children = (
-				BF20A9F118A10BA400863F6A /* AppsfireAdSDK.h */,
-				BF20A9F218A10BA400863F6A /* AppsfireSDK.h */,
-				BF20A9F318A10BA400863F6A /* AppsfireSDKConstants.h */,
-				BF20A9F418A10BA400863F6A /* libAppsfireSDK.a */,
-				BF20AA1318A1203200863F6A /* sashimi */,
-			);
-			name = AppsfireSDK;
-			path = "Classes/appsfire-sdk";
-			sourceTree = "<group>";
-		};
-		BF20A9F618A10D0E00863F6A /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				BF20A9F718A10D0E00863F6A /* Default-568h@2x.png */,
-				BF20A9F818A10D0E00863F6A /* icon-120x120.png */,
-				BF20A9F918A10D0E00863F6A /* icon-152x152.png */,
-				BF20A9FA18A10D0E00863F6A /* Icon-72.png */,
-				BF20A9FB18A10D0E00863F6A /* Icon-72@2x.png */,
-				BF20A9FC18A10D0E00863F6A /* icon-76x76.png */,
-				BF20A9FD18A10D0E00863F6A /* Icon-Small-50.png */,
-				BF20A9FE18A10D0E00863F6A /* Icon-Small-50@2x.png */,
-				BF20A9FF18A10D0E00863F6A /* Icon-Small.png */,
-				BF20AA0018A10D0E00863F6A /* Icon-Small@2x.png */,
-				BF20AA0118A10D0E00863F6A /* Icon.png */,
-				BF20AA0218A10D0E00863F6A /* Icon@2x.png */,
-				BF20AA0318A10D0E00863F6A /* iTunesArtwork.png */,
-				BF20AA0418A10D0E00863F6A /* iTunesArtwork@2x.png */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
-		BF20AA1318A1203200863F6A /* sashimi */ = {
-			isa = PBXGroup;
-			children = (
-				BF20AA1418A1203200863F6A /* AFAdSDKAdBadgeView.h */,
-				BF20AA1518A1203200863F6A /* AFAdSDKSashimiExtendedView.h */,
-				BF20AA1618A1203200863F6A /* AFAdSDKSashimiMinimalView.h */,
-				BF20AA1718A1203200863F6A /* AFAdSDKSashimiView.h */,
-				7B6B1B78190E898800549386 /* AFAdSDKUdonNoodleControl.h */,
-			);
-			path = sashimi;
 			sourceTree = "<group>";
 		};
 		BF20AA2418A13D2100863F6A /* Sashimi Examples */ = {
@@ -187,7 +130,8 @@
 				BF20AA2518A13D2E00863F6A /* Minimal */,
 				BF20AA2C18A163C800863F6A /* Extended */,
 				BF20AA2D18A166FA00863F6A /* Custom */,
-				7BE61D4F18FC08590097937A /* Udon Noodle */,
+				BFF8C61E1951BC2F00A3CA04 /* Custom (XIB) */,
+				7BE61D4418FBED9B0097937A /* Udon Noodle */,
 			);
 			name = "Sashimi Examples";
 			sourceTree = "<group>";
@@ -227,10 +171,51 @@
 			name = Custom;
 			sourceTree = "<group>";
 		};
+		BF2C5E361954991200594C38 /* Appsfire-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				BF2C5E371954991200594C38 /* AppsfireAdSDK.h */,
+				BF2C5E381954991200594C38 /* AppsfireEngageSDK.h */,
+				BF2C5E391954991200594C38 /* AppsfireSDK.h */,
+				BF2C5E3A1954991200594C38 /* AppsfireSDKConstants.h */,
+				BF2C5E3B1954991200594C38 /* libAppsfireSDK.a */,
+				BF2C5E3C1954991200594C38 /* sashimi */,
+			);
+			name = "Appsfire-sdk";
+			path = "../appsfire-sdk";
+			sourceTree = "<group>";
+		};
+		BF2C5E3C1954991200594C38 /* sashimi */ = {
+			isa = PBXGroup;
+			children = (
+				BF2C5E3D1954991200594C38 /* AFAdSDKAdBadgeView.h */,
+				BF2C5E3E1954991200594C38 /* AFAdSDKSashimiExtendedView.h */,
+				BF2C5E3F1954991200594C38 /* AFAdSDKSashimiMinimalView.h */,
+				BF2C5E401954991200594C38 /* AFAdSDKSashimiView.h */,
+				BF2C5E411954991200594C38 /* AFAdSDKUdonNoodleControl.h */,
+			);
+			path = sashimi;
+			sourceTree = "<group>";
+		};
+		BFF8C61E1951BC2F00A3CA04 /* Custom (XIB) */ = {
+			isa = PBXGroup;
+			children = (
+				BFF8C61F1951BDED00A3CA04 /* ExampleCustomSashimiWithXIBTableViewController.h */,
+				BFF8C6201951BDED00A3CA04 /* ExampleCustomSashimiWithXIBTableViewController.m */,
+				BFF8C6221951BFA900A3CA04 /* ExampleCustomSashimiWithXIBTableViewCell.h */,
+				BFF8C6231951BFA900A3CA04 /* ExampleCustomSashimiWithXIBTableViewCell.m */,
+				BFF8C6251951C02600A3CA04 /* ExampleCustomSashimiWithXIBView.h */,
+				BFF8C6261951C02600A3CA04 /* ExampleCustomSashimiWithXIBView.m */,
+				BFF8C6281951C53700A3CA04 /* ExampleCustomSashimiView.xib */,
+			);
+			name = "Custom (XIB)";
+			sourceTree = "<group>";
+		};
 		BFFD8E3D18A1013A00371EB0 = {
 			isa = PBXGroup;
 			children = (
-				BFFD8E4F18A1013A00371EB0 /* AppsfireSDK-Example-Sashimi */,
+				BF2C5E361954991200594C38 /* Appsfire-sdk */,
+				BFFD8E4F18A1013A00371EB0 /* AppsfireSDK Example Sashimi */,
 				BFFD8E4818A1013A00371EB0 /* Frameworks */,
 				BFFD8E4718A1013A00371EB0 /* Products */,
 			);
@@ -247,31 +232,33 @@
 		BFFD8E4818A1013A00371EB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BF20AA2218A1233200863F6A /* SystemConfiguration.framework */,
-				BF20AA2018A1232800863F6A /* QuartzCore.framework */,
 				BF20AA1E18A1231D00863F6A /* Accelerate.framework */,
 				BF20AA1C18A1231700863F6A /* AdSupport.framework */,
-				BF20AA1A18A1230300863F6A /* StoreKit.framework */,
-				BF20AA1818A122FF00863F6A /* Security.framework */,
-				BFFD8E4918A1013A00371EB0 /* Foundation.framework */,
 				BFFD8E4B18A1013A00371EB0 /* CoreGraphics.framework */,
+				BFFD8E4918A1013A00371EB0 /* Foundation.framework */,
+				BF20AA2018A1232800863F6A /* QuartzCore.framework */,
+				BF20AA1818A122FF00863F6A /* Security.framework */,
+				BF20AA1A18A1230300863F6A /* StoreKit.framework */,
+				BF20AA2218A1233200863F6A /* SystemConfiguration.framework */,
 				BFFD8E4D18A1013A00371EB0 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BFFD8E4F18A1013A00371EB0 /* AppsfireSDK-Example-Sashimi */ = {
+		BFFD8E4F18A1013A00371EB0 /* AppsfireSDK Example Sashimi */ = {
 			isa = PBXGroup;
 			children = (
 				BF20A9E718A10A9600863F6A /* AppDelegate.h */,
 				BF20A9E818A10A9600863F6A /* AppDelegate.m */,
-				BF20A9ED18A10ACB00863F6A /* MainViewController.h */,
-				BF20A9EE18A10ACB00863F6A /* MainViewController.m */,
+				BF2C5E001954857700594C38 /* AppNavigationController.h */,
+				BF2C5E011954857700594C38 /* AppNavigationController.m */,
+				BF20A9ED18A10ACB00863F6A /* AppTableViewController.h */,
+				BF20A9EE18A10ACB00863F6A /* AppTableViewController.m */,
 				BF20AA2418A13D2100863F6A /* Sashimi Examples */,
-				BF20A9F018A10BA400863F6A /* AppsfireSDK */,
-				BF20A9F618A10D0E00863F6A /* Images */,
 				BFFD8E5018A1013A00371EB0 /* Supporting Files */,
+				BF2C5DFE1954848E00594C38 /* Images.xcassets */,
 			);
+			name = "AppsfireSDK Example Sashimi";
 			path = "AppsfireSDK-Example-Sashimi";
 			sourceTree = "<group>";
 		};
@@ -338,21 +325,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF20AA0F18A10D0E00863F6A /* Icon.png in Resources */,
-				BF20AA1218A10D0E00863F6A /* iTunesArtwork@2x.png in Resources */,
-				BF20AA1018A10D0E00863F6A /* Icon@2x.png in Resources */,
-				BF20AA0C18A10D0E00863F6A /* Icon-Small-50@2x.png in Resources */,
 				BFFD8E5418A1013A00371EB0 /* InfoPlist.strings in Resources */,
-				BF20AA0A18A10D0E00863F6A /* icon-76x76.png in Resources */,
-				BF20AA0818A10D0E00863F6A /* Icon-72.png in Resources */,
-				BF20AA0918A10D0E00863F6A /* Icon-72@2x.png in Resources */,
-				BF20AA0718A10D0E00863F6A /* icon-152x152.png in Resources */,
-				BF20AA0B18A10D0E00863F6A /* Icon-Small-50.png in Resources */,
-				BF20AA0518A10D0E00863F6A /* Default-568h@2x.png in Resources */,
-				BF20AA1118A10D0E00863F6A /* iTunesArtwork.png in Resources */,
-				BF20AA0D18A10D0E00863F6A /* Icon-Small.png in Resources */,
-				BF20AA0618A10D0E00863F6A /* icon-120x120.png in Resources */,
-				BF20AA0E18A10D0E00863F6A /* Icon-Small@2x.png in Resources */,
+				BF2C5DFF1954848E00594C38 /* Images.xcassets in Resources */,
+				BFF8C62A1951ECBC00A3CA04 /* ExampleCustomSashimiView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,11 +340,15 @@
 			files = (
 				BF863DA118A1AEA100FA4C36 /* ExampleCustomSashimiTableViewController.m in Sources */,
 				BF863DA218A1AEA100FA4C36 /* ExampleCustomSashimiTableViewCell.m in Sources */,
-				BF20A9EF18A10ACB00863F6A /* MainViewController.m in Sources */,
-				7B6B1B77190E897B00549386 /* ExampleUdonNoodleTableViewController.m in Sources */,
+				BFF8C6211951BDED00A3CA04 /* ExampleCustomSashimiWithXIBTableViewController.m in Sources */,
+				BFF8C6271951C02600A3CA04 /* ExampleCustomSashimiWithXIBView.m in Sources */,
+				BF20A9EF18A10ACB00863F6A /* AppTableViewController.m in Sources */,
+				7BE61D4718FBEDAA0097937A /* ExampleUdonNoodleTableViewController.m in Sources */,
+				BFF8C6241951BFA900A3CA04 /* ExampleCustomSashimiWithXIBTableViewCell.m in Sources */,
 				BF20AA3318A18BA400863F6A /* ExampleExtendedSashimiTableViewController.m in Sources */,
 				BF20AA2818A13D6200863F6A /* ExampleMinimalSashimiTableViewController.m in Sources */,
 				BF20AA2B18A147C500863F6A /* ExampleMinimalSashimiTableViewCell.m in Sources */,
+				BF2C5E021954857700594C38 /* AppNavigationController.m in Sources */,
 				BF20A9EB18A10A9600863F6A /* AppDelegate.m in Sources */,
 				BF20AA3218A18BA400863F6A /* ExampleExtendedSashimiTableViewCell.m in Sources */,
 				BFFD8E5618A1013A00371EB0 /* main.m in Sources */,
@@ -423,7 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -473,10 +452,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppsfireSDK-Example-Sashimi/AppsfireSDK-Example-Sashimi-Prefix.pch";
 				INFOPLIST_FILE = "AppsfireSDK-Example-Sashimi/AppsfireSDK-Example-Sashimi-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/AppsfireSDK-Example-Sashimi/Classes/appsfire-sdk",
+					"$(SRCROOT)/../appsfire-sdk",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -491,10 +470,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppsfireSDK-Example-Sashimi/AppsfireSDK-Example-Sashimi-Prefix.pch";
 				INFOPLIST_FILE = "AppsfireSDK-Example-Sashimi/AppsfireSDK-Example-Sashimi-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/AppsfireSDK-Example-Sashimi/Classes/appsfire-sdk",
+					"$(SRCROOT)/../appsfire-sdk",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@class MainViewController;
+@class AppNavigationController;
+@class AppTableViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) UINavigationController *navigationController;
-@property (strong, nonatomic) MainViewController *tableViewController;
+@property (strong, nonatomic) AppNavigationController *navigationController;
+@property (strong, nonatomic) AppTableViewController *tableViewController;
 
 @end
