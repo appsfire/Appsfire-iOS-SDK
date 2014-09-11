@@ -1,7 +1,7 @@
 /*!
  *  @header    AppsfireAdSDK.h
  *  @abstract  Appsfire Advertising SDK Header
- *  @version   2.4.0
+ *  @version   2.4.1
  */
 
 #import <UIKit/UIViewController.h>
@@ -201,17 +201,6 @@
  */
 + (BOOL)areAdsLoaded;
 
-
-/** @name Deprecated Methods
- *  Methods which are about to be removed from the SDK.
- */
-
-+ (void)prepare __deprecated_msg("We'll automatically take care of 'preparing' the monetization sdk once the sdk is initialized.");
-
-+ (BOOL)isInitialized __deprecated_msg("We merged the engage and the monetization `isInitialized` methods into one. Please use `isInitialized` of AppsfireSDK instead.");
-
-+ (void)requestModalAd:(AFAdSDKModalType)modalType withController:(UIViewController *)controller __deprecated_msg("We updated the method and added a third parameter. Please use `+requestModalAd:withController:withDelegate:` instead.");
-
 @end
 
 
@@ -261,21 +250,6 @@
  *  @note You could decide to act differently knowing that there is currently no ad to display.
  */
 - (void)sashimiAdsRefreshedAndNotAvailable;
-
-
-/** @name Deprecated Methods
- *  Methods which are about to be removed from the SDK.
- */
-
-- (void)adUnitDidInitialize __deprecated_msg("You should now listen to `kAFSDKIsInitialized` notification.");
-- (void)modalAdIsReadyForRequest __deprecated_msg("You can now listen to un/successful retrieval via `modalAdsRefreshedAndAvailable` and `modalAdsRefreshedAndNotAvailable` methods. Note that the method will still be called in 2.4.");
-- (void)sashimiAdsWereReceived __deprecated_msg("You can now listen to un/successful retrieval via `sashimiAdsRefreshedAndAvailable` and `sashimiAdsRefreshedAndNotAvailable` methods. Note that the method will still be called in 2.4.");
-- (BOOL)shouldDisplayModalAd __deprecated_msg("We're moving this method to a proper delegate called `AFAdSDKModalDelegate`. Note that the method will still be called in 2.4 if you are not using the new protocol.");
-- (void)modalAdRequestDidFailWithError:(NSError *)error __deprecated_msg("We're moving this method to a proper delegate called `AFAdSDKModalDelegate`. Note that the method will still be called in 2.4 if you are not using the new protocol.");
-- (void)modalAdWillAppear __deprecated_msg("We're moving this method to a proper delegate called `AFAdSDKModalDelegate`. Note that the method will still be called in 2.4 if you are not using the new protocol.");
-- (void)modalAdDidAppear __deprecated_msg("We're moving this method to a proper delegate called `AFAdSDKModalDelegate`. Note that the method will still be called in 2.4 if you are not using the new protocol.");
-- (void)modalAdWillDisappear __deprecated_msg("We're moving this method to a proper delegate called `AFAdSDKModalDelegate`. Note that the method will still be called in 2.4 if you are not using the new protocol.");
-- (void)modalAdDidDisappear __deprecated_msg("We're moving this method to a proper delegate called `AFAdSDKModalDelegate`. Note that the method will still be called in 2.4 if you are not using the new protocol.");
 
 @end
 

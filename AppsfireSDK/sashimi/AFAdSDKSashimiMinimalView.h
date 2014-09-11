@@ -1,7 +1,7 @@
 /*!
  *  @header    AFAdSDKSashimiMinimalView.h
  *  @abstract  Appsfire Advertising SDK Sashimi Minimal View Header
- *  @version   2.4.0
+ *  @version   2.4.1
  */
 
 #import "AFAdSDKSashimiView.h"
@@ -89,19 +89,5 @@ typedef NS_ENUM(NSUInteger, AFAdSDKSashimiMinimalStyleMode) {
  * @since 2.2.0
  */
 @property (nonatomic, strong, readwrite) UILabel *taglineLabel;
-
-/*!
- * Color of the border around the app icon in `AFAdSDKSashimiMinimalStyleModeLight` style mode.
- *
- * @since 2.2.0
- */
-@property (nonatomic, strong, readwrite) UIColor *lightIconBorderColor __deprecated_msg("Use iconBorderColor instead.");
-
-/*!
- * Color of the border around the app icon in `AFAdSDKSashimiMinimalStyleModeDark` style mode.
- *
- * @since 2.2.0
- */
-@property (nonatomic, strong, readwrite) UIColor *darkIconBorderColor __deprecated_msg("Use iconBorderColor instead.");
 
 @end

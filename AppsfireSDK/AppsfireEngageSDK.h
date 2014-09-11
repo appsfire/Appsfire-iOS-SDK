@@ -1,7 +1,7 @@
 /*!
  *  @header    AppsfireEngageSDK.h
  *  @abstract  Appsfire Engage SDK Header
- *  @version   2.4.0
+ *  @version   2.4.1
  */
 
 #import <UIKit/UIViewController.h>
@@ -179,17 +179,6 @@
  *  If SDK isn't initialized, this number will be 0.
  */
 + (NSUInteger)numberOfPendingNotifications;
-
-
-/** @name Deprecated Methods
- *  Methods which are about to be removed from the SDK.
- */
-
-+ (NSString *)getSessionID __deprecated_msg("We plan to remove this method in a future release. If you still find an interest in using it, please contact us!");
-
-+ (void)pause __deprecated_msg("We plan to remove this method in a future release. If you still find an interest in using it, please contact us!");
-
-+ (void)resume __deprecated_msg("We plan to remove this method in a future release. If you still find an interest in using it, please contact us!");
 
 @end
 

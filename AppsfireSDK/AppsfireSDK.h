@@ -1,7 +1,7 @@
 /*!
  *  @header    AppsfireSDK.h
  *  @abstract  Appsfire iOS SDK Header
- *  @version   2.4.0
+ *  @version   2.4.1
  */
 
 #import <UIKit/UIViewController.h>
@@ -32,7 +32,7 @@
 /*!
  *  @brief Tells you if the SDK is initialized.
  *
- *  @note Once the SDK is initialized, you can present the notifications or the feedback.
+ *  @note The SDK initialization is not synchronous. Thus, don't except this method to return `YES` just after you called `connectWithSDKToken:features:parameters:`. If you need to be alerted once the SDK is initialized, please refer to the notification `kAFSDKIsInitialized`.
  *
  *  @return `YES` if the sdk is initialized, `NO` if not.
  */
@@ -44,18 +44,5 @@
  *  @return Return a string with SDK version and build number.
  */
 + (NSString *)versionDescription;
-
-
-/** @name Deprecated Methods
- *  Methods which are about to be removed from the SDK.
- */
-
-+ (BOOL)connectWithAPIKey:(NSString *)key __deprecated_msg("We updated our initialization method! We strongly advise you to stop using this method. Please check `+connectWithSDKToken:features:parameters:` instead.");
-
-+ (BOOL)connectWithAPIKey:(NSString *)key afterDelay:(NSTimeInterval)delay __deprecated_msg("We updated our initialization method! We strongly advise you to stop using this method. Please check `+connectWithSDKToken:features:parameters:` instead.");
-
-+ (void)resetCache __deprecated_msg("We plan to remove this method in a future release. If you still find an interest in using it, please contact us!");
-
-+ (NSString *)getAFSDKVersionInfo __deprecated_msg("We renamed the method. Please use `+versionDescription` instead.");
 
 @end

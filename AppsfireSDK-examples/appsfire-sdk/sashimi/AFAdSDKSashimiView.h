@@ -1,7 +1,7 @@
 /*!
  *  @header    AFAdSDKSashimiView.h
  *  @abstract  Appsfire Advertising SDK Sashimi Header
- *  @version   2.4.0
+ *  @version   2.4.1
  */
 
 #import <UIKit/UIView.h>

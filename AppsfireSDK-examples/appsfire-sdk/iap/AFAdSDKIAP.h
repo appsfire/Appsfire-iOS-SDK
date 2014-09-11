@@ -1,7 +1,7 @@
 /*!
  *  @header    AFAdSDKIAP.h
  *  @abstract  Appsfire In-App Purchase Ad Removal Prompt.
- *  @version   2.4.0
+ *  @version   2.4.1
  */
 
 #import <Foundation/NSObject.h>
@@ -34,7 +34,7 @@
 /*!
  * Debug mode setter.
  *
- * @param Setting the debug mode to `YES` ignores the day and count properties and will always show
+ * @param use Setting the debug mode to `YES` ignores the day and count properties and will always show
  * the alert view.
  *
  * @since 2.4.0

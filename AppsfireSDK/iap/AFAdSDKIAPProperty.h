@@ -1,7 +1,7 @@
 /*!
  *  @header    AFAdSDKIAPProperty.h
  *  @abstract  Appsfire In-App Purchase Ad Removal Prompte property class.
- *  @version   2.4.0
+ *  @version   2.4.1
  */
 
 #import <Foundation/NSObject.h>
@@ -66,7 +66,7 @@
  * dismissCountUntilFirstPromptUdonNoodle is also reached.
  *
  * @see dismissCountUntilFirstPromptModal
- * @see dismissCountUntilFirstPromptSashimi
+ * @see displayCountUntilFirstPromptSashimi
  * @see dismissCountUntilFirstPromptUdonNoodle
  *
  * @since 2.4.0

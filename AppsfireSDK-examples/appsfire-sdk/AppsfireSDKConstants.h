@@ -1,7 +1,7 @@
 /*!
  *  @header    AppsfireSDKConstants.h
  *  @abstract  Appsfire SDK Constants Header
- *  @version   2.4.0
+ *  @version   2.4.1
  */
 
 #import <Foundation/NSObject.h>
@@ -35,36 +35,6 @@ extern NSString* const kAFSDKPanelWasPresented;
 
 /** panel (for notifications or feedback) was dismissed */
 extern NSString* const kAFSDKPanelWasDismissed;
-
-/** dictionary (localized strings) is updated */
-extern NSString* const kAFSDKDictionaryUpdated __deprecated_msg("We plan to remove this notification in a future release. If you still find an interest in using it, please contact us!");
-
-
-/*!
- *  @brief Predefined acceptable sizes of the banner.
- *  @since 2.4
- */
-
-/** iPhone portrait banner size of 320pt x 50pt */
-extern CGSize const kAFAdSDKBannerSize320x50;
-
-/** iPhone landscape banner size of 480pt x 32pt */
-extern CGSize const kAFAdSDKBannerSize480x32;
-
-
-/*!
- *  @brief Predefined acceptable heights of the banner in full width case.
- *  @since 2.4
- */
-
-/** iPhone portrait banner height of 50pt */
-extern CGFloat const kAFAdSDKBannerHeight50;
-
-/** iPhone landscape banner height of 32pt */
-extern CGFloat const kAFAdSDKBannerHeight32;
-
-/** iPad portrait and landscape banner height of 66pt */
-extern CGFloat const kAFAdSDKBannerHeight66;
 
 
 /*!
