@@ -10,6 +10,6 @@
 
 @interface ExampleCustomSashimiWithXIBTableViewController : UITableViewController
 
-- (void)tryIncludingSashimiAds;
+- (void)tryToIncludeAds;
 
 @end

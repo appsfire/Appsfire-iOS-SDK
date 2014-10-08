@@ -1,7 +1,7 @@
 /*!
  *  @header    AFAdSDKSashimiMinimalView.h
  *  @abstract  Appsfire Advertising SDK Sashimi Minimal View Header
- *  @version   2.4.1
+ *  @version   2.5.0
  */
 
 #import "AFAdSDKSashimiView.h"

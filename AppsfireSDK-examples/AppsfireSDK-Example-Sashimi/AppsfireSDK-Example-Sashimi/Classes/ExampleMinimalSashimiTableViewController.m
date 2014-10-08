@@ -12,12 +12,12 @@
 // views
 #import "ExampleMinimalSashimiTableViewCell.h"
 
-@interface ExampleMinimalSashimiTableViewController () {
-    
-    BOOL _didIncludeSashimi;
-    NSMutableArray *_arraySource;
-    
-}
+@interface ExampleMinimalSashimiTableViewController ()
+
+@property (nonatomic, assign) BOOL didIncludeSashimi;
+
+@property (nonatomic, strong) NSMutableArray *arraySource;
+
 - (BOOL)_includeSashimiIfAvailable;
 
 @end
@@ -35,18 +35,10 @@
         self.tableView.rowHeight = 100.0;
         
         //
-        _arraySource = [NSMutableArray array];
-        
-        // fill array with dummy inserts for test purpose
-        [_arraySource addObject:@{@"title": @"Lorem ipsum dolor sit amet, consectetur adipiscing elit.", @"content": @"Sed lacinia dui at dui euismod, posuere ultricies massa mollis. Donec id orci quis dui lobortis scelerisque."}];
-        [_arraySource addObject:@{@"title": @"Aliquam sollicitudin turpis quis enim iaculis eleifend non a dolor.", @"content": @"Cras accumsan erat ac nunc suscipit, id venenatis libero rhoncus. Aliquam egestas tortor sed purus porttitor laoreet."}];
-        [_arraySource addObject:@{@"title": @"Praesent tristique dolor vehicula mi porttitor dictum quis id sem.", @"content": @"Nam vitae sem id sem ullamcorper pretium. Cras consectetur lectus sed diam egestas sodales."}];
-        [_arraySource addObject:@{@"title": @"Nullam bibendum ligula ac purus imperdiet sodales.", @"content": @"Morbi eu justo a lorem blandit vulputate vitae eget tortor. Fusce iaculis justo a orci interdum, et vulputate sem gravida."}];
-        [_arraySource addObject:@{@"title": @"Phasellus rhoncus nisi id hendrerit tempus.", @"content": @"Nulla ac nibh eu ante tempus ornare et ut massa. Cras eleifend odio ut ullamcorper cursus."}];
-        [_arraySource addObject:@{@"title": @"Suspendisse eleifend quam non scelerisque fermentum.", @"content": @"Vestibulum dictum nibh ut ipsum varius malesuada. Morbi volutpat magna ut nibh condimentum, tincidunt pulvinar magna vulputate."}];
+        self.arraySource = [NSMutableArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"LoremIpsum" ofType:@"plist"]];
 
         //
-        _didIncludeSashimi = NO;
+        self.didIncludeSashimi = NO;
         [self _includeSashimiIfAvailable];
 
     }
@@ -56,7 +48,7 @@
 
 #pragma mark - Include sashimi
 
-- (void)tryIncludingSashimiAds {
+- (void)tryToIncludeAds {
     
     if ([ self _includeSashimiIfAvailable ])
         [ self.tableView reloadData ];
@@ -69,7 +61,7 @@
     NSUInteger index, sashimiAdMax, sashimiAdSpacing, sashimiAdAdded;
     
     // if we already added some sashimi ad, stop here!
-    if (_didIncludeSashimi)
+    if (self.didIncludeSashimi)
         return NO;
     
     // get number of available ads
@@ -83,16 +75,16 @@
     // or create a custom logic to better fit with your implementation!
     sashimiAdMax = 2;
     sashimiAdSpacing = 3;
-    for (sashimiAdAdded = 0, index = sashimiAdSpacing ; index <= [_arraySource count] && sashimiAdAdded < sashimiAdsCount && sashimiAdAdded < sashimiAdMax ; index += sashimiAdSpacing) {
+    for (sashimiAdAdded = 0, index = sashimiAdSpacing ; index <= [self.arraySource count] && sashimiAdAdded < sashimiAdsCount && sashimiAdAdded < sashimiAdMax ; index += sashimiAdSpacing) {
         
-        [ _arraySource insertObject:@"sashimi" atIndex:index ];
+        [ self.arraySource insertObject:@"sashimi" atIndex:index ];
         sashimiAdAdded++;
         index++;
         
     }
     
     //
-    _didIncludeSashimi = YES;
+    self.didIncludeSashimi = YES;
     
     return YES;
 
@@ -108,7 +100,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return [_arraySource count];
+    return [self.arraySource count];
     
 }
 
@@ -120,8 +112,8 @@
     
     // get source object
     sourceObject = nil;
-    if (indexPath.row < [_arraySource count])
-        sourceObject = _arraySource[indexPath.row];
+    if (indexPath.row < [self.arraySource count])
+        sourceObject = self.arraySource[indexPath.row];
     
     // determine cell id
     celluid = ([sourceObject isKindOfClass:[NSString class]] && [sourceObject isEqualToString:@"sashimi"]) ? @"sashimi-minimal" : @"classic";

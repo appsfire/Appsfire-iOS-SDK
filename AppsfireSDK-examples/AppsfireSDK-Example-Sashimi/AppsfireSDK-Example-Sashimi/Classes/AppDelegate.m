@@ -43,8 +43,8 @@
     #endif
     
     // sdk connect
-    #error Add your Appsfire SDK Token below.
-    error = [AppsfireSDK connectWithSDKToken:@"" features:AFSDKFeatureMonetization parameters:nil];
+    #error Add your Appsfire SDK Token and Secret key below.
+    error = [AppsfireSDK connectWithSDKToken:@"" secretKey:@"" features:AFSDKFeatureMonetization parameters:nil];
     if (error != nil)
         NSLog(@"Unable to initialize Appsfire SDK (%@)", error);
 
@@ -56,7 +56,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     // main controller
-    self.tableViewController = [[AppTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    self.tableViewController = [[AppTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
     
     // navigation controller
     self.navigationController = [[AppNavigationController alloc] initWithRootViewController:self.tableViewController];
@@ -75,14 +75,8 @@
     
     NSLog(@"%s (mainThread=%d)", __PRETTY_FUNCTION__, [NSThread isMainThread]);
 
-    if ([self.navigationController.visibleViewController isKindOfClass:[ExampleMinimalSashimiTableViewController class]])
-        [(ExampleMinimalSashimiTableViewController *)self.navigationController.visibleViewController tryIncludingSashimiAds];
-    
-    else if ([self.navigationController.visibleViewController isKindOfClass:[ExampleExtendedSashimiTableViewController class]])
-        [(ExampleExtendedSashimiTableViewController *)self.navigationController.visibleViewController tryIncludingSashimiAds];
-    
-    else if ([self.navigationController.visibleViewController isKindOfClass:[ExampleCustomSashimiTableViewController class]])
-        [(ExampleCustomSashimiTableViewController *)self.navigationController.visibleViewController tryIncludingSashimiAds];
+    if ([self.navigationController.visibleViewController respondsToSelector:@selector(tryToIncludeAds)])
+        [self.navigationController.visibleViewController performSelector:@selector(tryToIncludeAds)];
     
 }
 

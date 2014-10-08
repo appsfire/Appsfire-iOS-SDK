@@ -34,8 +34,8 @@
     #endif
     
     // sdk connect
-    #error Add your Appsfire SDK Token below.
-    NSError *error = [AppsfireSDK connectWithSDKToken:@"" features:AFSDKFeatureMonetization parameters:nil];
+    #error Add your Appsfire SDK Token and Secret key below.
+    NSError *error = [AppsfireSDK connectWithSDKToken:@"" secretKey:@"" features:AFSDKFeatureMonetization parameters:nil];
     if (error) {
         NSLog(@"Unable to initialize Appsfire SDK (%@)", error);
     }

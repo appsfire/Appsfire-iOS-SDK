@@ -26,6 +26,9 @@
 		BF2C5E421954991200594C38 /* libAppsfireSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2C5E3B1954991200594C38 /* libAppsfireSDK.a */; };
 		BF863DA118A1AEA100FA4C36 /* ExampleCustomSashimiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF20AA3D18A1ACB800863F6A /* ExampleCustomSashimiTableViewController.m */; };
 		BF863DA218A1AEA100FA4C36 /* ExampleCustomSashimiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF20AA3B18A1ACB800863F6A /* ExampleCustomSashimiTableViewCell.m */; };
+		BFC71ED719D2F6FF00BB5BEF /* ExampleCarouselSashimiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC71ED619D2F6FF00BB5BEF /* ExampleCarouselSashimiTableViewController.m */; };
+		BFC71ED919D2FBC700BB5BEF /* LoremIpsum.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFC71ED819D2FBC700BB5BEF /* LoremIpsum.plist */; };
+		BFC71EDC19D3049500BB5BEF /* AFAdSDKCarouselSashimiView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC71EDB19D3049500BB5BEF /* AFAdSDKCarouselSashimiView.m */; };
 		BFF8C6211951BDED00A3CA04 /* ExampleCustomSashimiWithXIBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF8C6201951BDED00A3CA04 /* ExampleCustomSashimiWithXIBTableViewController.m */; };
 		BFF8C6241951BFA900A3CA04 /* ExampleCustomSashimiWithXIBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF8C6231951BFA900A3CA04 /* ExampleCustomSashimiWithXIBTableViewCell.m */; };
 		BFF8C6271951C02600A3CA04 /* ExampleCustomSashimiWithXIBView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF8C6261951C02600A3CA04 /* ExampleCustomSashimiWithXIBView.m */; };
@@ -38,6 +41,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B851EFF19DC36780066D083 /* AFAdSDKIAP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKIAP.h; sourceTree = "<group>"; };
+		7B851F0019DC36780066D083 /* AFAdSDKIAPProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKIAPProperty.h; sourceTree = "<group>"; };
+		7B851F0219DC36780066D083 /* AFMedBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMedBannerView.h; sourceTree = "<group>"; };
+		7B851F0319DC36780066D083 /* AFMedBannerViewCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMedBannerViewCustomEvent.h; sourceTree = "<group>"; };
+		7B851F0419DC36780066D083 /* AFMedBannerViewCustomEventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMedBannerViewCustomEventDelegate.h; sourceTree = "<group>"; };
+		7B851F0519DC36780066D083 /* AFMedInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMedInfo.h; sourceTree = "<group>"; };
+		7B851F0619DC36780066D083 /* AFMedInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMedInterstitial.h; sourceTree = "<group>"; };
+		7B851F0719DC36780066D083 /* AFMedInterstitialCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMedInterstitialCustomEvent.h; sourceTree = "<group>"; };
+		7B851F0819DC36780066D083 /* AFMedInterstitialCustomEventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMedInterstitialCustomEventDelegate.h; sourceTree = "<group>"; };
 		7BE61D4518FBEDAA0097937A /* ExampleUdonNoodleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleUdonNoodleTableViewController.h; path = Classes/ExampleUdonNoodleTableViewController.h; sourceTree = "<group>"; };
 		7BE61D4618FBEDAA0097937A /* ExampleUdonNoodleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleUdonNoodleTableViewController.m; path = Classes/ExampleUdonNoodleTableViewController.m; sourceTree = "<group>"; };
 		BF20A9E718A10A9600863F6A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
@@ -77,6 +89,11 @@
 		BF2C5E3F1954991200594C38 /* AFAdSDKSashimiMinimalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiMinimalView.h; sourceTree = "<group>"; };
 		BF2C5E401954991200594C38 /* AFAdSDKSashimiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiView.h; sourceTree = "<group>"; };
 		BF2C5E411954991200594C38 /* AFAdSDKUdonNoodleControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKUdonNoodleControl.h; sourceTree = "<group>"; };
+		BFC71ED519D2F6FF00BB5BEF /* ExampleCarouselSashimiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleCarouselSashimiTableViewController.h; path = Classes/ExampleCarouselSashimiTableViewController.h; sourceTree = "<group>"; };
+		BFC71ED619D2F6FF00BB5BEF /* ExampleCarouselSashimiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleCarouselSashimiTableViewController.m; path = Classes/ExampleCarouselSashimiTableViewController.m; sourceTree = "<group>"; };
+		BFC71ED819D2FBC700BB5BEF /* LoremIpsum.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LoremIpsum.plist; sourceTree = "<group>"; };
+		BFC71EDA19D3049500BB5BEF /* AFAdSDKCarouselSashimiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFAdSDKCarouselSashimiView.h; path = Classes/AFAdSDKCarouselSashimiView.h; sourceTree = "<group>"; };
+		BFC71EDB19D3049500BB5BEF /* AFAdSDKCarouselSashimiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFAdSDKCarouselSashimiView.m; path = Classes/AFAdSDKCarouselSashimiView.m; sourceTree = "<group>"; };
 		BFF8C61F1951BDED00A3CA04 /* ExampleCustomSashimiWithXIBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleCustomSashimiWithXIBTableViewController.h; path = Classes/ExampleCustomSashimiWithXIBTableViewController.h; sourceTree = "<group>"; };
 		BFF8C6201951BDED00A3CA04 /* ExampleCustomSashimiWithXIBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleCustomSashimiWithXIBTableViewController.m; path = Classes/ExampleCustomSashimiWithXIBTableViewController.m; sourceTree = "<group>"; };
 		BFF8C6221951BFA900A3CA04 /* ExampleCustomSashimiWithXIBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleCustomSashimiWithXIBTableViewCell.h; path = Classes/ExampleCustomSashimiWithXIBTableViewCell.h; sourceTree = "<group>"; };
@@ -115,6 +132,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B851EFE19DC36780066D083 /* iap */ = {
+			isa = PBXGroup;
+			children = (
+				7B851EFF19DC36780066D083 /* AFAdSDKIAP.h */,
+				7B851F0019DC36780066D083 /* AFAdSDKIAPProperty.h */,
+			);
+			path = iap;
+			sourceTree = "<group>";
+		};
+		7B851F0119DC36780066D083 /* mediation */ = {
+			isa = PBXGroup;
+			children = (
+				7B851F0219DC36780066D083 /* AFMedBannerView.h */,
+				7B851F0319DC36780066D083 /* AFMedBannerViewCustomEvent.h */,
+				7B851F0419DC36780066D083 /* AFMedBannerViewCustomEventDelegate.h */,
+				7B851F0519DC36780066D083 /* AFMedInfo.h */,
+				7B851F0619DC36780066D083 /* AFMedInterstitial.h */,
+				7B851F0719DC36780066D083 /* AFMedInterstitialCustomEvent.h */,
+				7B851F0819DC36780066D083 /* AFMedInterstitialCustomEventDelegate.h */,
+			);
+			path = mediation;
+			sourceTree = "<group>";
+		};
 		7BE61D4418FBED9B0097937A /* Udon Noodle */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,11 +167,8 @@
 		BF20AA2418A13D2100863F6A /* Sashimi Examples */ = {
 			isa = PBXGroup;
 			children = (
-				BF20AA2518A13D2E00863F6A /* Minimal */,
-				BF20AA2C18A163C800863F6A /* Extended */,
-				BF20AA2D18A166FA00863F6A /* Custom */,
-				BFF8C61E1951BC2F00A3CA04 /* Custom (XIB) */,
-				7BE61D4418FBED9B0097937A /* Udon Noodle */,
+				BFC71ED219D2F5E200BB5BEF /* All formats */,
+				BFC71ED319D2F5E800BB5BEF /* Helper classes */,
 			);
 			name = "Sashimi Examples";
 			sourceTree = "<group>";
@@ -179,6 +216,8 @@
 				BF2C5E391954991200594C38 /* AppsfireSDK.h */,
 				BF2C5E3A1954991200594C38 /* AppsfireSDKConstants.h */,
 				BF2C5E3B1954991200594C38 /* libAppsfireSDK.a */,
+				7B851EFE19DC36780066D083 /* iap */,
+				7B851F0119DC36780066D083 /* mediation */,
 				BF2C5E3C1954991200594C38 /* sashimi */,
 			);
 			name = "Appsfire-sdk";
@@ -195,6 +234,37 @@
 				BF2C5E411954991200594C38 /* AFAdSDKUdonNoodleControl.h */,
 			);
 			path = sashimi;
+			sourceTree = "<group>";
+		};
+		BFC71ED219D2F5E200BB5BEF /* All formats */ = {
+			isa = PBXGroup;
+			children = (
+				BF20AA2518A13D2E00863F6A /* Minimal */,
+				BF20AA2C18A163C800863F6A /* Extended */,
+				BF20AA2D18A166FA00863F6A /* Custom */,
+				BFF8C61E1951BC2F00A3CA04 /* Custom (XIB) */,
+				7BE61D4418FBED9B0097937A /* Udon Noodle */,
+			);
+			name = "All formats";
+			sourceTree = "<group>";
+		};
+		BFC71ED319D2F5E800BB5BEF /* Helper classes */ = {
+			isa = PBXGroup;
+			children = (
+				BFC71ED419D2F60D00BB5BEF /* Carousel */,
+			);
+			name = "Helper classes";
+			sourceTree = "<group>";
+		};
+		BFC71ED419D2F60D00BB5BEF /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				BFC71ED519D2F6FF00BB5BEF /* ExampleCarouselSashimiTableViewController.h */,
+				BFC71ED619D2F6FF00BB5BEF /* ExampleCarouselSashimiTableViewController.m */,
+				BFC71EDA19D3049500BB5BEF /* AFAdSDKCarouselSashimiView.h */,
+				BFC71EDB19D3049500BB5BEF /* AFAdSDKCarouselSashimiView.m */,
+			);
+			name = Carousel;
 			sourceTree = "<group>";
 		};
 		BFF8C61E1951BC2F00A3CA04 /* Custom (XIB) */ = {
@@ -266,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				BFFD8E5118A1013A00371EB0 /* AppsfireSDK-Example-Sashimi-Info.plist */,
+				BFC71ED819D2FBC700BB5BEF /* LoremIpsum.plist */,
 				BFFD8E5218A1013A00371EB0 /* InfoPlist.strings */,
 				BFFD8E5518A1013A00371EB0 /* main.m */,
 				BFFD8E5718A1013A00371EB0 /* AppsfireSDK-Example-Sashimi-Prefix.pch */,
@@ -299,7 +370,7 @@
 		BFFD8E3E18A1013A00371EB0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Appsfire;
 			};
 			buildConfigurationList = BFFD8E4118A1013A00371EB0 /* Build configuration list for PBXProject "AppsfireSDK-Example-Sashimi" */;
@@ -328,6 +399,7 @@
 				BFFD8E5418A1013A00371EB0 /* InfoPlist.strings in Resources */,
 				BF2C5DFF1954848E00594C38 /* Images.xcassets in Resources */,
 				BFF8C62A1951ECBC00A3CA04 /* ExampleCustomSashimiView.xib in Resources */,
+				BFC71ED919D2FBC700BB5BEF /* LoremIpsum.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,8 +413,10 @@
 				BF863DA118A1AEA100FA4C36 /* ExampleCustomSashimiTableViewController.m in Sources */,
 				BF863DA218A1AEA100FA4C36 /* ExampleCustomSashimiTableViewCell.m in Sources */,
 				BFF8C6211951BDED00A3CA04 /* ExampleCustomSashimiWithXIBTableViewController.m in Sources */,
+				BFC71EDC19D3049500BB5BEF /* AFAdSDKCarouselSashimiView.m in Sources */,
 				BFF8C6271951C02600A3CA04 /* ExampleCustomSashimiWithXIBView.m in Sources */,
 				BF20A9EF18A10ACB00863F6A /* AppTableViewController.m in Sources */,
+				BFC71ED719D2F6FF00BB5BEF /* ExampleCarouselSashimiTableViewController.m in Sources */,
 				7BE61D4718FBEDAA0097937A /* ExampleUdonNoodleTableViewController.m in Sources */,
 				BFF8C6241951BFA900A3CA04 /* ExampleCustomSashimiWithXIBTableViewCell.m in Sources */,
 				BF20AA3318A18BA400863F6A /* ExampleExtendedSashimiTableViewController.m in Sources */,

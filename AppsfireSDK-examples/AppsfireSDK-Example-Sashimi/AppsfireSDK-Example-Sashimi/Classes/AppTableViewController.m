@@ -15,6 +15,7 @@
 #import "ExampleCustomSashimiTableViewController.h"
 #import "ExampleCustomSashimiWithXIBTableViewController.h"
 #import "ExampleUdonNoodleTableViewController.h"
+#import "ExampleCarouselSashimiTableViewController.h"
 
 @implementation AppTableViewController
 
@@ -26,7 +27,7 @@
         
         // title
         self.title = @"Appsfire SDK - Sashimi";
-        self.tableView.rowHeight = 80.0;
+        self.tableView.rowHeight = 65.0;
 
     }
     return self;
@@ -37,13 +38,25 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
-    return 1;
+    return 2;
     
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 5;
+    if (section == 0)
+        return 5;
+    else
+        return 1;
+    
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    
+    if (section == 0)
+        return @"All the formats";
+    else
+        return @"Helper classes";
     
 }
 
@@ -62,25 +75,37 @@
     }
     
     // update title
-    switch (indexPath.row) {
-        case 0:
-            cellTitle = @"Sashimi Minimal";
-            break;
-        case 1:
-            cellTitle = @"Sashimi Extended";
-            break;
-        case 2:
-            cellTitle = @"Sashimi Custom";
-            break;
-        case 3:
-            cellTitle = @"Sashimi Custom (with XIB)";
-            break;
-        case 4:
-            cellTitle = @"Udon Noodle (Pull-to-Refresh)";
-            break;
-        default:
-            cellTitle = @"";
-            break;
+    if (indexPath.section == 0) {
+        switch (indexPath.row) {
+            case 0:
+                cellTitle = @"Sashimi Minimal";
+                break;
+            case 1:
+                cellTitle = @"Sashimi Extended";
+                break;
+            case 2:
+                cellTitle = @"Sashimi Custom";
+                break;
+            case 3:
+                cellTitle = @"Sashimi Custom (with XIB)";
+                break;
+            case 4:
+                cellTitle = @"Udon Noodle (Pull-to-Refresh)";
+                break;
+            default:
+                cellTitle = @"";
+                break;
+        }
+    }
+    else {
+        switch (indexPath.row) {
+            case 0:
+                cellTitle = @"Carousel";
+                break;
+            default:
+                cellTitle = @"";
+                break;
+        }
     }
     [ cell.textLabel setText:cellTitle ];
     
@@ -95,50 +120,74 @@
     
     UIViewController *controller;
     
-    switch (indexPath.row) {
+    // all formats
+    if (indexPath.section == 0) {
+    
+        switch (indexPath.row) {
+            
+            // sashimi minimal
+            case 0:
+            {
+                controller = [[ExampleMinimalSashimiTableViewController alloc] initWithStyle:UITableViewStylePlain];
+                [self.navigationController pushViewController:controller animated:YES];
+                break;
+            }
+
+            // sashimi extended
+            case 1:
+            {
+                controller = [[ExampleExtendedSashimiTableViewController alloc] initWithStyle:UITableViewStylePlain];
+                [self.navigationController pushViewController:controller animated:YES];
+                break;
+            }
+
+            // sashimi custom
+            case 2:
+            {
+                controller = [[ExampleCustomSashimiTableViewController alloc] initWithStyle:UITableViewStylePlain];
+                [self.navigationController pushViewController:controller animated:YES];
+                break;
+            }
+
+            // sashimi custom (with XIB)
+            case 3:
+            {
+                controller = [[ExampleCustomSashimiWithXIBTableViewController alloc] initWithStyle:UITableViewStylePlain];
+                [self.navigationController pushViewController:controller animated:YES];
+                break;
+            }
+
+            // udon noodle
+            case 4:
+            {
+                controller = [[ExampleUdonNoodleTableViewController alloc] initWithStyle:UITableViewStylePlain];
+                [self.navigationController pushViewController:controller animated:YES];
+                break;
+            }
+
+            default:
+                break;
+        }
+            
+    }
+    
+    // helper classes
+    else {
         
-        // sashimi minimal
-        case 0:
-        {
-            controller = [[ExampleMinimalSashimiTableViewController alloc] initWithStyle:UITableViewStylePlain];
-            [self.navigationController pushViewController:controller animated:YES];
-            break;
+        switch (indexPath.row) {
+                
+            // carousel
+            case 0:
+            {
+                controller = [[ExampleCarouselSashimiTableViewController alloc] initWithStyle:UITableViewStylePlain];
+                [self.navigationController pushViewController:controller animated:YES];
+                break;
+            }
+                
+            default:
+                break;
         }
-
-        // sashimi extended
-        case 1:
-        {
-            controller = [[ExampleExtendedSashimiTableViewController alloc] initWithStyle:UITableViewStylePlain];
-            [self.navigationController pushViewController:controller animated:YES];
-            break;
-        }
-
-        // sashimi custom
-        case 2:
-        {
-            controller = [[ExampleCustomSashimiTableViewController alloc] initWithStyle:UITableViewStylePlain];
-            [self.navigationController pushViewController:controller animated:YES];
-            break;
-        }
-
-        // sashimi custom (with XIB)
-        case 3:
-        {
-            controller = [[ExampleCustomSashimiWithXIBTableViewController alloc] initWithStyle:UITableViewStylePlain];
-            [self.navigationController pushViewController:controller animated:YES];
-            break;
-        }
-
-        // udon noodle
-        case 4:
-        {
-            controller = [[ExampleUdonNoodleTableViewController alloc] initWithStyle:UITableViewStylePlain];
-            [self.navigationController pushViewController:controller animated:YES];
-            break;
-        }
-
-        default:
-            break;
+        
     }
     
 }

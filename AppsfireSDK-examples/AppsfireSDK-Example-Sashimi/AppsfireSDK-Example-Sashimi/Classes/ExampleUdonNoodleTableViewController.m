@@ -12,13 +12,11 @@
 // views
 #import "AFAdSDKUdonNoodleControl.h"
 
+@interface ExampleUdonNoodleTableViewController () <AFAdSDKUdonNoodleControlDelegate>
 
-@interface ExampleUdonNoodleTableViewController () <AFAdSDKUdonNoodleControlDelegate> {
-    
-    NSMutableArray *_arraySource;
-    AFAdSDKUdonNoodleControl *_refreshControl;
-    
-}
+@property (nonatomic, strong) NSMutableArray *arraySource;
+
+@property (nonatomic, strong) AFAdSDKUdonNoodleControl *udonNoodleControl;
 
 @end
 
@@ -35,15 +33,7 @@
         self.tableView.rowHeight = 100.0;
         
         //
-        _arraySource = [NSMutableArray array];
-        
-        // fill array with dummy inserts for test purpose
-        [_arraySource addObject:@{@"title": @"Lorem ipsum dolor sit amet, consectetur adipiscing elit.", @"content": @"Sed lacinia dui at dui euismod, posuere ultricies massa mollis. Donec id orci quis dui lobortis scelerisque."}];
-        [_arraySource addObject:@{@"title": @"Aliquam sollicitudin turpis quis enim iaculis eleifend non a dolor.", @"content": @"Cras accumsan erat ac nunc suscipit, id venenatis libero rhoncus. Aliquam egestas tortor sed purus porttitor laoreet."}];
-        [_arraySource addObject:@{@"title": @"Praesent tristique dolor vehicula mi porttitor dictum quis id sem.", @"content": @"Nam vitae sem id sem ullamcorper pretium. Cras consectetur lectus sed diam egestas sodales."}];
-        [_arraySource addObject:@{@"title": @"Nullam bibendum ligula ac purus imperdiet sodales.", @"content": @"Morbi eu justo a lorem blandit vulputate vitae eget tortor. Fusce iaculis justo a orci interdum, et vulputate sem gravida."}];
-        [_arraySource addObject:@{@"title": @"Phasellus rhoncus nisi id hendrerit tempus.", @"content": @"Nulla ac nibh eu ante tempus ornare et ut massa. Cras eleifend odio ut ullamcorper cursus."}];
-        [_arraySource addObject:@{@"title": @"Suspendisse eleifend quam non scelerisque fermentum.", @"content": @"Vestibulum dictum nibh ut ipsum varius malesuada. Morbi volutpat magna ut nibh condimentum, tincidunt pulvinar magna vulputate."}];
+        self.arraySource = [NSMutableArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"LoremIpsum" ofType:@"plist"]];
         
     }
     return self;
@@ -55,9 +45,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _refreshControl = [[AFAdSDKUdonNoodleControl alloc] initWithScrollView:self.tableView];
-    _refreshControl.delegate = self;
-    [_refreshControl addTarget:self action:@selector(doRefresh:) forControlEvents:UIControlEventValueChanged];
+    self.udonNoodleControl = [[AFAdSDKUdonNoodleControl alloc] initWithScrollView:self.tableView];
+    self.udonNoodleControl.delegate = self;
+    [self.udonNoodleControl addTarget:self action:@selector(doRefresh:) forControlEvents:UIControlEventValueChanged];
     
 }
 
@@ -67,7 +57,7 @@
     // Udon Noodle adjustments.
     if ([self respondsToSelector:@selector(topLayoutGuide)]) {
         CGFloat topOffset = self.topLayoutGuide.length;
-        _refreshControl.defaultTopContentOffset = topOffset;
+        self.udonNoodleControl.defaultTopContentOffset = topOffset;
     }
 }
 
@@ -81,7 +71,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return [_arraySource count];
+    return [self.arraySource count];
     
 }
 
@@ -93,8 +83,8 @@
     
     // get source object
     sourceObject = nil;
-    if (indexPath.row < [_arraySource count]) {
-        sourceObject = _arraySource[indexPath.row];
+    if (indexPath.row < [self.arraySource count]) {
+        sourceObject = self.arraySource[indexPath.row];
     }
     
     // determine cell id
@@ -126,11 +116,11 @@
 #pragma mark - Refreshing
 
 - (void)doRefresh:(AFAdSDKUdonNoodleControl *)refreshControl {
-    [_refreshControl beginRefreshing];
+    [refreshControl beginRefreshing];
     NSLog(@"Refreshing...");
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [_refreshControl endRefreshing];
+        [refreshControl endRefreshing];
         NSLog(@"Refreshed!");
     });
 }

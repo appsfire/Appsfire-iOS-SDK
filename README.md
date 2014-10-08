@@ -1,8 +1,8 @@
 Appsfire for iOS
 ================
 
-**Modified**: 2014-09-10
-**SDK Version**: 2.4.1
+**Modified**: 2014-10-08
+**SDK Version**: 2.5.0
 
 ## Getting Started with Appsfire
 The Appsfire iOS SDK is the cornerstone of the Appsfire network.
@@ -76,6 +76,13 @@ Included is a sample app to use as example and for help on Appsfire integration.
 If you encounter any issues, do not hesitate to contact our happy support team at support@appsfire.com.
 
 ## Change Logs
+
+### Version 2.5.0
+**Release date**: October 8, 2014
+<ul>
+	<li>Mediation.</li>
+	<li>Carousel for sashimi.</li>
+</ul>
 
 ### Version 2.4.1
 **Release date**: September 10, 2014

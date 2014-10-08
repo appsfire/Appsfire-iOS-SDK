@@ -13,4 +13,7 @@
    <FileRef
       location = "group:AppsfireSDK-Example-IAP/AppsfireSDK-Example-IAP.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:AppsfireSDK-Example-Mediation/AppsfireSDK-Example-Mediation.xcodeproj">
+   </FileRef>
 </Workspace>

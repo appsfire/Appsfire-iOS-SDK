@@ -1,7 +1,7 @@
 /*!
  *  @header    AppsfireSDKConstants.h
  *  @abstract  Appsfire SDK Constants Header
- *  @version   2.4.1
+ *  @version   2.5.0
  */
 
 #import <Foundation/NSObject.h>
@@ -35,6 +35,21 @@ extern NSString* const kAFSDKPanelWasPresented;
 
 /** panel (for notifications or feedback) was dismissed */
 extern NSString* const kAFSDKPanelWasDismissed;
+
+
+/*!
+ *  @brief Predefined heights of the banner in full width case.
+ *  @since 2.4
+ */
+
+/** iPhone portrait banner height of 50pt */
+extern CGFloat const kAFAdSDKBannerHeight50;
+
+/** iPhone landscape banner height of 32pt */
+extern CGFloat const kAFAdSDKBannerHeight32;
+
+/** iPad portrait and landscape banner height of 66pt */
+extern CGFloat const kAFAdSDKBannerHeight66;
 
 
 /*!
@@ -142,6 +157,8 @@ typedef NS_ENUM(NSUInteger, AFSDKErrorCode) {
     // Initialization
     /** Missing the SDK Token */
     AFSDKErrorCodeInitializationMissingAPIKey,
+    /** Missing the Secret Key */
+    AFSDKErrorCodeInitializationMissingSecretKey,
     /** Missing the Features bitmask */
     AFSDKErrorCodeInitializationMissingFeatures,
     

@@ -1,7 +1,7 @@
 /*!
  *  @header    AppsfireEngageSDK.h
  *  @abstract  Appsfire Engage SDK Header
- *  @version   2.4.1
+ *  @version   2.5.0
  */
 
 #import <UIKit/UIViewController.h>
@@ -61,7 +61,6 @@
  *
  *  @note Note that `handleBadgeCountLocallyAndRemotely` overrides any settings established by `handleBadgeCountLocally`.
  *  @note IMPORTANT: If you set this option to YES, you need to provide us with your Push Certificate.
- *  For more information, visit your "Manage Apps" section on http://dashboard.appsfire.com/app/manage
  *
  *  @param handleLocallyAndRemotely Boolean to determine if badge count should be handled locally and remotely.
  */

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+		<key>content</key>
+		<string>Sed lacinia dui at dui euismod, posuere ultricies massa mollis. Donec id orci quis dui lobortis scelerisque.</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Aliquam sollicitudin turpis quis enim iaculis eleifend non a dolor.</string>
+		<key>content</key>
+		<string>Cras accumsan erat ac nunc suscipit, id venenatis libero rhoncus. Aliquam egestas tortor sed purus porttitor laoreet.</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Praesent tristique dolor vehicula mi porttitor dictum quis id sem.</string>
+		<key>content</key>
+		<string>Nam vitae sem id sem ullamcorper pretium. Cras consectetur lectus sed diam egestas sodales.</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Nullam bibendum ligula ac purus imperdiet sodales.</string>
+		<key>content</key>
+		<string>Morbi eu justo a lorem blandit vulputate vitae eget tortor. Fusce iaculis justo a orci interdum, et vulputate sem gravida.</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Phasellus rhoncus nisi id hendrerit tempus.</string>
+		<key>content</key>
+		<string>Nulla ac nibh eu ante tempus ornare et ut massa. Cras eleifend odio ut ullamcorper cursus.</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Suspendisse eleifend quam non scelerisque fermentum.</string>
+		<key>content</key>
+		<string>Vestibulum dictum nibh ut ipsum varius malesuada. Morbi volutpat magna ut nibh condimentum, tincidunt pulvinar magna vulputate.</string>
+	</dict>
+</array>
+</plist>
