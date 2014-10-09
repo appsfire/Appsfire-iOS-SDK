@@ -24,11 +24,11 @@ if (self.carouselView == nil) {
 
 ### Easy customization
 
-** Available effects **
+**Available effects**
 
 We implemented two effects: fade (`AFAdSDKCarouselEffectFade`) and scale (`AFAdSDKCarouselEffectScale`). You even can choose to combine them!
 
-** Any kind of sashimi **
+**Any kind of sashimi**
 
 In this example we put the template `sashimi extended`. But you could decide to put the minimal template, or even your own custom sashimi!
 
