@@ -178,8 +178,6 @@
 		7BA24DA419DC05B000EC58B2 /* AFAdSDKSashimiMinimalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiMinimalView.h; sourceTree = "<group>"; };
 		7BA24DA519DC05B000EC58B2 /* AFAdSDKSashimiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiView.h; sourceTree = "<group>"; };
 		7BA24DA619DC05B000EC58B2 /* AFAdSDKUdonNoodleControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKUdonNoodleControl.h; sourceTree = "<group>"; };
-		7BC1467019DE8AB500F7BB17 /* AFAdColonyInterstitialCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdColonyInterstitialCustomEvent.h; sourceTree = "<group>"; };
-		7BC1467119DE8AB500F7BB17 /* AFAdColonyInterstitialCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAdColonyInterstitialCustomEvent.m; sourceTree = "<group>"; };
 		7BC1467419DE8AB500F7BB17 /* AFAdMobBannerViewCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdMobBannerViewCustomEvent.h; sourceTree = "<group>"; };
 		7BC1467519DE8AB500F7BB17 /* AFAdMobBannerViewCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAdMobBannerViewCustomEvent.m; sourceTree = "<group>"; };
 		7BC1467619DE8AB500F7BB17 /* AFAdMobInterstitialCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdMobInterstitialCustomEvent.h; sourceTree = "<group>"; };
@@ -628,7 +626,6 @@
 		7BC1466E19DE8AB500F7BB17 /* Adapters */ = {
 			isa = PBXGroup;
 			children = (
-				7BC1466F19DE8AB500F7BB17 /* AdColony */,
 				7BC1467319DE8AB500F7BB17 /* AdMob */,
 				7BC1469A19DE8AB500F7BB17 /* Charboost */,
 				7BC1469E19DE8AB500F7BB17 /* DoubleClick */,
@@ -641,23 +638,6 @@
 			);
 			name = Adapters;
 			path = Classes/Adapters;
-			sourceTree = "<group>";
-		};
-		7BC1466F19DE8AB500F7BB17 /* AdColony */ = {
-			isa = PBXGroup;
-			children = (
-				7BC1467019DE8AB500F7BB17 /* AFAdColonyInterstitialCustomEvent.h */,
-				7BC1467119DE8AB500F7BB17 /* AFAdColonyInterstitialCustomEvent.m */,
-				7BC1467219DE8AB500F7BB17 /* SDK */,
-			);
-			path = AdColony;
-			sourceTree = "<group>";
-		};
-		7BC1467219DE8AB500F7BB17 /* SDK */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SDK;
 			sourceTree = "<group>";
 		};
 		7BC1467319DE8AB500F7BB17 /* AdMob */ = {
