@@ -48,7 +48,7 @@ Edit your Podfile and add AppsfireSDK:
 
 ``` bash
 platform :ios, '5.1.1'
-pod 'AppsfireSDK', '~> 2.4.1'
+pod 'AppsfireSDK', '~> 2.5.0'
 ```
 
 Install into your Xcode project:
