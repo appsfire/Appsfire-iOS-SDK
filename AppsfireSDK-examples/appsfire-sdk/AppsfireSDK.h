@@ -1,7 +1,7 @@
 /*!
  *  @header    AppsfireSDK.h
  *  @abstract  Appsfire iOS SDK Header
- *  @version   2.5.0
+ *  @version   2.5.1
  */
 
 #import <UIKit/UIViewController.h>
@@ -26,7 +26,7 @@
  *  @param features Features defined by a bitmask. You can enable one or more features. If you are only using the Monetization SDK, then you should only specify `AFSDKFeatureMonetization`. In case of doubt, don't hesitate to contact us!
  *  @param parameters (optional) A dictionary describing the optional parameters to initialize the SDK.
  *
- *  @return Returns an error of something bad happened. Or just `nil` if all went well!
+ *  @return Returns an error if something bad happened. Or just `nil` if all went well!
  */
 + (NSError *)connectWithSDKToken:(NSString *)token secretKey:(NSString *)secretKey features:(AFSDKFeature)features parameters:(NSDictionary *)parameters;
 

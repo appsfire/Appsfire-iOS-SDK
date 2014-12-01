@@ -1,7 +1,7 @@
 /*!
  *  @header    AFMedBannerViewCustomEventDelegate.h
  *  @abstract  Appsfire Mediation banner view custom event delegate.
- *  @version   2.5.0
+ *  @version   2.5.1
  */
 
 #import <Foundation/NSObject.h>
@@ -72,7 +72,7 @@
 - (UIViewController *)viewControllerForBannerViewCustomEvent:(id <AFMedBannerViewCustomEvent>)customEvent;
 
 /*!
- * Optional method which should be called when a tap had been detected on the banner and which
+ * Optional method which should be called when a tap has been detected on the banner and which
  * triggered the presentation of an overlay like a modal view.
  *
  * @param customEvent The custom event which originated this event. You should usually pass `self`

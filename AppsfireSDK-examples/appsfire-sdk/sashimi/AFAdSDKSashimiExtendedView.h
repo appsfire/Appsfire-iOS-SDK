@@ -1,7 +1,7 @@
 /*!
  *  @header    AFAdSDKSashimiExtendedView.h
  *  @abstract  Appsfire Advertising SDK Sashimi Extended View Header
- *  @version   2.5.0
+ *  @version   2.5.1
  */
 
 #import "AFAdSDKSashimiView.h"

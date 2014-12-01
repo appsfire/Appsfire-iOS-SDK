@@ -1,7 +1,7 @@
 /*!
  *  @header    AFMedBannerView.h
  *  @abstract  Appsfire Mediation banner view.
- *  @version   2.5.0
+ *  @version   2.5.1
  */
 
 #import <UIKit/UIView.h>

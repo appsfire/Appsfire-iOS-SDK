@@ -1,7 +1,7 @@
 /*!
  *  @header    AppsfireSDKConstants.h
  *  @abstract  Appsfire SDK Constants Header
- *  @version   2.5.0
+ *  @version   2.5.1
  */
 
 #import <Foundation/NSObject.h>

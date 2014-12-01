@@ -28,6 +28,20 @@
     
 }
 
+- (void)layoutSubviews {
+    
+    CGRect badgeFrame;
+    
+    // IB will apply his layout first
+    [super layoutSubviews];
+
+    // badge: adjust size
+    badgeFrame = self.badgeView.frame;
+    badgeFrame.size = [self.badgeView sizeThatFits:CGSizeMake(20.0, 14.0)];
+    self.badgeView.frame = badgeFrame;
+    
+}
+
 - (void)sashimiIsReadyForInitialization {
     
     // title
@@ -64,7 +78,7 @@
 }
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
-
+    
     // avoid the button to take the event
     return self;
     

@@ -1,7 +1,7 @@
 /*!
  *  @header    AFAdSDKAdBadgeView.h
  *  @abstract  Appsfire Advertising SDK Ad Badge view.
- *  @version   2.5.0
+ *  @version   2.4.0
  */
 
 #import <UIKit/UIView.h>

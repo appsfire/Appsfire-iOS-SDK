@@ -1,7 +1,7 @@
 /*!
  *  @header    AFMedInterstitial.h
  *  @abstract  Appsfire Mediation interstitial controller.
- *  @version   2.5.0
+ *  @version   2.5.1
  */
 
 #import <UIKit/UIViewController.h>

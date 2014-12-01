@@ -81,7 +81,10 @@ typedef NS_ENUM(NSUInteger, AFSDKBadgeHandling) {
             
             // NOTE : If you choose the second option, you must register your user's push token and send the
             // token to the SDK. To start, you will have to register the token using this code :
-            [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+            if ([[[UIDevice currentDevice] systemVersion] compare:@"8.0" options:NSNumericSearch] == NSOrderedAscending)
+                [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+            else
+                [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeSound|UIUserNotificationTypeBadge categories:nil]];
             
             // you will also need to implement this if you are using push notifications.
             notification = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
@@ -123,6 +126,13 @@ typedef NS_ENUM(NSUInteger, AFSDKBadgeHandling) {
 }
 
 #pragma mark - Handling Remote Notifications
+
+- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings {
+    
+    // register for remote notifications (to get token)
+    [application registerForRemoteNotifications];
+    
+}
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     

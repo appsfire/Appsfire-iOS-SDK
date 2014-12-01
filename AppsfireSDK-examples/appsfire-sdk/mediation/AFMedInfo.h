@@ -1,7 +1,7 @@
 /*!
  *  @header    AFMedInfo.h
  *  @abstract  Appsfire Mediation Information Object.
- *  @version   2.5.0
+ *  @version   2.5.1
  */
 
 #import <Foundation/NSObject.h>

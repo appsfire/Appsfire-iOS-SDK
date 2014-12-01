@@ -1,7 +1,7 @@
 /*!
  *  @header    AFMedInterstitialCustomEvent.h
  *  @abstract  Appsfire Mediation interstitial custom event protocol.
- *  @version   2.5.0
+ *  @version   2.5.1
  */
 
 #import <Foundation/NSObject.h>

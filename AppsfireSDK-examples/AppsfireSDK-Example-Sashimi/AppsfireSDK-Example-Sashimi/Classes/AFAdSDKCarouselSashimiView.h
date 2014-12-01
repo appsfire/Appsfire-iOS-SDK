@@ -39,7 +39,7 @@ typedef NS_OPTIONS(NSUInteger, AFAdSDKCarouselEffect) {
     /** No effect */
     AFAdSDKCarouselEffectNone   = 0,
     /** Fade */
-    AFAdSDKCarouselEffectFade   = 0 << 1,
+    AFAdSDKCarouselEffectFade   = 1 << 0,
     /** Scale */
     AFAdSDKCarouselEffectScale  = 1 << 1
 };

@@ -1,8 +1,8 @@
 ## Carousel
 
-We developed a carousel that helps you to present several Sashimi ads with (almost) no effort. Just insert the open source class `AFAdSDKCarouselSashimiView` inside your UITableView / UICollectionView, and increase your number of impressions without disturbing your users.
+We developed a carousel that helps you to present several sashimi ads with (almost) no effort. Just insert the open source class `AFAdSDKCarouselSashimiView` inside your UITableView / UICollectionView, and increase your number of impressions without disturbing your users.
 
-<center>![carousel example](./sashimi-carousel-example.gif)</center>
+<center>![carousel example](./sashimi-carousel-example.jpg)</center>
 
 ### Implementation
 
@@ -24,11 +24,11 @@ if (self.carouselView == nil) {
 
 ### Easy customization
 
-**Available effects**
+** Available effects **
 
 We implemented two effects: fade (`AFAdSDKCarouselEffectFade`) and scale (`AFAdSDKCarouselEffectScale`). You even can choose to combine them!
 
-**Any kind of sashimi**
+** Any kind of sashimi **
 
 In this example we put the template `sashimi extended`. But you could decide to put the minimal template, or even your own custom sashimi!
 

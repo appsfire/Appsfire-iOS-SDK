@@ -1,8 +1,8 @@
 Appsfire for iOS
 ================
 
-**Modified**: 2014-10-08
-**SDK Version**: 2.5.0
+**Modified**: 2014-12-01
+**SDK Version**: 2.5.1
 
 ## Getting Started with Appsfire
 The Appsfire iOS SDK is the cornerstone of the Appsfire network.
@@ -48,7 +48,7 @@ Edit your Podfile and add AppsfireSDK:
 
 ``` bash
 platform :ios, '5.1.1'
-pod 'AppsfireSDK', '~> 2.5.0'
+pod 'AppsfireSDK', '~> 2.5.1'
 ```
 
 Install into your Xcode project:
@@ -76,6 +76,15 @@ Included is a sample app to use as example and for help on Appsfire integration.
 If you encounter any issues, do not hesitate to contact our happy support team at support@appsfire.com.
 
 ## Change Logs
+
+### Version 2.5.1
+**Release date**: December 1, 2014
+<ul>
+	<li>Our Ad Badge is now dynamic and becoming international! French is the first supported language ("Ad" is translated to "Pub" for devices in French). More languages to come soon. Please read our <b><a href="/Upgrading/From_2,5_to_2,5,1">migration note</a></b> (new CoreText framework required).</li>
+	<li>Visual improvements in Appsfire interstitial ad units: the fade-out transition for Sushi and Uramaki on iOS 7+ now takes into account the current app context (and not the context of the app before the ad was displayed).</li>
+	<li>Sashimi ad format: the number of Sashimi Ads returned by our SDK (<code>numberOfSashimiAdsAvailableForFormat:</code>) was wrong when Cross Promotion was enabled. It is now fixed!</li>
+	<li>Some other updates and bug fixes</li>
+</ul>
 
 ### Version 2.5.0
 **Release date**: October 8, 2014

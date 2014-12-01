@@ -1,7 +1,7 @@
 /*!
  *  @header    AppsfireAdSDK.h
  *  @abstract  Appsfire Advertising SDK Header
- *  @version   2.5.0
+ *  @version   2.5.1
  */
 
 #import <UIKit/UIViewController.h>
