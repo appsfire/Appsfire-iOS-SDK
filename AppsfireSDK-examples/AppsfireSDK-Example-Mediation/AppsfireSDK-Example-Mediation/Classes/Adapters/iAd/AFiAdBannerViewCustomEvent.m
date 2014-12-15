@@ -214,7 +214,7 @@
     self.trackImpression = NO;
     
     @synchronized(self.observers) {
-        for (id <AFiAdBannerViewManagerObserver> observer in self.observers) {
+        for (id <AFiAdBannerViewManagerObserver> observer in [self.observers copy]) {
             if ([observer respondsToSelector:@selector(bannerDidLoad)]) {
                 [observer bannerDidLoad];
             }
@@ -225,7 +225,7 @@
 - (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
     
     @synchronized(self.observers) {
-        for (id <AFiAdBannerViewManagerObserver> observer in self.observers) {
+        for (id <AFiAdBannerViewManagerObserver> observer in [self.observers copy]) {
             if ([observer respondsToSelector:@selector(bannerDidFailWithError:)]) {
                 [observer bannerDidFailWithError:error];
             }
@@ -236,7 +236,7 @@
 - (BOOL)bannerViewActionShouldBegin:(ADBannerView *)banner willLeaveApplication:(BOOL)willLeave {
     
     @synchronized(self.observers) {
-        for (id <AFiAdBannerViewManagerObserver> observer in self.observers) {
+        for (id <AFiAdBannerViewManagerObserver> observer in [self.observers copy]) {
             if ([observer respondsToSelector:@selector(bannerActionWillBeginAndWillLeaveApplication:)]) {
                 [observer bannerActionWillBeginAndWillLeaveApplication:willLeave];
             }
@@ -249,7 +249,7 @@
 - (void)bannerViewActionDidFinish:(ADBannerView *)banner {
     
     @synchronized(self.observers) {
-        for (id <AFiAdBannerViewManagerObserver> observer in self.observers) {
+        for (id <AFiAdBannerViewManagerObserver> observer in [self.observers copy]) {
             if ([observer respondsToSelector:@selector(bannerActionDidFinish)]) {
                 [observer bannerActionDidFinish];
             }
