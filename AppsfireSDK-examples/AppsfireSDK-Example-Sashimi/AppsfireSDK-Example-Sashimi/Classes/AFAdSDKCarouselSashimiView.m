@@ -53,7 +53,7 @@ static NSUInteger const kCarouselAdditionalElts = 2;
 // maximum number of elements displayed inside the carousel
 static NSUInteger const kCarouselEltsLimit = 7;
 
-@interface AFAdSDKCarouselSashimiView () <UIScrollViewDelegate>
+@interface AFAdSDKCarouselSashimiView () <UIScrollViewDelegate, AFAdSDKSashimiViewDelegate>
 
 @property (nonatomic, assign) Class sashimiClass;
 
@@ -311,8 +311,11 @@ static NSUInteger const kCarouselEltsLimit = 7;
             break;
         
         // get the ad && add it to the list
-        sashimiView = (AFAdSDKSashimiView *)[AppsfireAdSDK sashimiViewForSubclass:self.sashimiClass withController:[UIApplication sharedApplication].keyWindow.rootViewController andError:nil];
+        sashimiView = (AFAdSDKSashimiView *)[AppsfireAdSDK sashimiViewForSubclass:self.sashimiClass andError:nil];
         if (sashimiView != nil) {
+            
+            //
+            sashimiView.delegate = self;
             
             // apply gray border
             sashimiView.layer.borderColor = [UIColor colorWithWhite:199.0/255.0 alpha:1.0].CGColor;
@@ -343,6 +346,14 @@ static NSUInteger const kCarouselEltsLimit = 7;
         return self.contentScrollView;
     
     return childView;
+    
+}
+
+#pragma mark - Sashimi View Delegate
+
+- (UIViewController *)viewControllerForSashimiView:(AFAdSDKSashimiView *)sashimiView {
+    
+    return [UIApplication sharedApplication].keyWindow.rootViewController;
     
 }
 

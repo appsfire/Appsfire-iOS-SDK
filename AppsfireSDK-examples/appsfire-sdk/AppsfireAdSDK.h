@@ -1,7 +1,7 @@
 /*!
  *  @header    AppsfireAdSDK.h
  *  @abstract  Appsfire Advertising SDK Header
- *  @version   2.5.1
+ *  @version   2.6.0
  */
 
 #import <UIKit/UIViewController.h>
@@ -155,36 +155,33 @@
  *  @since 2.2
  *
  *  @param format The kind of sashimi view you would like to get.
- *  @param controller The controller will be used as host to display the StoreKit. This parameter is optional, you can send `nil`. Note that we'll retain the controller with a weak attribute.
  *  @param error If a problem occured, the error object will be filled with a code and a description.
  *
  *  @return A view containing an ad which can be displayed right now. In case a problem occured, `nil` could be returned.
  */
-+ (AFAdSDKSashimiView *)sashimiViewForFormat:(AFAdSDKSashimiFormat)format withController:(UIViewController *)controller andError:(NSError **)error;
++ (AFAdSDKSashimiView *)sashimiViewForFormat:(AFAdSDKSashimiFormat)format andError:(NSError **)error;
 
 /*!
  *  @brief Get a sashimi view based on a subclass.
  *  @since 2.2
  *
  *  @param viewClass A subclass of `AFAdSDKSashimiView`. Please check the documentation for a good implementation.
- *  @param controller The controller will be used as host to display the StoreKit. This parameter is optional, you can send `nil`. Note that we'll retain the controller with a weak attribute.
  *  @param error If a problem occured, the error object will be filled with a code and a description.
  *
  *  @return An `UIView` containing an ad which can be displayed right now. In case a problem occured, `nil` could be returned.
  */
-+ (AFAdSDKSashimiView *)sashimiViewForSubclass:(Class)viewClass withController:(UIViewController *)controller andError:(NSError **)error;
++ (AFAdSDKSashimiView *)sashimiViewForSubclass:(Class)viewClass andError:(NSError **)error;
 
 /*!
  *  @brief Get a sashimi view based on a nib name.
  *  @since 2.4
  *
  *  @param nibName A xib which is a subclass of `AFAdSDKSashimiView`. Please check the documentation for a good implementation.
- *  @param controller The controller will be used as host to display the StoreKit. This parameter is optional, you can send `nil`. Note that we'll retain the controller with a weak attribute.
  *  @param error If a problem occured, the error object will be filled with a code and a description.
  *
  *  @return An `UIView` containing an ad which can be displayed right now. In case a problem occured, `nil` could be returned.
  */
-+ (AFAdSDKSashimiView *)sashimiViewForNibName:(NSString *)nibName withController:(UIViewController *)controller andError:(NSError **)error;
++ (AFAdSDKSashimiView *)sashimiViewForNibName:(NSString *)nibName andError:(NSError **)error;
 
 
 /** @name Library life
@@ -200,6 +197,17 @@
  *  @return `YES` if ads are loaded from the web service.
  */
 + (BOOL)areAdsLoaded;
+
+
+/** @name Deprecated
+ *  Methods that you should stop using, and that will be removed in future release
+ */
+
++ (AFAdSDKSashimiView *)sashimiViewForFormat:(AFAdSDKSashimiFormat)format withController:(UIViewController *)controller andError:(NSError **)error __deprecated_msg("We're now asking for the controller (that will host the Store Kit) via `AppsfireAdSDKDelegate`");
+
++ (AFAdSDKSashimiView *)sashimiViewForSubclass:(Class)viewClass withController:(UIViewController *)controller andError:(NSError **)error __deprecated_msg("We're now asking for the controller (that will host the Store Kit) via `AppsfireAdSDKDelegate`");
+
++ (AFAdSDKSashimiView *)sashimiViewForNibName:(NSString *)nibName withController:(UIViewController *)controller andError:(NSError **)error __deprecated_msg("We're now asking for the controller (that will host the Store Kit) via `AppsfireAdSDKDelegate`");
 
 @end
 

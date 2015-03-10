@@ -1,7 +1,7 @@
 /*!
  *  @header    AFAdSDKSashimiView.h
  *  @abstract  Appsfire Advertising SDK Sashimi Header
- *  @version   2.5.1
+ *  @version   2.6.0
  */
 
 #import <UIKit/UIView.h>
@@ -220,5 +220,18 @@ typedef NS_ENUM(NSUInteger, AFAdSDKAppAssetType) {
  * @since 2.4.0
  */
 - (void)sashimiViewDidRecordClick:(AFAdSDKSashimiView *)sashimiView;
+
+/*!
+ * This method should return the UIViewController used to host the StoreKit view controller. If not
+ * implemented, the StoreKit is not used and the user will be redirected to the App Store to
+ * download the app.
+ *
+ * @param sashimiView The AFAdSDKSashimiView instance requesting for the host UIViewController to contain the StoreKit.
+ *
+ * @return a UIViewController that will host the StoreKit.
+ *
+ * @since 2.6.0
+ */
+- (UIViewController *)viewControllerForSashimiView:(AFAdSDKSashimiView *)sashimiView;
 
 @end

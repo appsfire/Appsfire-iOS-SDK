@@ -1,7 +1,7 @@
 /*!
  *  @header    AppsfireSDKConstants.h
  *  @abstract  Appsfire SDK Constants Header
- *  @version   2.5.1
+ *  @version   2.6.0
  */
 
 #import <Foundation/NSObject.h>
@@ -38,21 +38,6 @@ extern NSString* const kAFSDKPanelWasDismissed;
 
 
 /*!
- *  @brief Predefined heights of the banner in full width case.
- *  @since 2.4
- */
-
-/** iPhone portrait banner height of 50pt */
-extern CGFloat const kAFAdSDKBannerHeight50;
-
-/** iPhone landscape banner height of 32pt */
-extern CGFloat const kAFAdSDKBannerHeight32;
-
-/** iPad portrait and landscape banner height of 66pt */
-extern CGFloat const kAFAdSDKBannerHeight66;
-
-
-/*!
  *  @brief Enum for specifying features you plan to use.
  *
  *  @note By specifying us the list of features you plan using, you'll allow us to optimize the user experience and the web-services calls.
@@ -64,9 +49,7 @@ typedef NS_OPTIONS(NSUInteger, AFSDKFeature) {
     /** Engage feature */
     AFSDKFeatureEngage          = 1 << 0,
     /** Monetization feature */
-    AFSDKFeatureMonetization    = 1 << 1,
-    /** Track feature */
-    AFSDKFeatureTrack           = 1 << 2
+    AFSDKFeatureMonetization    = 1 << 1
 };
 
 
@@ -192,25 +175,4 @@ typedef NS_ENUM(NSUInteger, AFSDKErrorCode) {
     /** The property object is missing a buy block handler */
     AFSDKErrorCodeIAPBuyBlockMissing,
     
-    // Mediation sdk
-    /** The placement request failed. */
-    AFSDKErrorCodeMediationRequestFailed,
-    /** The placement id is not valid. */
-    AFSDKErrorCodeMediationAdPlacementIdNotValid,
-    /** The payload received for the placement id is not valid */
-    AFSDKErrorCodeMediationPayloadNotValid,
-    /** The received custom class does not exist */
-    AFSDKErrorCodeMediationCustomClassNotFound,
-    /** The received custom class does not conform to protocol */
-    AFSDKErrorCodeMediationCustomClassNotConformToProtocol,
-    /** The received placement id does not have any ads to show */
-    AFSDKErrorCodeMediationNoAds,
-    /** The ad request timed out */
-    AFSDKErrorCodeMediationAdRequestTimeout,
-    /** The interstitial has expired, you need to create a new one */
-    AFSDKErrorCodeMediationInterstitialExpired,
-    /** The interstitial has already been used, you need to create a new one */
-    AFSDKErrorCodeMediationInterstitialAlreadyUsed,
-    /** The size of the banner does not fit the destination container view */
-    AFSDKErrorCodeMediationBannerSizeMismatch
 };

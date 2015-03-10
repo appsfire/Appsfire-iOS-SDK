@@ -10,7 +10,7 @@
 #import "ExampleCustomSashimiWithXIBView.h"
 #import "AppsfireAdSDK.h"
 
-@interface ExampleCustomSashimiWithXIBTableViewCell() {
+@interface ExampleCustomSashimiWithXIBTableViewCell() <AFAdSDKSashimiViewDelegate> {
     
     AFAdSDKSashimiView *_viewSashimi;
     
@@ -32,9 +32,10 @@
             [ self setSeparatorInset:UIEdgeInsetsZero ];
         
         //
-        _viewSashimi = [ AppsfireAdSDK sashimiViewForNibName:@"ExampleCustomSashimiView" withController:[UIApplication sharedApplication].keyWindow.rootViewController andError:&error ];
+        _viewSashimi = [ AppsfireAdSDK sashimiViewForNibName:@"ExampleCustomSashimiView" andError:&error ];
         if ([ _viewSashimi isKindOfClass:[ UIView class ] ] && error == nil) {
-            
+        
+            _viewSashimi.delegate = self;
             [_viewSashimi setFrame:self.bounds];
             [self.contentView addSubview:_viewSashimi];
             
@@ -50,6 +51,12 @@
     [super layoutSubviews];
     
     [_viewSashimi setFrame:self.bounds];
+    
+}
+
+- (UIViewController *)viewControllerForSashimiView:(AFAdSDKSashimiView *)sashimiView {
+    
+    return [UIApplication sharedApplication].keyWindow.rootViewController;
     
 }
 

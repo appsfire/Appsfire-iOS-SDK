@@ -1,7 +1,7 @@
 /*!
  *  @header    AppsfireEngageSDK.h
  *  @abstract  Appsfire Engage SDK Header
- *  @version   2.5.1
+ *  @version   2.6.0
  */
 
 #import <UIKit/UIViewController.h>

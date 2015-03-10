@@ -1,8 +1,8 @@
 Appsfire for iOS
 ================
 
-**Modified**: 2014-12-01
-**SDK Version**: 2.5.1
+**Modified**: 2015-03-11
+**SDK Version**: 2.6.0
 
 ## Getting Started with Appsfire
 The Appsfire iOS SDK is the cornerstone of the Appsfire network.
@@ -48,7 +48,7 @@ Edit your Podfile and add AppsfireSDK:
 
 ``` bash
 platform :ios, '5.1.1'
-pod 'AppsfireSDK', '~> 2.5.1'
+pod 'AppsfireSDK', '~> 2.6.0'
 ```
 
 Install into your Xcode project:
@@ -76,6 +76,15 @@ Included is a sample app to use as example and for help on Appsfire integration.
 If you encounter any issues, do not hesitate to contact our happy support team at support@appsfire.com.
 
 ## Change Logs
+
+### Version 2.6.0
+**Release date**: March 11, 2015
+<ul>
+    <li>Removed Mediation feature. Please note it will not longer be supported after May 1.</li>
+    <li>Stopped supporting armv7s architecture (deprecated since Xcode 6).</li>
+    <li>The package now contains the bridge for swift (header file).</li>
+    <li>Some other updates and bug fixes.</li>
+</ul>
 
 ### Version 2.5.1
 **Release date**: December 1, 2014

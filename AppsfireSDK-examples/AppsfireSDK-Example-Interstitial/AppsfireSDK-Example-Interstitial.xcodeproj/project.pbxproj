@@ -30,13 +30,6 @@
 		7B1A68C31864756C0079DC2D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		7B851F0A19DC367E0066D083 /* AFAdSDKIAP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKIAP.h; sourceTree = "<group>"; };
 		7B851F0B19DC367E0066D083 /* AFAdSDKIAPProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKIAPProperty.h; sourceTree = "<group>"; };
-		7B851F0D19DC367E0066D083 /* AFMedBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMedBannerView.h; sourceTree = "<group>"; };
-		7B851F0E19DC367E0066D083 /* AFMedBannerViewCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMedBannerViewCustomEvent.h; sourceTree = "<group>"; };
-		7B851F0F19DC367E0066D083 /* AFMedBannerViewCustomEventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMedBannerViewCustomEventDelegate.h; sourceTree = "<group>"; };
-		7B851F1019DC367E0066D083 /* AFMedInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMedInfo.h; sourceTree = "<group>"; };
-		7B851F1119DC367E0066D083 /* AFMedInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMedInterstitial.h; sourceTree = "<group>"; };
-		7B851F1219DC367E0066D083 /* AFMedInterstitialCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMedInterstitialCustomEvent.h; sourceTree = "<group>"; };
-		7B851F1319DC367E0066D083 /* AFMedInterstitialCustomEventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMedInterstitialCustomEventDelegate.h; sourceTree = "<group>"; };
 		7BE9A3AD17E706E100A664E8 /* AppsfireSDK-Example-Interstitial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppsfireSDK-Example-Interstitial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE9A3B017E706E100A664E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7BE9A3B217E706E100A664E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -69,6 +62,7 @@
 		BFF8C7731952ECEF00A3CA04 /* AppTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppTableViewController.m; path = "AppsfireSDK-Example-Interstitial/Classes/AppTableViewController.m"; sourceTree = SOURCE_ROOT; };
 		BFF8C7771952EDED00A3CA04 /* AppsfireAdTimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsfireAdTimerView.h; sourceTree = "<group>"; };
 		BFF8C7781952EDED00A3CA04 /* AppsfireAdTimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppsfireAdTimerView.m; sourceTree = "<group>"; };
+		BFFF61391AA07E1D00C520A1 /* AppsfireSDK-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppsfireSDK-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,20 +93,6 @@
 				7B851F0B19DC367E0066D083 /* AFAdSDKIAPProperty.h */,
 			);
 			path = iap;
-			sourceTree = "<group>";
-		};
-		7B851F0C19DC367E0066D083 /* mediation */ = {
-			isa = PBXGroup;
-			children = (
-				7B851F0D19DC367E0066D083 /* AFMedBannerView.h */,
-				7B851F0E19DC367E0066D083 /* AFMedBannerViewCustomEvent.h */,
-				7B851F0F19DC367E0066D083 /* AFMedBannerViewCustomEventDelegate.h */,
-				7B851F1019DC367E0066D083 /* AFMedInfo.h */,
-				7B851F1119DC367E0066D083 /* AFMedInterstitial.h */,
-				7B851F1219DC367E0066D083 /* AFMedInterstitialCustomEvent.h */,
-				7B851F1319DC367E0066D083 /* AFMedInterstitialCustomEventDelegate.h */,
-			);
-			path = mediation;
 			sourceTree = "<group>";
 		};
 		7BE9A3A417E706E100A664E8 = {
@@ -184,9 +164,9 @@
 				BF2C5E1B195497D800594C38 /* AppsfireEngageSDK.h */,
 				BF2C5E1C195497D800594C38 /* AppsfireSDK.h */,
 				BF2C5E1D195497D800594C38 /* AppsfireSDKConstants.h */,
+				BFFF61391AA07E1D00C520A1 /* AppsfireSDK-Bridging-Header.h */,
 				BF2C5E1E195497D800594C38 /* libAppsfireSDK.a */,
 				7B851F0919DC367E0066D083 /* iap */,
-				7B851F0C19DC367E0066D083 /* mediation */,
 				BF2C5E1F195497D800594C38 /* sashimi */,
 			);
 			name = "Appsfire-sdk";

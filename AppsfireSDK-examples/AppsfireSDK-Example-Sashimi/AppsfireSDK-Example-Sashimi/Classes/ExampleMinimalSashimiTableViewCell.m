@@ -10,7 +10,7 @@
 #import "AFAdSDKSashimiMinimalView.h"
 #import "AppsfireAdSDK.h"
 
-@interface ExampleMinimalSashimiTableViewCell() {
+@interface ExampleMinimalSashimiTableViewCell() <AFAdSDKSashimiViewDelegate> {
     
     AFAdSDKSashimiMinimalView *_viewSashimi;
     
@@ -32,16 +32,20 @@
             [ self setSeparatorInset:UIEdgeInsetsZero ];
         
         // create view
-        _viewSashimi = (AFAdSDKSashimiMinimalView *)[ AppsfireAdSDK sashimiViewForFormat:AFAdSDKSashimiFormatMinimal withController:[UIApplication sharedApplication].keyWindow.rootViewController andError:&error ];
-        
-        // customize a bit
-        [_viewSashimi.titleLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:15.0]];
-        [_viewSashimi.categoryLabel setFont:[UIFont fontWithName:@"HelveticaNeue" size:11.0]];
-        [_viewSashimi.taglineLabel setFont:[UIFont fontWithName:@"HelveticaNeue" size:13.0]];
+        _viewSashimi = (AFAdSDKSashimiMinimalView *)[ AppsfireAdSDK sashimiViewForFormat:AFAdSDKSashimiFormatMinimal andError:&error ];
         
         //
         if ([ _viewSashimi isKindOfClass:[ UIView class ] ] && error == nil) {
+        
+            //
+            _viewSashimi.delegate = self;
             
+            // customize a bit
+            [_viewSashimi.titleLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:15.0]];
+            [_viewSashimi.categoryLabel setFont:[UIFont fontWithName:@"HelveticaNeue" size:11.0]];
+            [_viewSashimi.taglineLabel setFont:[UIFont fontWithName:@"HelveticaNeue" size:13.0]];
+            
+            //
             [_viewSashimi setFrame:self.bounds];
             [self.contentView addSubview:_viewSashimi];
             
@@ -57,6 +61,12 @@
     [super layoutSubviews];
     
     [_viewSashimi setFrame:self.bounds];
+    
+}
+
+- (UIViewController *)viewControllerForSashimiView:(AFAdSDKSashimiView *)sashimiView {
+    
+    return [UIApplication sharedApplication].keyWindow.rootViewController;
     
 }
 

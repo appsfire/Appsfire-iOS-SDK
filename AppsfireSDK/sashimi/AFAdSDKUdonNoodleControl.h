@@ -1,7 +1,7 @@
 /*!
  *  @header    AFAdSDKUdonNoodleControl.h
  *  @abstract  Udon Noodle Control Header file.
- *  @version   2.5.1
+ *  @version   2.6.0
  */
 
 #import <UIKit/UIControl.h>
