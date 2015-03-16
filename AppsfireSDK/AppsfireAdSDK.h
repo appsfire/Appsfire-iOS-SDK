@@ -203,11 +203,11 @@
  *  Methods that you should stop using, and that will be removed in future release
  */
 
-+ (AFAdSDKSashimiView *)sashimiViewForFormat:(AFAdSDKSashimiFormat)format withController:(UIViewController *)controller andError:(NSError **)error __deprecated_msg("We're now asking for the controller (that will host the Store Kit) via `AppsfireAdSDKDelegate`");
++ (AFAdSDKSashimiView *)sashimiViewForFormat:(AFAdSDKSashimiFormat)format withController:(UIViewController *)controller andError:(NSError **)error __deprecated_msg("We're now asking for the controller (that will host the Store Kit) via `AFAdSDKSashimiViewDelegate`");
 
-+ (AFAdSDKSashimiView *)sashimiViewForSubclass:(Class)viewClass withController:(UIViewController *)controller andError:(NSError **)error __deprecated_msg("We're now asking for the controller (that will host the Store Kit) via `AppsfireAdSDKDelegate`");
++ (AFAdSDKSashimiView *)sashimiViewForSubclass:(Class)viewClass withController:(UIViewController *)controller andError:(NSError **)error __deprecated_msg("We're now asking for the controller (that will host the Store Kit) via `AFAdSDKSashimiViewDelegate`");
 
-+ (AFAdSDKSashimiView *)sashimiViewForNibName:(NSString *)nibName withController:(UIViewController *)controller andError:(NSError **)error __deprecated_msg("We're now asking for the controller (that will host the Store Kit) via `AppsfireAdSDKDelegate`");
++ (AFAdSDKSashimiView *)sashimiViewForNibName:(NSString *)nibName withController:(UIViewController *)controller andError:(NSError **)error __deprecated_msg("We're now asking for the controller (that will host the Store Kit) via `AFAdSDKSashimiViewDelegate`");
 
 @end
 
