@@ -23,6 +23,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    NSError *error;
+    
     /*
      *  Appsfire Setup
      */
@@ -35,7 +37,7 @@
     
     // sdk connect
     #error Add your Appsfire SDK Token and Secret key below.
-    NSError *error = [AppsfireSDK connectWithSDKToken:@"" secretKey:@"" features:AFSDKFeatureMonetization parameters:nil];
+    error = [AppsfireSDK connectWithSDKToken:@"" secretKey:@"" features:AFSDKFeatureMonetization parameters:nil];
     if (error) {
         NSLog(@"Unable to initialize Appsfire SDK (%@)", error);
     }

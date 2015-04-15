@@ -1,7 +1,7 @@
 /*!
  *  @header    AFAdSDKIAPProperty.h
  *  @abstract  Appsfire In-App Purchase Ad Removal Prompte property class.
- *  @version   2.6.0
+ *  @version   2.7.0
  */
 
 #import <Foundation/NSObject.h>
@@ -179,6 +179,33 @@
  * @since 2.4.0
  */
 @property (readwrite, nonatomic, assign) NSUInteger dismissCountBeforeRemindingUdonNoodle;
+
+/*!
+ * Number of Himono banner display after which first the UIAlertView should be displayed.
+ *
+ * @note If the display count is reached, the UIAlertView will only be displayed if the value of
+ * daysCountUntilFirstPrompt is also reached. If you want to disable this parameter and only
+ * consider the daysCountUntilFirstPrompt parameter, just set this parameter to `0`.
+ *
+ * @note Default is `100`.
+ *
+ * @since 2.4.0
+ */
+@property (readwrite, nonatomic, assign) NSUInteger displayCountUntilFirstPromptHimono;
+
+/*!
+ * Number of Himono banner display before showing again the UIAlertView after the user tapped on the
+ * "Cancel" button.
+ *
+ * @note If the display count is reached, the UIAlertView will only be displayed if the value of
+ * daysCountBeforeReminding is also reached. If you want to disable this parameter and only consider
+ * the daysCountBeforeReminding parameter, just set this parameter to `0`.
+ *
+ * @note Default is `100`.
+ *
+ * @since 2.4.0
+ */
+@property (readwrite, nonatomic, assign) NSUInteger displayCountBeforeRemindingHimono;
 
 /*!
  * AFAdSDKIAPProperty Property builder.

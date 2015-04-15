@@ -1,7 +1,7 @@
 /*!
  *  @header    AFAdSDKSashimiExtendedView.h
  *  @abstract  Appsfire Advertising SDK Sashimi Extended View Header
- *  @version   2.6.0
+ *  @version   2.7.0
  */
 
 #import "AFAdSDKSashimiView.h"
@@ -13,7 +13,6 @@
  * @since 2.2.0
  */
 typedef NS_ENUM(NSUInteger, AFAdSDKSashimiExtendedStyleMode) {
-    
     /*!
      * Light style mode, great for integration in light interfaces.
      *

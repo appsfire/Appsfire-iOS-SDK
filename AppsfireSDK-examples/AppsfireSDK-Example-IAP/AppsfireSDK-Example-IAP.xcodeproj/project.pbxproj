@@ -56,6 +56,9 @@
 		7B60468E1993A76B00EBA7DF /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		7B6046901993A77A00EBA7DF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		7B6046921993A79A00EBA7DF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BFAF479F1AD69BD600767748 /* AFNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNativeAd.h; sourceTree = "<group>"; };
+		BFAF47AC1AD69E5600767748 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BFAF47AE1AD69E5A00767748 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BFFF613C1AA07FD900C520A1 /* AppsfireSDK-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppsfireSDK-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +104,8 @@
 		7B60463E19938E8400EBA7DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFAF47AE1AD69E5A00767748 /* MapKit.framework */,
+				BFAF47AC1AD69E5600767748 /* CoreLocation.framework */,
 				7B6046921993A79A00EBA7DF /* Security.framework */,
 				7B6046901993A77A00EBA7DF /* StoreKit.framework */,
 				7B60468E1993A76B00EBA7DF /* AdSupport.framework */,
@@ -148,6 +153,7 @@
 				7B60467119938EB500EBA7DF /* AppsfireSDK.h */,
 				7B60467219938EB500EBA7DF /* AppsfireSDKConstants.h */,
 				BFFF613C1AA07FD900C520A1 /* AppsfireSDK-Bridging-Header.h */,
+				BFAF479E1AD69BD600767748 /* native */,
 				7B60467319938EB500EBA7DF /* iap */,
 				7B60467719938EB500EBA7DF /* sashimi */,
 			);
@@ -174,6 +180,14 @@
 				7B60467C19938EB500EBA7DF /* AFAdSDKUdonNoodleControl.h */,
 			);
 			path = sashimi;
+			sourceTree = "<group>";
+		};
+		BFAF479E1AD69BD600767748 /* native */ = {
+			isa = PBXGroup;
+			children = (
+				BFAF479F1AD69BD600767748 /* AFNativeAd.h */,
+			);
+			path = native;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

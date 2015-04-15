@@ -9,6 +9,8 @@
 #import "ExampleCustomSashimiView.h"
 //
 #import <QuartzCore/QuartzCore.h>
+//
+#import "AFAdSDKAdBadgeView.h"
 
 @interface ExampleCustomSashimiView()
 

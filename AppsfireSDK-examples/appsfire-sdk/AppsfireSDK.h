@@ -1,7 +1,7 @@
 /*!
  *  @header    AppsfireSDK.h
  *  @abstract  Appsfire iOS SDK Header
- *  @version   2.6.0
+ *  @version   2.7.0
  */
 
 #import <UIKit/UIViewController.h>

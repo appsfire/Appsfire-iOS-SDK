@@ -51,6 +51,9 @@
 		BF2C5E321954980700594C38 /* AFAdSDKSashimiMinimalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiMinimalView.h; sourceTree = "<group>"; };
 		BF2C5E331954980700594C38 /* AFAdSDKSashimiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiView.h; sourceTree = "<group>"; };
 		BF2C5E341954980700594C38 /* AFAdSDKUdonNoodleControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKUdonNoodleControl.h; sourceTree = "<group>"; };
+		BFAF479D1AD69BCA00767748 /* AFNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNativeAd.h; sourceTree = "<group>"; };
+		BFAF47A81AD69DD000767748 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BFAF47AA1AD69DDC00767748 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BFF8C62D1952D0AC00A3CA04 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "AppsfireSDK-Example-Engage/Classes/AppDelegate.h"; sourceTree = SOURCE_ROOT; };
 		BFF8C62E1952D0AC00A3CA04 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "AppsfireSDK-Example-Engage/Classes/AppDelegate.m"; sourceTree = SOURCE_ROOT; };
 		BFF8C6411952D0AC00A3CA04 /* AppTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppTableViewController.h; path = "AppsfireSDK-Example-Engage/Classes/AppTableViewController.h"; sourceTree = SOURCE_ROOT; };
@@ -115,6 +118,8 @@
 		7BE9A3AF17E706E100A664E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFAF47AA1AD69DDC00767748 /* MapKit.framework */,
+				BFAF47A81AD69DD000767748 /* CoreLocation.framework */,
 				7B1A68C31864756C0079DC2D /* Accelerate.framework */,
 				7BE9A3F017E709AB00A664E8 /* AdSupport.framework */,
 				7BE9A3B217E706E100A664E8 /* CoreGraphics.framework */,
@@ -165,6 +170,7 @@
 				BF2C5E2D1954980700594C38 /* AppsfireSDKConstants.h */,
 				BFFF613B1AA07FBC00C520A1 /* AppsfireSDK-Bridging-Header.h */,
 				BF2C5E2E1954980700594C38 /* libAppsfireSDK.a */,
+				BFAF479C1AD69BCA00767748 /* native */,
 				7B851EF319DC366D0066D083 /* iap */,
 				BF2C5E2F1954980700594C38 /* sashimi */,
 			);
@@ -182,6 +188,14 @@
 				BF2C5E341954980700594C38 /* AFAdSDKUdonNoodleControl.h */,
 			);
 			path = sashimi;
+			sourceTree = "<group>";
+		};
+		BFAF479C1AD69BCA00767748 /* native */ = {
+			isa = PBXGroup;
+			children = (
+				BFAF479D1AD69BCA00767748 /* AFNativeAd.h */,
+			);
+			path = native;
 			sourceTree = "<group>";
 		};
 		BFF8C6DA1952E07900A3CA04 /* Helpers */ = {

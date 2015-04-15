@@ -1,7 +1,7 @@
 /*!
  *  @header    AppsfireSDK-Bridging-Header.h
  *  @abstract  Appsfire iOS SDK Swift Bridging Header
- *  @version   2.6.0
+ *  @version   2.7.0
  */
 
 // Appsfire SDK
@@ -16,6 +16,10 @@
 #import "AFAdSDKSashimiExtendedView.h"
 #import "AFAdSDKSashimiMinimalView.h"
 #import "AFAdSDKUdonNoodleControl.h"
+#import "AFAdSDKHimonoBannerView.h"
+
+// Native Ad
+#import "AFNativeAd.h"
 
 // In-App Purchase
 #import "AFAdSDKIAP.h"

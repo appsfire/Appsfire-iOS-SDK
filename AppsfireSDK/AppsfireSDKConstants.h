@@ -1,7 +1,7 @@
 /*!
  *  @header    AppsfireSDKConstants.h
  *  @abstract  Appsfire SDK Constants Header
- *  @version   2.6.0
+ *  @version   2.7.0
  */
 
 #import <Foundation/NSObject.h>
@@ -35,6 +35,42 @@ extern NSString* const kAFSDKPanelWasPresented;
 
 /** panel (for notifications or feedback) was dismissed */
 extern NSString* const kAFSDKPanelWasDismissed;
+
+
+/*!
+ *  @brief Names of notifications for the availability of ads.
+ *  @since 2.7
+ */
+
+/** modal ads were refreshed and at least one is available */
+extern NSString* const kAFSDKModalAdsRefreshedAndAvailable;
+
+/** modal ads were refreshed but none is available */
+extern NSString* const kAFSDKModalAdsRefreshedAndNotAvailable;
+
+/** sashimi ads were refreshed and at least one is available */
+extern NSString* const kAFSDKSashimiAdsRefreshedAndAvailable;
+
+/** sashimi ads were refreshed but none is available */
+extern NSString* const kAFSDKSashimiAdsRefreshedAndNotAvailable;
+
+/** native ads were refreshed and at least one is available */
+extern NSString* const kAFSDKNativeAdsRefreshedAndAvailable;
+
+/** native ads were refreshed but none is available */
+extern NSString* const kAFSDKNativeAdsRefreshedAndNotAvailable;
+
+
+/*!
+ *  @brief Predefined heights of the banner in full width case.
+ *  @since 2.7
+ */
+
+/** iPhone banner height of 50pt */
+extern CGFloat const kAFAdSDKBannerHeight50;
+
+/** iPad banner height of 90pt */
+extern CGFloat const kAFAdSDKBannerHeight90;
 
 
 /*!
@@ -174,5 +210,41 @@ typedef NS_ENUM(NSUInteger, AFSDKErrorCode) {
     AFSDKErrorCodeIAPBuyButtonTitleMissing,
     /** The property object is missing a buy block handler */
     AFSDKErrorCodeIAPBuyBlockMissing,
-    
+};
+
+/*!
+ *  Enum to differentiate the device of a screenshot.
+ *  @since 2.2
+ */
+typedef NS_ENUM(NSUInteger, AFAdSDKAppScreenshotType) {
+    /** The screenshot type is unknown. */
+    AFAdSDKAppScreenshotTypeUnknown = 0,
+    /** iPhone screenshot type. */
+    AFAdSDKAppScreenshotTypeiPhone,
+    /** iPad screenshot type. */
+    AFAdSDKAppScreenshotTypeiPad
+};
+
+/*!
+ *  Enum to differentiate the orientation of a screenshot.
+ *  @since 2.2
+ */
+typedef NS_ENUM(NSUInteger, AFAdSDKAppScreenshotOrientation) {
+    /** The orientation of the screenshot is unknown. */
+    AFAdSDKAppScreenshotOrientationUnknown = 0,
+    /** The screenshot is in Portrait orientation. */
+    AFAdSDKAppScreenshotOrientationPortrait,
+    /** The screenshot is in Landscape orientation. */
+    AFAdSDKAppScreenshotOrientationLandscape
+};
+
+/*!
+ *  Enum about the kind of asset you can download in a sashimi.
+ *  @since 2.4
+ */
+typedef NS_ENUM(NSUInteger, AFAdSDKAppAssetType) {
+    /** The icon. */
+    AFAdSDKAppAssetTypeIcon = 0,
+    /** The screenshot. */
+    AFAdSDKAppAssetTypeScreenshot
 };

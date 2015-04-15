@@ -7,6 +7,8 @@
 //
 
 #import "ExampleCustomSashimiWithXIBView.h"
+//
+#import "AFAdSDKAdBadgeView.h"
 
 @implementation ExampleCustomSashimiWithXIBView
 
@@ -25,20 +27,6 @@
     [_ctaButton.layer setBorderWidth:1.0];
     [_ctaButton.layer setCornerRadius:4.0];
     [_ctaButton setContentEdgeInsets:UIEdgeInsetsMake(2.0, 6.0, 2.0, 6.0)];
-    
-}
-
-- (void)layoutSubviews {
-    
-    CGRect badgeFrame;
-    
-    // IB will apply his layout first
-    [super layoutSubviews];
-
-    // badge: adjust size
-    badgeFrame = self.badgeView.frame;
-    badgeFrame.size = [self.badgeView sizeThatFits:CGSizeMake(20.0, 14.0)];
-    self.badgeView.frame = badgeFrame;
     
 }
 

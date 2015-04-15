@@ -29,6 +29,7 @@
 		BFC71ED719D2F6FF00BB5BEF /* ExampleCarouselSashimiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC71ED619D2F6FF00BB5BEF /* ExampleCarouselSashimiTableViewController.m */; };
 		BFC71ED919D2FBC700BB5BEF /* LoremIpsum.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFC71ED819D2FBC700BB5BEF /* LoremIpsum.plist */; };
 		BFC71EDC19D3049500BB5BEF /* AFAdSDKCarouselSashimiView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC71EDB19D3049500BB5BEF /* AFAdSDKCarouselSashimiView.m */; };
+		BFCE930D1ADBAF11001A2DE5 /* ExampleHimonoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCE930C1ADBAF11001A2DE5 /* ExampleHimonoViewController.m */; };
 		BFF8C6211951BDED00A3CA04 /* ExampleCustomSashimiWithXIBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF8C6201951BDED00A3CA04 /* ExampleCustomSashimiWithXIBTableViewController.m */; };
 		BFF8C6241951BFA900A3CA04 /* ExampleCustomSashimiWithXIBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF8C6231951BFA900A3CA04 /* ExampleCustomSashimiWithXIBTableViewCell.m */; };
 		BFF8C6271951C02600A3CA04 /* ExampleCustomSashimiWithXIBView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF8C6261951C02600A3CA04 /* ExampleCustomSashimiWithXIBView.m */; };
@@ -82,11 +83,17 @@
 		BF2C5E3F1954991200594C38 /* AFAdSDKSashimiMinimalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiMinimalView.h; sourceTree = "<group>"; };
 		BF2C5E401954991200594C38 /* AFAdSDKSashimiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiView.h; sourceTree = "<group>"; };
 		BF2C5E411954991200594C38 /* AFAdSDKUdonNoodleControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKUdonNoodleControl.h; sourceTree = "<group>"; };
+		BFAF479B1AD69BBB00767748 /* AFNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNativeAd.h; sourceTree = "<group>"; };
+		BFAF47A41AD69D1500767748 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BFAF47A61AD69D1900767748 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BFC71ED519D2F6FF00BB5BEF /* ExampleCarouselSashimiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleCarouselSashimiTableViewController.h; path = Classes/ExampleCarouselSashimiTableViewController.h; sourceTree = "<group>"; };
 		BFC71ED619D2F6FF00BB5BEF /* ExampleCarouselSashimiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleCarouselSashimiTableViewController.m; path = Classes/ExampleCarouselSashimiTableViewController.m; sourceTree = "<group>"; };
 		BFC71ED819D2FBC700BB5BEF /* LoremIpsum.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LoremIpsum.plist; sourceTree = "<group>"; };
 		BFC71EDA19D3049500BB5BEF /* AFAdSDKCarouselSashimiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFAdSDKCarouselSashimiView.h; path = Classes/AFAdSDKCarouselSashimiView.h; sourceTree = "<group>"; };
 		BFC71EDB19D3049500BB5BEF /* AFAdSDKCarouselSashimiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFAdSDKCarouselSashimiView.m; path = Classes/AFAdSDKCarouselSashimiView.m; sourceTree = "<group>"; };
+		BFCE930B1ADBAF11001A2DE5 /* ExampleHimonoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleHimonoViewController.h; path = Classes/ExampleHimonoViewController.h; sourceTree = "<group>"; };
+		BFCE930C1ADBAF11001A2DE5 /* ExampleHimonoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleHimonoViewController.m; path = Classes/ExampleHimonoViewController.m; sourceTree = "<group>"; };
+		BFCE930E1ADBAFA9001A2DE5 /* AFAdSDKHimonoBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKHimonoBannerView.h; sourceTree = "<group>"; };
 		BFF8C61F1951BDED00A3CA04 /* ExampleCustomSashimiWithXIBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleCustomSashimiWithXIBTableViewController.h; path = Classes/ExampleCustomSashimiWithXIBTableViewController.h; sourceTree = "<group>"; };
 		BFF8C6201951BDED00A3CA04 /* ExampleCustomSashimiWithXIBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleCustomSashimiWithXIBTableViewController.m; path = Classes/ExampleCustomSashimiWithXIBTableViewController.m; sourceTree = "<group>"; };
 		BFF8C6221951BFA900A3CA04 /* ExampleCustomSashimiWithXIBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleCustomSashimiWithXIBTableViewCell.h; path = Classes/ExampleCustomSashimiWithXIBTableViewCell.h; sourceTree = "<group>"; };
@@ -197,6 +204,7 @@
 				BF2C5E3A1954991200594C38 /* AppsfireSDKConstants.h */,
 				BFFF613A1AA07E4800C520A1 /* AppsfireSDK-Bridging-Header.h */,
 				BF2C5E3B1954991200594C38 /* libAppsfireSDK.a */,
+				BFAF479A1AD69BBB00767748 /* native */,
 				7B851EFE19DC36780066D083 /* iap */,
 				BF2C5E3C1954991200594C38 /* sashimi */,
 			);
@@ -207,6 +215,7 @@
 		BF2C5E3C1954991200594C38 /* sashimi */ = {
 			isa = PBXGroup;
 			children = (
+				BFCE930E1ADBAFA9001A2DE5 /* AFAdSDKHimonoBannerView.h */,
 				BF2C5E3D1954991200594C38 /* AFAdSDKAdBadgeView.h */,
 				BF2C5E3E1954991200594C38 /* AFAdSDKSashimiExtendedView.h */,
 				BF2C5E3F1954991200594C38 /* AFAdSDKSashimiMinimalView.h */,
@@ -214,6 +223,14 @@
 				BF2C5E411954991200594C38 /* AFAdSDKUdonNoodleControl.h */,
 			);
 			path = sashimi;
+			sourceTree = "<group>";
+		};
+		BFAF479A1AD69BBB00767748 /* native */ = {
+			isa = PBXGroup;
+			children = (
+				BFAF479B1AD69BBB00767748 /* AFNativeAd.h */,
+			);
+			path = native;
 			sourceTree = "<group>";
 		};
 		BFC71ED219D2F5E200BB5BEF /* All formats */ = {
@@ -224,6 +241,7 @@
 				BF20AA2D18A166FA00863F6A /* Custom */,
 				BFF8C61E1951BC2F00A3CA04 /* Custom (XIB) */,
 				7BE61D4418FBED9B0097937A /* Udon Noodle */,
+				BFCE930A1ADBAEEC001A2DE5 /* Himono */,
 			);
 			name = "All formats";
 			sourceTree = "<group>";
@@ -245,6 +263,15 @@
 				BFC71EDB19D3049500BB5BEF /* AFAdSDKCarouselSashimiView.m */,
 			);
 			name = Carousel;
+			sourceTree = "<group>";
+		};
+		BFCE930A1ADBAEEC001A2DE5 /* Himono */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE930B1ADBAF11001A2DE5 /* ExampleHimonoViewController.h */,
+				BFCE930C1ADBAF11001A2DE5 /* ExampleHimonoViewController.m */,
+			);
+			name = Himono;
 			sourceTree = "<group>";
 		};
 		BFF8C61E1951BC2F00A3CA04 /* Custom (XIB) */ = {
@@ -282,6 +309,8 @@
 		BFFD8E4818A1013A00371EB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFAF47A61AD69D1900767748 /* MapKit.framework */,
+				BFAF47A41AD69D1500767748 /* CoreLocation.framework */,
 				BF20AA1E18A1231D00863F6A /* Accelerate.framework */,
 				BF20AA1C18A1231700863F6A /* AdSupport.framework */,
 				BFFD8E4B18A1013A00371EB0 /* CoreGraphics.framework */,
@@ -395,6 +424,7 @@
 				BFF8C6211951BDED00A3CA04 /* ExampleCustomSashimiWithXIBTableViewController.m in Sources */,
 				BFC71EDC19D3049500BB5BEF /* AFAdSDKCarouselSashimiView.m in Sources */,
 				BFF8C6271951C02600A3CA04 /* ExampleCustomSashimiWithXIBView.m in Sources */,
+				BFCE930D1ADBAF11001A2DE5 /* ExampleHimonoViewController.m in Sources */,
 				BF20A9EF18A10ACB00863F6A /* AppTableViewController.m in Sources */,
 				BFC71ED719D2F6FF00BB5BEF /* ExampleCarouselSashimiTableViewController.m in Sources */,
 				7BE61D4718FBEDAA0097937A /* ExampleUdonNoodleTableViewController.m in Sources */,

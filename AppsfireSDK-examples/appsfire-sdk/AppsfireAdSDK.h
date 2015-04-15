@@ -1,7 +1,7 @@
 /*!
  *  @header    AppsfireAdSDK.h
  *  @abstract  Appsfire Advertising SDK Header
- *  @version   2.6.0
+ *  @version   2.7.0
  */
 
 #import <UIKit/UIViewController.h>
@@ -9,6 +9,7 @@
 #import <Foundation/NSError.h>
 #import "AppsfireSDKConstants.h"
 
+@class AFNativeAd;
 @class AFAdSDKSashimiView;
 @protocol AppsfireAdSDKDelegate;
 @protocol AFAdSDKModalDelegate;
@@ -151,6 +152,19 @@
 + (NSUInteger)numberOfSashimiAdsAvailableForNibName:(NSString *)nibName;
 
 /*!
+ *  @brief Ask if ads are loaded and if there is at least one sashimi ad available.
+ *  @since 2.7
+ *
+ *  @note If ads aren't downloaded yet, then the method will return `AFAdSDKAdAvailabilityPending`.
+ *  To test the library, and then have always have a positive response, please use the "debug" mode (see online documentation for more precisions).
+ *
+ *  @param viewClass A subclass of `AFAdSDKSashimiView`. Please check the documentation for a good implementation.
+ *
+ *  @return `AFAdSDKAdAvailabilityPending` if ads aren't loaded yet, `AFAdSDKAdAvailabilityYes` and if there is at least one modal ad available, `AFAdSDKAdAvailabilityNo` otherwise.
+ */
++ (AFAdSDKAdAvailability)isThereSashimiAdAvailableForSubclass:(Class)viewClass;
+
+/*!
  *  @brief Get a sashimi view based on a format.
  *  @since 2.2
  *
@@ -184,6 +198,43 @@
 + (AFAdSDKSashimiView *)sashimiViewForNibName:(NSString *)nibName andError:(NSError **)error;
 
 
+/** @name Native Ads
+ *  Methods for native Ads.
+ */
+
+/*!
+ *  @brief Ask if ads are loaded and if there is at least one native ad available.
+ *  @since 2.7
+ *
+ *  @note If ads aren't downloaded yet, then the method will return `AFAdSDKAdAvailabilityPending`.
+ *  To test the library, and then have always have a positive response, please use the "debug" mode (see online documentation for more precisions).
+ *
+ *  @return `AFAdSDKAdAvailabilityPending` if ads aren't loaded yet, `AFAdSDKAdAvailabilityYes` and if there is at least one modal ad available, `AFAdSDKAdAvailabilityNo` otherwise.
+ */
++ (AFAdSDKAdAvailability)isThereNativeAdAvailable;
+
+/*!
+ *  @brief Get the number of available native ads
+ *  @since 2.7
+ *
+ *  @note If ads aren't downloaded yet, then the method will return `0`.
+ *  To test the library, and then have a positive response, please use the "debug" mode.
+ *
+ *  @return The number of available native ads.
+ */
++ (NSUInteger)numberOfNativeAdsAvailable;
+
+/*!
+ *  @brief Get a native ad.
+ *  @since 2.7
+ *
+ *  @param error If a problem occured, the error object will be filled with a code and a description.
+ *
+ *  @return A `AFNativeAd` containing a native ad. Please check the documentation for a good implementation!
+ */
++ (AFNativeAd *)nativeAdWithError:(NSError **)error;
+
+
 /** @name Library life
  *  Methods about the general life of the library.
  */
@@ -197,17 +248,6 @@
  *  @return `YES` if ads are loaded from the web service.
  */
 + (BOOL)areAdsLoaded;
-
-
-/** @name Deprecated
- *  Methods that you should stop using, and that will be removed in future release
- */
-
-+ (AFAdSDKSashimiView *)sashimiViewForFormat:(AFAdSDKSashimiFormat)format withController:(UIViewController *)controller andError:(NSError **)error __deprecated_msg("We're now asking for the controller (that will host the Store Kit) via `AppsfireAdSDKDelegate`");
-
-+ (AFAdSDKSashimiView *)sashimiViewForSubclass:(Class)viewClass withController:(UIViewController *)controller andError:(NSError **)error __deprecated_msg("We're now asking for the controller (that will host the Store Kit) via `AppsfireAdSDKDelegate`");
-
-+ (AFAdSDKSashimiView *)sashimiViewForNibName:(NSString *)nibName withController:(UIViewController *)controller andError:(NSError **)error __deprecated_msg("We're now asking for the controller (that will host the Store Kit) via `AppsfireAdSDKDelegate`");
 
 @end
 
@@ -258,6 +298,24 @@
  *  @note You could decide to act differently knowing that there is currently no ad to display.
  */
 - (void)sashimiAdsRefreshedAndNotAvailable;
+
+/** @name Native Ads
+ *  Methods serving native ads purposes.
+ */
+
+/*!
+ *  @brief Called when ads were refreshed and that at least one native ad is available.
+ *  @since 2.7
+ */
+- (void)nativeAdsRefreshedAndAvailable;
+
+/*!
+ *  @brief Called when ads were refreshed but that none is available for native format.
+ *  @since 2.7
+ *
+ *  @note You could decide to act differently knowing that there is currently no ad to display.
+ */
+- (void)nativeAdsRefreshedAndNotAvailable;
 
 @end
 

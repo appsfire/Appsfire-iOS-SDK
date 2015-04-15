@@ -52,6 +52,9 @@
 		BF2C5E22195497D800594C38 /* AFAdSDKSashimiMinimalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiMinimalView.h; sourceTree = "<group>"; };
 		BF2C5E23195497D800594C38 /* AFAdSDKSashimiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKSashimiView.h; sourceTree = "<group>"; };
 		BF2C5E24195497D800594C38 /* AFAdSDKUdonNoodleControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAdSDKUdonNoodleControl.h; sourceTree = "<group>"; };
+		BFAF47991AD69BAC00767748 /* AFNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNativeAd.h; sourceTree = "<group>"; };
+		BFAF47A01AD69CA900767748 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BFAF47A21AD69CBC00767748 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BFF8C73E1952EC1200A3CA04 /* AppsfireSDK-Example-Interstitial-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "AppsfireSDK-Example-Interstitial-Info.plist"; path = "AppsfireSDK-Example-Interstitial/AppsfireSDK-Example-Interstitial-Info.plist"; sourceTree = SOURCE_ROOT; };
 		BFF8C73F1952EC1200A3CA04 /* AppsfireSDK-Example-Interstitial-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AppsfireSDK-Example-Interstitial-Prefix.pch"; path = "AppsfireSDK-Example-Interstitial/AppsfireSDK-Example-Interstitial-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		BFF8C7401952EC1200A3CA04 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = "AppsfireSDK-Example-Interstitial/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
@@ -116,6 +119,8 @@
 		7BE9A3AF17E706E100A664E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFAF47A21AD69CBC00767748 /* MapKit.framework */,
+				BFAF47A01AD69CA900767748 /* CoreLocation.framework */,
 				7B1A68C31864756C0079DC2D /* Accelerate.framework */,
 				7BE9A3F017E709AB00A664E8 /* AdSupport.framework */,
 				7BE9A3B217E706E100A664E8 /* CoreGraphics.framework */,
@@ -166,6 +171,7 @@
 				BF2C5E1D195497D800594C38 /* AppsfireSDKConstants.h */,
 				BFFF61391AA07E1D00C520A1 /* AppsfireSDK-Bridging-Header.h */,
 				BF2C5E1E195497D800594C38 /* libAppsfireSDK.a */,
+				BFAF47981AD69BAC00767748 /* native */,
 				7B851F0919DC367E0066D083 /* iap */,
 				BF2C5E1F195497D800594C38 /* sashimi */,
 			);
@@ -183,6 +189,14 @@
 				BF2C5E24195497D800594C38 /* AFAdSDKUdonNoodleControl.h */,
 			);
 			path = sashimi;
+			sourceTree = "<group>";
+		};
+		BFAF47981AD69BAC00767748 /* native */ = {
+			isa = PBXGroup;
+			children = (
+				BFAF47991AD69BAC00767748 /* AFNativeAd.h */,
+			);
+			path = native;
 			sourceTree = "<group>";
 		};
 		BFF8C7751952EDED00A3CA04 /* Helpers */ = {

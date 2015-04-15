@@ -31,7 +31,7 @@
         //
         self.title = @"Udon Noodle";
         self.tableView.rowHeight = 100.0;
-        
+                
         //
         self.arraySource = [NSMutableArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"LoremIpsum" ofType:@"plist"]];
         

@@ -16,6 +16,7 @@
 #import "ExampleCustomSashimiWithXIBTableViewController.h"
 #import "ExampleUdonNoodleTableViewController.h"
 #import "ExampleCarouselSashimiTableViewController.h"
+#import "ExampleHimonoViewController.h"
 
 @implementation AppTableViewController
 
@@ -45,7 +46,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     if (section == 0)
-        return 5;
+        return 6;
     else
         return 1;
     
@@ -91,6 +92,9 @@
                 break;
             case 4:
                 cellTitle = @"Udon Noodle (Pull-to-Refresh)";
+                break;
+            case 5:
+                cellTitle = @"Himono (Banner)";
                 break;
             default:
                 cellTitle = @"";
@@ -162,6 +166,14 @@
             {
                 controller = [[ExampleUdonNoodleTableViewController alloc] initWithStyle:UITableViewStylePlain];
                 [self.navigationController pushViewController:controller animated:YES];
+                break;
+            }
+                
+            // himono
+            case 5:
+            {
+                controller = [[ExampleHimonoViewController alloc] init];
+                [self.navigationController pushViewController:controller animated:YES];                
                 break;
             }
 
