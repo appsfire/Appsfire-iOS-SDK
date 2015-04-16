@@ -1,8 +1,8 @@
 Appsfire for iOS
 ================
 
-**Modified**: 2015-04-15  
-**SDK Version**: 2.7.0
+**Modified**: 2015-04-16  
+**SDK Version**: 2.7.1
 
 ## Getting Started with Appsfire
 The Appsfire iOS SDK is the cornerstone of the Appsfire network.
@@ -48,7 +48,7 @@ Edit your Podfile and add AppsfireSDK:
 
 ``` bash
 platform :ios, '5.1.1'
-pod 'AppsfireSDK', '~> 2.7.0'
+pod 'AppsfireSDK', '~> 2.7.1'
 ```
 
 Install into your Xcode project:
@@ -76,6 +76,12 @@ Included is a sample app to use as example and for help on Appsfire integration.
 If you encounter any issues, do not hesitate to contact our happy support team at support@appsfire.com.
 
 ## Change Logs
+
+### Version 2.7.1
+**Release date**: April 16, 2015
+<ul>
+<li>Solved an issue affecting the report of the impression with Native Ads feature.</li>
+</ul>
 
 ### Version 2.7.0
 **Release date**: April 15, 2015

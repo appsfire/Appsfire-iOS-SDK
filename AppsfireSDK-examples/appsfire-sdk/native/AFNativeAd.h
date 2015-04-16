@@ -1,7 +1,7 @@
 /*!
  *  @header    AFNativeAd.h
  *  @abstract  Appsfire Advertising SDK Native Ad Header
- *  @version   2.7.0
+ *  @version   2.7.1
  */
 
 #import <Foundation/NSObject.h>
@@ -48,6 +48,12 @@
  *  The star rating of the ad (out of 5).
  */
 @property (nonatomic, copy, readonly) NSNumber *starRating;
+
+/*!
+ *  Localized category of the application.
+ */
+@property (nonatomic, copy, readonly) NSString *category;
+
 
 /*!
  *  @brief Connect the `AFNativeAd` object to the view you use for display.
