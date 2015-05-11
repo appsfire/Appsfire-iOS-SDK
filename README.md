@@ -1,8 +1,8 @@
 Appsfire for iOS
 ================
 
-**Modified**: 2015-04-16  
-**SDK Version**: 2.7.1
+**Modified**: 2015-05-11  
+**SDK Version**: 2.7.2
 
 ## Getting Started with Appsfire
 The Appsfire iOS SDK is the cornerstone of the Appsfire network.
@@ -76,6 +76,12 @@ Included is a sample app to use as example and for help on Appsfire integration.
 If you encounter any issues, do not hesitate to contact our happy support team at support@appsfire.com.
 
 ## Change Logs
+
+### Version 2.7.2
+**Release date**: May 11, 2015
+<ul>
+<li>Add isFree, localizedPrice to AFNativeAd.</li>
+</ul>
 
 ### Version 2.7.1
 **Release date**: April 16, 2015
