@@ -13,6 +13,6 @@ Pod::Spec.new do |spec|
   spec.library         = 'AppsfireSDK'
   spec.xcconfig        =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/AppsfireSDK/AppsfireSDK"' }
   spec.weak_frameworks = 'AdSupport', 'StoreKit'
-  spec.frameworks      = 'Accelerate', 'CoreGraphics', 'CoreText', 'Foundation', 'QuartzCore', 'Security', 'SystemConfiguration', 'UIKit'
+  spec.frameworks      = 'Accelerate', 'CoreGraphics', 'CoreText', 'Foundation', 'QuartzCore', 'Security', 'SystemConfiguration', 'MapKit', 'CoreLocation', 'UIKit'
   spec.requires_arc    = true
 end
