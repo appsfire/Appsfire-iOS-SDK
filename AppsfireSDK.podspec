@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name            = 'AppsfireSDK'
-  spec.version         = '2.7.2'
+  spec.version         = '2.7.3'
   spec.license         = 'Commercial'
   spec.summary         = 'Appsfire iOS SDK'
   spec.description     = 'The Appsfire SDK for iOS enables you to natively monetize your applications and engage with your users.'
