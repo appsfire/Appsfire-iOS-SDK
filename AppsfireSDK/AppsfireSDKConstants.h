@@ -7,6 +7,12 @@
 #import <Foundation/NSObject.h>
 #include <CoreGraphics/CGGeometry.h>
 
+#if __has_feature(objc_arc)
+/* Don't manually release SDK objects */
+#undef dispatch_release
+#define dispatch_release(__object) ({  })
+#endif
+
 /*!
  *  @brief Names of parameters you can use in the initialization method.
  *  @since 2.4

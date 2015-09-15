@@ -356,6 +356,11 @@
 - (void)modalAdDidAppear;
 
 /*!
+ *  @brief Called when the modal ad was clicked.
+ */
+- (void)modalAdDidRecordClick;
+
+/*!
  *  @brief Called when the modal ad is going to be dismissed.
  *
  *  @note In case of in-app download, the method is called when the last modal disappears.
