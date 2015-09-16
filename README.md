@@ -77,8 +77,8 @@ If you encounter any issues, do not hesitate to contact our happy support team a
 
 ## Change Logs
 
-### Version 2.7.6
-**Release date**: September 15, 2015
+### Version 2.7.7
+**Release date**: September 16, 2015
 <ul>
 <li>iOS 9 support.</li>
 </ul>
