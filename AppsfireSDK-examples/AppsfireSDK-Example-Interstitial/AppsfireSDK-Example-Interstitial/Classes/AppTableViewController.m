@@ -159,14 +159,14 @@ typedef NS_ENUM(NSUInteger, AFAdSDKRowInterstitial) {
     }
     
     // check if an ad is available
-    if ([AppsfireAdSDK isThereAModalAdAvailableForType:modalType] == AFAdSDKAdAvailabilityYes) {
+    if ([AppsfireAdSDK isThereAModalAdAvailableForType:modalType forZone:@"/3180317/interstitial/af"] == AFAdSDKAdAvailabilityYes) {
         
         // if timer was asked
         if (shouldUseTimer) {
             
             [[[AppsfireAdTimerView alloc] initWithCountdownStart:3] presentWithCompletion:^(BOOL accepted) {
                 if (accepted)
-                    [AppsfireAdSDK requestModalAd:modalType withController:self withDelegate:self];
+                    [AppsfireAdSDK requestModalAd:modalType forZone:@"/3180317/interstitial/af" withController:self withDelegate:self];
             }];
             
         }
@@ -174,7 +174,7 @@ typedef NS_ENUM(NSUInteger, AFAdSDKRowInterstitial) {
         // else, simply display ad
         else {
             
-            [AppsfireAdSDK requestModalAd:modalType withController:self withDelegate:self];
+            [AppsfireAdSDK requestModalAd:modalType forZone:@"/3180317/interstitial/af" withController:self withDelegate:self];
             
         }
         

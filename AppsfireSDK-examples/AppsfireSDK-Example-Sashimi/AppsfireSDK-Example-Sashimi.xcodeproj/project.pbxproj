@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C074BBB1BCFDA5B00C73483 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAF47A61AD69D1900767748 /* MapKit.framework */; };
+		0C074BBC1BCFDA7600C73483 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAF47A41AD69D1500767748 /* CoreLocation.framework */; };
 		7BE61D4718FBEDAA0097937A /* ExampleUdonNoodleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE61D4618FBEDAA0097937A /* ExampleUdonNoodleTableViewController.m */; };
 		BF20A9EB18A10A9600863F6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF20A9E818A10A9600863F6A /* AppDelegate.m */; };
 		BF20A9EF18A10ACB00863F6A /* AppTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF20A9EE18A10ACB00863F6A /* AppTableViewController.m */; };
@@ -117,6 +119,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C074BBC1BCFDA7600C73483 /* CoreLocation.framework in Frameworks */,
+				0C074BBB1BCFDA5B00C73483 /* MapKit.framework in Frameworks */,
 				BF20AA2318A1233200863F6A /* SystemConfiguration.framework in Frameworks */,
 				BF20AA2118A1232800863F6A /* QuartzCore.framework in Frameworks */,
 				BF20AA1F18A1231D00863F6A /* Accelerate.framework in Frameworks */,
@@ -379,7 +383,7 @@
 		BFFD8E3E18A1013A00371EB0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Appsfire;
 			};
 			buildConfigurationList = BFFD8E4118A1013A00371EB0 /* Build configuration list for PBXProject "AppsfireSDK-Example-Sashimi" */;
@@ -533,6 +537,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppsfireSDK-Example-Sashimi/AppsfireSDK-Example-Sashimi-Prefix.pch";
 				INFOPLIST_FILE = "AppsfireSDK-Example-Sashimi/AppsfireSDK-Example-Sashimi-Info.plist";
@@ -542,6 +547,7 @@
 					"$(SRCROOT)/../appsfire-sdk",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -551,6 +557,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppsfireSDK-Example-Sashimi/AppsfireSDK-Example-Sashimi-Prefix.pch";
 				INFOPLIST_FILE = "AppsfireSDK-Example-Sashimi/AppsfireSDK-Example-Sashimi-Info.plist";
@@ -560,6 +567,7 @@
 					"$(SRCROOT)/../appsfire-sdk",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

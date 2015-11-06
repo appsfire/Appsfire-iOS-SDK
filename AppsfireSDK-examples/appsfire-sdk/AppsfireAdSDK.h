@@ -62,11 +62,12 @@
  *  You cannot request two ad modals at the same time. In the case where you already have a modal request in the queue, the previous one will be canceled.
  *
  *  @param modalType The kind of modal you want to request.
+ *  @param zoneId ID of zone that contains the ad, as supplied by Appsfire
  *  @param controller A controller that will be used to display the various components. We recommend you specify the root controller or your application.
  *  If you don't specify a controller, the request will be aborted. Note that we'll retain the controller with a strong attribute.
  *  @param delegate (optional) The delegate that will receive any specific event related to your request.
  */
-+ (void)requestModalAd:(AFAdSDKModalType)modalType withController:(UIViewController *)controller withDelegate:(id<AFAdSDKModalDelegate>)delegate;
++ (void)requestModalAd:(AFAdSDKModalType)modalType forZone:(NSString *)zoneId withController:(UIViewController *)controller withDelegate:(id<AFAdSDKModalDelegate>)delegate;
 
 /*!
  *  @brief Ask if ads are loaded and if there is at least one modal ad available.
@@ -76,11 +77,12 @@
  *  To test the library, and then have always have a positive response, please use the "debug" mode (see online documentation for more precisions).
  *
  *  @param modalType The kind of modal you want to check.
+ *  @param zoneId ID of zone to check for ads, as supplied by Appsfire
  *  Note that most of ads should be available for both formats.
  *
  *  @return `AFAdSDKAdAvailabilityPending` if ads aren't loaded yet, `AFAdSDKAdAvailabilityYes` and if there is at least one modal ad available, `AFAdSDKAdAvailabilityNo` otherwise.
  */
-+ (AFAdSDKAdAvailability)isThereAModalAdAvailableForType:(AFAdSDKModalType)modalType;
++ (AFAdSDKAdAvailability)isThereAModalAdAvailableForType:(AFAdSDKModalType)modalType forZone:(NSString *)zoneId;
 
 /*!
  *  @brief Force the dismissal of any modal ad currently being displayed on the screen.
@@ -120,10 +122,11 @@
  *  To test the library, and then have a positive response, please use the "debug" mode.
  *
  *  @param format The kind of sashimi view you would like to get.
+ *  @param zoneId ID of zone to check for ads, as supplied by Appsfire
  *
  *  @return The number of available sashimi ads.
  */
-+ (NSUInteger)numberOfSashimiAdsAvailableForFormat:(AFAdSDKSashimiFormat)format;
++ (NSUInteger)numberOfSashimiAdsAvailableForFormat:(AFAdSDKSashimiFormat)format forZone:(NSString *)zoneId;
 
 /*!
  *  @brief Get the number of available sashimi ads for a specific class.
@@ -133,10 +136,11 @@
  *  To test the library, and then have a positive response, please use the "debug" mode.
  *
  *  @param viewClass A subclass of `AFAdSDKSashimiView`. Please check the documentation for a good implementation.
+ *  @param zoneId ID of zone to check for ads, as supplied by Appsfire
  *
  *  @return The number of available sashimi ads.
  */
-+ (NSUInteger)numberOfSashimiAdsAvailableForSubclass:(Class)viewClass;
++ (NSUInteger)numberOfSashimiAdsAvailableForSubclass:(Class)viewClass forZone:(NSString *)zoneId;
 
 /*!
  *  @brief Get the number of available sashimi ads for a specific nib name.
@@ -146,10 +150,11 @@
  *  To test the library, and then have a positive response, please use the "debug" mode.
  *
  *  @param nibName A xib which is a subclass of `AFAdSDKSashimiView`. Please check the documentation for a good implementation.
+ *  @param zoneId ID of zone to check for ads, as supplied by Appsfire
  *
  *  @return The number of available sashimi ads.
  */
-+ (NSUInteger)numberOfSashimiAdsAvailableForNibName:(NSString *)nibName;
++ (NSUInteger)numberOfSashimiAdsAvailableForNibName:(NSString *)nibName forZone:(NSString *)zoneId;
 
 /*!
  *  @brief Ask if ads are loaded and if there is at least one sashimi ad available.
@@ -159,43 +164,47 @@
  *  To test the library, and then have always have a positive response, please use the "debug" mode (see online documentation for more precisions).
  *
  *  @param viewClass A subclass of `AFAdSDKSashimiView`. Please check the documentation for a good implementation.
+ *  @param zoneId ID of zone to check for ads, as supplied by Appsfire
  *
  *  @return `AFAdSDKAdAvailabilityPending` if ads aren't loaded yet, `AFAdSDKAdAvailabilityYes` and if there is at least one modal ad available, `AFAdSDKAdAvailabilityNo` otherwise.
  */
-+ (AFAdSDKAdAvailability)isThereSashimiAdAvailableForSubclass:(Class)viewClass;
++ (AFAdSDKAdAvailability)isThereSashimiAdAvailableForSubclass:(Class)viewClass forZone:(NSString *)zoneId;
 
 /*!
  *  @brief Get a sashimi view based on a format.
  *  @since 2.2
  *
  *  @param format The kind of sashimi view you would like to get.
+ *  @param zoneId ID of zone that contains the ad, as supplied by Appsfire
  *  @param error If a problem occured, the error object will be filled with a code and a description.
  *
  *  @return A view containing an ad which can be displayed right now. In case a problem occured, `nil` could be returned.
  */
-+ (AFAdSDKSashimiView *)sashimiViewForFormat:(AFAdSDKSashimiFormat)format andError:(NSError **)error;
++ (AFAdSDKSashimiView *)sashimiViewForFormat:(AFAdSDKSashimiFormat)format forZone:(NSString *)zoneId andError:(NSError **)error;
 
 /*!
  *  @brief Get a sashimi view based on a subclass.
  *  @since 2.2
  *
  *  @param viewClass A subclass of `AFAdSDKSashimiView`. Please check the documentation for a good implementation.
+ *  @param zoneId ID of zone that contains the ad, as supplied by Appsfire
  *  @param error If a problem occured, the error object will be filled with a code and a description.
  *
  *  @return An `UIView` containing an ad which can be displayed right now. In case a problem occured, `nil` could be returned.
  */
-+ (AFAdSDKSashimiView *)sashimiViewForSubclass:(Class)viewClass andError:(NSError **)error;
++ (AFAdSDKSashimiView *)sashimiViewForSubclass:(Class)viewClass forZone:(NSString *)zoneId andError:(NSError **)error;
 
 /*!
  *  @brief Get a sashimi view based on a nib name.
  *  @since 2.4
  *
  *  @param nibName A xib which is a subclass of `AFAdSDKSashimiView`. Please check the documentation for a good implementation.
+ *  @param zoneId ID of zone that contains the ad, as supplied by Appsfire
  *  @param error If a problem occured, the error object will be filled with a code and a description.
  *
  *  @return An `UIView` containing an ad which can be displayed right now. In case a problem occured, `nil` could be returned.
  */
-+ (AFAdSDKSashimiView *)sashimiViewForNibName:(NSString *)nibName andError:(NSError **)error;
++ (AFAdSDKSashimiView *)sashimiViewForNibName:(NSString *)nibName forZone:(NSString *)zoneId andError:(NSError **)error;
 
 
 /** @name Native Ads
@@ -206,33 +215,38 @@
  *  @brief Ask if ads are loaded and if there is at least one native ad available.
  *  @since 2.7
  *
+ *  @param zoneId ID of zone to check for ads, as supplied by Appsfire
+ *
  *  @note If ads aren't downloaded yet, then the method will return `AFAdSDKAdAvailabilityPending`.
  *  To test the library, and then have always have a positive response, please use the "debug" mode (see online documentation for more precisions).
  *
  *  @return `AFAdSDKAdAvailabilityPending` if ads aren't loaded yet, `AFAdSDKAdAvailabilityYes` and if there is at least one modal ad available, `AFAdSDKAdAvailabilityNo` otherwise.
  */
-+ (AFAdSDKAdAvailability)isThereNativeAdAvailable;
++ (AFAdSDKAdAvailability)isThereNativeAdAvailable:(NSString *)zoneId;
 
 /*!
  *  @brief Get the number of available native ads
  *  @since 2.7
+ *
+ *  @param zoneId ID of zone to check for ads, as supplied by Appsfire
  *
  *  @note If ads aren't downloaded yet, then the method will return `0`.
  *  To test the library, and then have a positive response, please use the "debug" mode.
  *
  *  @return The number of available native ads.
  */
-+ (NSUInteger)numberOfNativeAdsAvailable;
++ (NSUInteger)numberOfNativeAdsAvailable:(NSString *)zoneId;
 
 /*!
  *  @brief Get a native ad.
  *  @since 2.7
  *
  *  @param error If a problem occured, the error object will be filled with a code and a description.
+ *  @param zoneId ID of zone that contains the ad, as supplied by Appsfire
  *
  *  @return A `AFNativeAd` containing a native ad. Please check the documentation for a good implementation!
  */
-+ (AFNativeAd *)nativeAdWithError:(NSError **)error;
++ (AFNativeAd *)nativeAdWithError:(NSError **)error forZone:(NSString *)zoneId;
 
 
 /** @name Library life
@@ -354,6 +368,11 @@
  *  @brief Called when the modal ad was presented.
  */
 - (void)modalAdDidAppear;
+
+/*!
+ *  @brief Called when the modal ad was clicked.
+ */
+- (void)modalAdDidRecordClick;
 
 /*!
  *  @brief Called when the modal ad is going to be dismissed.

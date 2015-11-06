@@ -1,7 +1,7 @@
 /*!
  *  @header    AFNativeAd.h
  *  @abstract  Appsfire Advertising SDK Native Ad Header
- *  @version   2.7.1
+ *  @version   2.7.0
  */
 
 #import <Foundation/NSObject.h>
@@ -54,6 +54,19 @@
  */
 @property (nonatomic, copy, readonly) NSString *category;
 
+/*!
+ *  Is App Free.
+ *
+ *  @since 2.2.0
+ */
+@property (nonatomic, readonly) BOOL isFree;
+
+/*!
+ *  Localized price of the application.
+ *
+ *  @since 2.2.0
+ */
+@property (nonatomic, readonly) NSString *localizedPrice;
 
 /*!
  *  @brief Connect the `AFNativeAd` object to the view you use for display.

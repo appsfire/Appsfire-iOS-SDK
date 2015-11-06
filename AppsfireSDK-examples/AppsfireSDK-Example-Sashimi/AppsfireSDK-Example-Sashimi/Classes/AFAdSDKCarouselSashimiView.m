@@ -307,11 +307,11 @@ static NSUInteger const kCarouselEltsLimit = 7;
     for (index = 0; index < missingAds; index++) {
         
         // check that at least one ad is available
-        if ([AppsfireAdSDK numberOfSashimiAdsAvailableForSubclass:self.sashimiClass] == 0)
+        if ([AppsfireAdSDK numberOfSashimiAdsAvailableForSubclass:self.sashimiClass forZone:@"/3180317/square/af"] == 0)
             break;
         
         // get the ad && add it to the list
-        sashimiView = (AFAdSDKSashimiView *)[AppsfireAdSDK sashimiViewForSubclass:self.sashimiClass andError:nil];
+        sashimiView = (AFAdSDKSashimiView *)[AppsfireAdSDK sashimiViewForSubclass:self.sashimiClass forZone:@"/3180317/square/af" andError:nil];
         if (sashimiView != nil) {
             
             //

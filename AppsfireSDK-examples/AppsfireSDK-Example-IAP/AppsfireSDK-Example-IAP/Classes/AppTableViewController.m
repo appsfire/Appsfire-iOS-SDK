@@ -66,8 +66,8 @@
         case 0: {
             
             // Show a sushi ad if available.
-            if ([AppsfireAdSDK isThereAModalAdAvailableForType:AFAdSDKModalTypeSushi]) {
-                [AppsfireAdSDK requestModalAd:AFAdSDKModalTypeSushi withController:self withDelegate:nil];
+            if ([AppsfireAdSDK isThereAModalAdAvailableForType:AFAdSDKModalTypeSushi forZone:@"/3180317/interstitial/af"]) {
+                [AppsfireAdSDK requestModalAd:AFAdSDKModalTypeSushi forZone:@"/3180317/interstitial/af" withController:self withDelegate:nil];
             }
             
         } break;

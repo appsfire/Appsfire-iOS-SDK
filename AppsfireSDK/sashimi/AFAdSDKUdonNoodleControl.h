@@ -196,13 +196,21 @@ typedef NS_ENUM(NSUInteger, AFAdSDKUNControlScrollDismissStyle) {
 @property (nonatomic, assign, readwrite, getter = isShowingAds) BOOL showAds;
 
 /*!
+ * ID of zone containing the ads
+ */
+@property (nonatomic, strong) NSString *zoneId;
+
+- (id)init:(NSString *)zoneId;
+
+/*!
  * Initializes and returns a standard Udon Noodle control.
  *
  * @param scrollView The UIScrollView used to trigger the Udon Noodle control.
+ * @param zoneId ID of zone containing the ads, as supplied by Appsfire
  *
  * @since 2.3.0
  */
-- (id)initWithScrollView:(UIScrollView *)scrollView;
+- (id)initWithScrollView:(UIScrollView *)scrollView forZone:(NSString *)zoneId;
 
 /*!
  * Tells the control that a refresh operation was started programmatically.

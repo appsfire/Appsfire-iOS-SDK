@@ -45,6 +45,11 @@
 @property (nonatomic, assign, readonly) BOOL loaded;
 
 /*!
+ * Id of zone containing the himono
+ */
+@property (nonatomic, strong) NSString *zoneId;
+
+/*!
  *  @brief Initializes and returns a new instance of AFAdSDKHimonoBannerView to the size passed in argument.
  *
  *  @param size The size of the banner view.
@@ -66,9 +71,11 @@
 /*!
  *  @brief Tells to the himono banner view to start showing ads.
  *
+ *  @param ID of zone containing the himono ads, as supplied by Appsfire
+ *
  *  @note Make sure to implement the delegate to be notified of ad loading or errors during the retrieval.
  */
-- (void)loadAd;
+- (void)loadAd:(NSString *)zoneId;
 
 @end
 

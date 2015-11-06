@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C3F3CE31B17742500E1BB94 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAF47AC1AD69E5600767748 /* CoreLocation.framework */; };
+		0C3F3CE41B17742900E1BB94 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAF47AE1AD69E5A00767748 /* MapKit.framework */; };
 		7B60464019938E8400EBA7DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B60463F19938E8400EBA7DF /* Foundation.framework */; };
 		7B60464219938E8400EBA7DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B60464119938E8400EBA7DF /* CoreGraphics.framework */; };
 		7B60464419938E8400EBA7DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B60464319938E8400EBA7DF /* UIKit.framework */; };
@@ -67,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C3F3CE41B17742900E1BB94 /* MapKit.framework in Frameworks */,
+				0C3F3CE31B17742500E1BB94 /* CoreLocation.framework in Frameworks */,
 				7B6046931993A79A00EBA7DF /* Security.framework in Frameworks */,
 				7B6046911993A77A00EBA7DF /* StoreKit.framework in Frameworks */,
 				7B60468F1993A76B00EBA7DF /* AdSupport.framework in Frameworks */,
@@ -217,7 +221,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = AF;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Appsfire;
 			};
 			buildConfigurationList = 7B60463719938E8400EBA7DF /* Build configuration list for PBXProject "AppsfireSDK-Example-IAP" */;
@@ -306,7 +310,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -339,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -354,7 +358,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppsfireSDK-Example-IAP/AppsfireSDK-Example-IAP-Prefix.pch";
 				INFOPLIST_FILE = "AppsfireSDK-Example-IAP/AppsfireSDK-Example-IAP-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../appsfire-sdk",
@@ -372,7 +376,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppsfireSDK-Example-IAP/AppsfireSDK-Example-IAP-Prefix.pch";
 				INFOPLIST_FILE = "AppsfireSDK-Example-IAP/AppsfireSDK-Example-IAP-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../appsfire-sdk",

@@ -11,9 +11,6 @@
       location = "group:AppsfireSDK-Example-Native/AppsfireSDK-Example-Native.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:AppsfireSDK-Example-Engage/AppsfireSDK-Example-Engage.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:AppsfireSDK-Example-IAP/AppsfireSDK-Example-IAP.xcodeproj">
    </FileRef>
 </Workspace>

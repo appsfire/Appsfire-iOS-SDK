@@ -67,7 +67,7 @@
     
     // get number of available ads
     // stop there is no ad is available
-    sashimiAdsCount = [AppsfireAdSDK numberOfSashimiAdsAvailableForSubclass:[ExampleCustomSashimiView class]];
+    sashimiAdsCount = [AppsfireAdSDK numberOfSashimiAdsAvailableForSubclass:[ExampleCustomSashimiView class] forZone:@"/3180317/square/af"];
     if (sashimiAdsCount == 0)
         return NO;
     

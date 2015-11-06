@@ -45,7 +45,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.udonNoodleControl = [[AFAdSDKUdonNoodleControl alloc] initWithScrollView:self.tableView];
+    self.udonNoodleControl = [[AFAdSDKUdonNoodleControl alloc] initWithScrollView:self.tableView forZone:@"/3180317/square/af"];
     self.udonNoodleControl.delegate = self;
     [self.udonNoodleControl addTarget:self action:@selector(doRefresh:) forControlEvents:UIControlEventValueChanged];
     

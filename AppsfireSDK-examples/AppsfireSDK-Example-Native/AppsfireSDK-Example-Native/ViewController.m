@@ -95,7 +95,7 @@
     AFAdSDKAdAvailability adAvaibility;
     
     //
-    adAvaibility = [AppsfireAdSDK isThereNativeAdAvailable];
+    adAvaibility = [AppsfireAdSDK isThereNativeAdAvailable:@"/3180317/nativead/af"];
     
     // status text
     if (adAvaibility == AFAdSDKAdAvailabilityPending)
@@ -118,14 +118,14 @@
     AFNativeAd *nativeAd;
     
     // verify that at least 1 ad is available
-    if ([AppsfireAdSDK isThereNativeAdAvailable] != AFAdSDKAdAvailabilityYes) {
+    if ([AppsfireAdSDK isThereNativeAdAvailable:@"/3180317/nativead/af"] != AFAdSDKAdAvailabilityYes) {
         [[[UIAlertView alloc] initWithTitle:@"Native Ad" message:@"Couldn't refresh native ad: no new ad to display" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil] show];
         return;
     }
     
     // get native ad
     error = nil;
-    nativeAd = [AppsfireAdSDK nativeAdWithError:&error];
+    nativeAd = [AppsfireAdSDK nativeAdWithError:&error forZone:@"/3180317/nativead/af"];
     
     // set to view
     if ([nativeAd isKindOfClass:[AFNativeAd class]] && error == nil) {

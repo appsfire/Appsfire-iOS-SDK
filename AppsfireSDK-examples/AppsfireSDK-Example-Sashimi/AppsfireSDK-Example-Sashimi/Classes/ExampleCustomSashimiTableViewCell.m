@@ -32,7 +32,7 @@
             [ self setSeparatorInset:UIEdgeInsetsZero ];
         
         //
-        _viewSashimi = [ AppsfireAdSDK sashimiViewForSubclass:[ExampleCustomSashimiView class] andError:&error ];
+        _viewSashimi = [ AppsfireAdSDK sashimiViewForSubclass:[ExampleCustomSashimiView class] forZone:@"/3180317/square/af" andError:&error ];
         if ([ _viewSashimi isKindOfClass:[ UIView class ] ] && error == nil) {
         
             _viewSashimi.delegate = self;

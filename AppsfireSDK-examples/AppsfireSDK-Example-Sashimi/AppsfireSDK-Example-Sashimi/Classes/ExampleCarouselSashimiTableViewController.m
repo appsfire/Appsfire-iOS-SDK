@@ -108,7 +108,7 @@
     
     // get number of available ads
     // stop there is no ad is available
-    if ([AppsfireAdSDK numberOfSashimiAdsAvailableForSubclass:[AFAdSDKSashimiExtendedView class]] == 0)
+    if ([AppsfireAdSDK numberOfSashimiAdsAvailableForSubclass:[AFAdSDKSashimiExtendedView class] forZone:@"/3180317/square/af"] == 0)
         return NO;
     
     // add carousel into your content

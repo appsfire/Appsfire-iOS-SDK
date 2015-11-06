@@ -65,7 +65,7 @@
     self.himonoBannerView = [[AFAdSDKHimonoBannerView alloc] initWithAdSize:CGSizeMake(320.0, himonoHeight)];
     self.himonoBannerView.backgroundColor = [UIColor lightGrayColor];
     self.himonoBannerView.delegate = self;
-    [self.himonoBannerView loadAd];
+    [self.himonoBannerView loadAd:@"/3180317/homebanner/af"];
     
 }
 

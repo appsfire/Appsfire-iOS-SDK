@@ -32,7 +32,7 @@
             [ self setSeparatorInset:UIEdgeInsetsZero ];
         
         // create view
-        _viewSashimi = (AFAdSDKSashimiExtendedView *)[ AppsfireAdSDK sashimiViewForFormat:AFAdSDKSashimiFormatExtended andError:&error ];
+        _viewSashimi = (AFAdSDKSashimiExtendedView *)[ AppsfireAdSDK sashimiViewForFormat:AFAdSDKSashimiFormatExtended forZone:@"/3180317/square/af" andError:&error ];
         
         //
         if ([ _viewSashimi isKindOfClass:[ UIView class ] ] && error == nil) {
