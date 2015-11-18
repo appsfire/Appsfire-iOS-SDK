@@ -1,12 +1,12 @@
 Pod::Spec.new do |spec|
   spec.name            = 'AppsfireSDK'
-  spec.version         = '2.8.1'
+  spec.version         = '2.8.2'
   spec.license         = 'Commercial'
   spec.summary         = 'Appsfire iOS SDK'
   spec.description     = 'The Appsfire SDK for iOS enables you to natively monetize your applications and engage with your users.'
   spec.homepage        = 'http://www.mobilenetworkgroup.com/'
   spec.author          = { 'Appsfire' => 'http://www.mobilenetworkgroup.com/' }
-  spec.source          = { :git => 'https://github.com/appsfire/Appsfire-iOS-SDK.git', :tag => '2.8.1' }
+  spec.source          = { :git => 'https://github.com/appsfire/Appsfire-iOS-SDK.git', :tag => '2.8.2' }
   spec.platform        = :ios, '6.0'
   spec.source_files    = 'AppsfireSDK/**/*.{h,m}'
   spec.preserve_paths  = 'AppsfireSDK/*.a'

@@ -1,7 +1,7 @@
 /*!
  *  @header    AFAdSDKHimonoBannerView.h
  *  @abstract  Himono Banner View header file.
- *  @version   2.7.0
+ *  @version   2.8.2
  */
 
 #import <UIKit/UIView.h>

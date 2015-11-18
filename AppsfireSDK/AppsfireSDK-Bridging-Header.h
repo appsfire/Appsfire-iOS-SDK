@@ -1,7 +1,7 @@
 /*!
  *  @header    AppsfireSDK-Bridging-Header.h
  *  @abstract  Appsfire iOS SDK Swift Bridging Header
- *  @version   2.7.0
+ *  @version   2.8.2
  */
 
 // Appsfire SDK

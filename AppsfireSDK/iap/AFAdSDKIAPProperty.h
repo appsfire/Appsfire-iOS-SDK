@@ -1,7 +1,7 @@
 /*!
  *  @header    AFAdSDKIAPProperty.h
  *  @abstract  Appsfire In-App Purchase Ad Removal Prompte property class.
- *  @version   2.7.0
+ *  @version   2.8.2
  */
 
 #import <Foundation/NSObject.h>
